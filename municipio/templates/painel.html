@@ -1,0 +1,367 @@
+{% load static %}
+<!-- Painel Analítico -->
+<div class="p-4" style="background-color: LightGrey;">
+    <form method="GET">
+        <div class="row bg-white">
+            <div class="col-4">
+                <div class="row">
+                    <div class="col-12 offset-11 offset-md-0 col-md-4 mt-md-5 ms-md-3">
+                        <img src="../../static/inicio/imagens/cp_logo_governo.png" width="155px" class="d-inline-block align-text-top" alt="Logo">
+                    </div>
+                    <div class="col-12 offset-11 offset-md-0 col-md-4 mt-md-5 pt-md-4 ps-md-5 ms-md-5">
+                        <img src="../../static/inicio/imagens/LOGOTIPO_EMP.png" width="150px" class="d-inline-block align-text-top" alt="Logo">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 py-5 text-white" style="background-color: rgb(32, 56, 100);">
+                <h3 class="mt-4 ms-5">PAINEL ANALÍTICO</h3>
+                <h6 class="ms-5">2023</h6>
+            </div>
+            <div class="col-12 col-md-5 py-3 ps-4 pe-1 ps-md-0 pe-md-0" style="background-color:rgb(32, 56, 100);">
+                <div class="container-md row">
+                    <div class="col-12">
+                        <div class="bg-white">
+                            <div class="bg-white m-2">
+                                <strong>Regional:</strong>
+                            </div>
+                            <div class="">
+                                {% for dado in dados %}
+                                <div class="container-fluid mt-1 mb-1">
+                                    <div class="card" style="background-color: rgb(155, 194, 230);">
+                                        <div class="card-body">
+                                            <h5 class="my-0">DIREC {{ dado.direc }} - {{ dado.nomeMunicipio }}</h5>
+                                        </div>
+                                      </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-md row pt-2">
+                    <div class="col-12">
+                        <div class="bg-white">
+                            <div class="bg-white m-2">
+                                <strong>Nome da escola:</strong>
+                                {% for dado in dados %}
+                                <p class="my-0">{{dado.nomeEscola}}</p>
+                                {% endfor %}
+                            </div>
+                            <div class="m-2">
+                                <select class="form-select" id="escola" name="escola" onchange="this.form.submit()" style="background-color: rgb(155, 194, 230);">
+                                    <option selected>SELECIONE A ESCOLA</option>
+                                    {% for escola in escolas %}
+                                    <option value="{{ escola.codEscola }}">{{ escola.codEscola }} - {{ escola.nomeEscola }}</option>
+                                    {% endfor %}
+                                  </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    {% for dado in dados %}
+    <!-- CHECK OFERTAS -->
+    <div class="row pt-4 py-3">
+        <div class="col-12 bg-white p-3">
+            <strong class="text-primary">
+                OFERTA:
+            </strong>
+            <svg id="fund" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="gray" class="bi bi-check-lg" viewBox="0 0 16 16">
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+            </svg>
+            <strong id=nameFund>Fundamental</strong>
+            <svg id="eja" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="gray" class="bi bi-check-lg" viewBox="0 0 16 16">
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+            </svg>
+            <strong id="nameEJA">EJA</strong>
+        </div>
+    </div>
+    <!-- TOTAL DE MATRÍCULAS 2023 -->
+    <div class="row pt-2 py-3">
+        <div class="col-12 text-primary text-center bg-white p-3">
+            <strong>TOTAL DE MATRÍCULAS 2023</strong>
+        </div>
+    </div>
+    <div class="row pt-1">
+        <div class="col-6 col-md-4 offset-1 offset-md-0 ps-0 pb-2 pb-md-0 ps-md-0 ms-md-3">
+            <div class="card" style="width: 25rem;">
+                <div class="card-body">
+                    <div>
+                        <canvas height="300" id="chartMat"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 offset-1 offset-md-0 ps-0 pb-2 pb-md-0 ps-md-0 ms-md-0">
+            <div class="card" style="width: 25rem;">
+                <div class="card-body">
+                    <div>
+                        <canvas id="chartMatDiNo"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3 offset-1 offset-md-0 ps-0 pb-2 pb-md-0 ps-md-0 ms-md-0">
+            <div class="card" style="width: 25rem;">
+                <div class="card-body">
+                    <div>
+                        <canvas height="300" id="chartMod"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- INDICADORES INTERNO -->
+    <div class="row py-3">
+        <div class="col-12 text-primary text-center bg-white p-3">
+            <strong>INDICADORES INTERNO</strong>
+        </div>
+    </div>
+    <div class="row pt-1">
+        <div class="col-6 col-md-3 offset-1 offset-md-0 ps-4 pb-2 pb-md-0 ps-md-0 ms-md-3">
+            <div class="card" style="width: 21rem;">
+                <div class="card-body">
+                    <div>
+                        <canvas id="chartTA1s"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3 offset-1 offset-md-0 ps-4 pb-2 pb-md-0 ps-md-0 ms-md-4">
+            <div class="card" style="width: 21rem;">
+                <div class="card-body">
+                    <div>
+                        <canvas id="chartTA2s"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3 offset-1 offset-md-0 ps-4 pb-2 pb-md-0 ps-md-0 ms-md-4">
+            <div class="card" style="width: 21rem;">
+                <div class="card-body">
+                    <div>
+                        <canvas id="chartTA3s"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-2 offset-3 offset-md-0 ps-2 pb-2 pb-md-0 ps-md-0 ms-md-4">
+            <div class="card" style="width: 14rem; height: 21rem; background-color: rgb(126, 126, 126);">
+                <div class="card-body text-light text-center mb-2">
+                    <p><strong>Taxa Total da escola no Ensino Médio (%)</strong></p>
+                    <p><strong>Aprovação:</strong></p>
+                    <h4 id="TAM" style="color: darkblue;"> </h4>
+                    <p><strong>Reprovação:</strong></p>
+                    <h4 id="TRM" style="color:darkred;"> </h4>
+                    <p><strong>Abandono:</strong></p>
+                    <h4 id="TEM" style="color:goldenrod;"> </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- INDICADORES EXTERNO -->
+    <div class="row py-3">
+        <div class="col-6 text-primary text-center bg-white">
+            <strong>INDICADORES EXTERNO</strong>
+        </div>
+        <div class="col-6 text-primary text-center bg-white">
+            <strong>METAS</strong>
+        </div>
+    </div>
+    <div class="row pt-1">
+        <div class="col-6 col-md-3 offset-2 offset-md-0 ps-4 pb-2 pb-md-0 ps-md-0 ms-md-3">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <div>
+                        <canvas height="350" id="chartIDEB"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3 offset-2 offset-md-0 ps-4 pb-2 pb-md-0 ps-md-0 ms-md-1">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <div>
+                        <canvas height="350" id="chartSIMAIS"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3 offset-2 offset-md-0 ps-4 pb-2 pb-md-0 ps-md-0 ms-md-2">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <div>
+                        <canvas height="350" id="chartMETAIDEB"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-2 offset-2 offset-md-0 ps-4 pb-2 pb-md-0 ps-md-0 ms-md-1">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <div>
+                        <canvas height="350" id="chartMETASIMAIS"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- RESULTADO SMAR 2023 -->
+    <!-- <div class="row py-3">
+        <div class="col-12 text-primary text-center bg-white p-3">
+            <strong>RESULTADO 1ª SMAR 2023</strong>
+        </div>
+    </div>
+    <div class="row pt-2">
+        <div class="col-6 col-md-3 offset-1 offset-md-0 ps-5 ps-md-0 ms-md-3">
+            <div class="card" style="width: 19rem;">
+                <div class="card-body">
+                    <div>
+                        <canvas height="300" id="chartAva"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3 offset-1 offset-md-0 ps-5 ps-md-0">
+            <div class="card" style="width: 19rem;">
+                <div class="card-body">
+                    <div>
+                        <canvas height="300" id="chartNota1"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3 offset-1 offset-md-0 ps-5 ps-md-0">
+            <div class="card" style="width: 19rem;">
+                <div class="card-body">
+                    <div>
+                        <canvas height="300" id="chartNota2"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-2 offset-1 offset-md-0 ps-5 ps-md-0">
+            <div class="card" style="width: 19rem;">
+                <div class="card-body">
+                    <div>
+                        <canvas height="300" id="chartNota3"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    {% endfor %}
+    <p class="pt-5"><strong>Fontes: SEEC/INEP/CENSO ESCOLAR</strong>
+    <div>
+        <a id="voltar" href="{% url 'mapa' %}">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+            </svg>
+            Voltar
+        </a>
+    </div>
+</div>
+<style>
+    #voltar {
+        text-decoration: none
+    }
+</style>
+{% for dado in dados %}
+<!-- Ajustes dados OFERTA e Taxa das Escolas -->
+<script>
+    //Taxas totais:
+    const fund = document.getElementById('fund'); // Check Fundamental
+    const eja = document.getElementById('eja'); // Check EJA
+    const nameFund = document.getElementById('nameFund'); // Nome Fundamental
+    const nameEJA = document.getElementById('nameEJA') // Nome EJA
+    const tam = document.getElementById('TAM'); // Taxa de Aprovação Média
+    const trm = document.getElementById('TRM'); // Taxa de Reprovação Média
+    const tem = document.getElementById('TEM'); // Taxa de Evasão Média
+
+    var TAM = "{{dado.taxAprMedia}}"; // Dados Django da Taxa de Aprovação Média
+    var TRM = "{{dado.taxRepMedia}}"; // Dados Django da Taxa de Reprovação Média
+    var TEM = "{{dado.taxEvaMedia}}"; // Dados Django da Taxa de Evasão Média
+
+    // Adicionar valores no campo de taxa total das escolas.
+    const paragrafo1 = document.createElement("p");
+    const textApr = document.createTextNode(parseFloat(TAM.replace(",", ".")).toFixed(1));
+    paragrafo1.appendChild(textApr);
+    tam.appendChild(paragrafo1);
+
+    const paragrafo2 = document.createElement("p");
+    const textRep = document.createTextNode(parseFloat(TRM.replace(",", ".")).toFixed(1));
+    paragrafo2.appendChild(textRep);
+    trm.appendChild(paragrafo2);
+
+    const paragrafo3 = document.createElement("p");
+    const textEva = document.createTextNode(parseFloat(TEM.replace(",", ".")).toFixed(1));
+    paragrafo3.appendChild(textEva);
+    tem.appendChild(paragrafo3);
+
+    // Verificar se a escola possui ofertas de fundamental e EJA.
+    var chkFund = "{{dado.ofertaFund}}"; // Dados Django da Oferta Fundamental
+    var chkEJA = "{{dado.ofertaEJA}}"; // Dados Django da Oferta EJA
+
+    if (parseInt(chkFund) === 1) {
+        fund.style.fill = 'rgb(13, 110, 253)'
+        nameFund.style.display = 'inline';
+    }
+    else {
+        fund.style.display = 'none';
+        nameFund.style.display = 'none';
+    }
+
+    if (parseInt(chkEJA) === 1) {
+        eja.style.fill = 'rgb(13, 110, 253)'
+        nameEJA.style.display = 'inline';
+    }
+    else {
+        eja.style.display = 'none';
+        nameEJA.style.display = 'none';
+
+    }
+</script>
+<!-- END Ajustes dados OFERTA e Taxa das Escolas -->
+{% endfor %}
+<!-- BOOTSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<!-- END Painel Analítico -->
+
+{% for dado in dados %}
+<!-- Biblioteca para Visualização de Dados -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!-- Plugin Para mostrar o rótulo nos gráficos -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js" integrity="sha512-JPcRR8yFa8mmCsfrw4TNte1ZvF1e3+1SdGMslZvmrzDYxS69J7J49vkFL8u6u8PlPJK+H3voElBtUCzaXj+6ig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Gerar Gráficos -->
+<script>
+    var mat1Serie = "{{dado.mat1Serie}}"; // Matrícula 1ª Série
+    var mat2Serie = "{{dado.mat2Serie}}"; // Matrícula 2ª Série
+    var mat3Serie = "{{dado.mat3Serie}}"; // Matrícula 3ª Série
+    var matNoturno = "{{dado.matNoturno}}"; // Matrícula Noturno
+    var matDiurnoParcial = "{{dado.matDiurnoParcial}}"; // Matrícula Diurno Parcial
+    var matDiurnoIntegral = "{{dado.matDiurnoIntegral}}"; // Matrícula Diurno Integral
+    var matRegular = "{{dado.matRegular}}"; // Matrícula Regular
+    var matProfissional = "{{dado.matProfissional}}"; // Matrícula Profissional
+    var idebEscola = "{{dado.idebEscola}}"; // IDEB Escola
+    var idebRN = "{{dado.idebRN}}"; // IDEB RN
+    var metIdebEscola = "{{dado.metIdebEscola}}"; // Meta IDEB Escola
+    var metIdebRN = "{{dado.metIdebRN}}"; // Meta IDEB RN
+    var simaisPor = '{{dado.simaisPor}}'; // SIMAIS Lin. Portuguesa
+    var simaisMat = "{{dado.simaisMat}}"; // SIMAIS Matemática
+    var metSimaisPor = '{{dado.metSimaisPor}}'; // Meta SIMAIS Lin. Portuguesa
+    var metSimaisMat = "{{dado.metSimaisMat}}"; // Meta SIMAIS Matemática
+    var taxApr1Serie = "{{dado.taxApr1Serie}}"; // Taxa de Aprovação - 1ª Série
+    var taxApr2Serie = "{{dado.taxApr2Serie}}"; // Taxa de Aprovação - 1ª Série
+    var taxApr3Serie = "{{dado.taxApr3Serie}}"; // Taxa de Aprovação - 1ª Série
+    var taxRet1Serie = "{{dado.taxRet1Serie}}"; // Taxa de Retenção - 1ª Série
+    var taxRet2Serie = "{{dado.taxRet2Serie}}"; // Taxa de Retenção - 2ª Série
+    var taxRet3Serie = "{{dado.taxRet3Serie}}"; // Taxa de Retenção - 3ª Série
+    var taxEva1Serie = "{{dado.taxEva1Serie}}"; // Taxa de Evasão - 1ª Série
+    var taxEva2Serie = "{{dado.taxEva2Serie}}"; // Taxa de Evasão - 2ª Série
+    var taxEva3Serie = "{{dado.taxEva3Serie}}"; // Taxa de Evasão - 3ª Série
+</script>
+<script src="{% static 'inicio/js/painel.js' %}"></script>
+<!-- END Gerar Gráficos -->
+{% endfor %}
