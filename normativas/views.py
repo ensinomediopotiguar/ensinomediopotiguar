@@ -1,4 +1,4 @@
 from django.shortcuts import render
 
-def documentos(request):
+def normativas(request):
     return render(request, 'normativas/normativas.html')

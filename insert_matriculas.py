@@ -2,7 +2,7 @@ import pandas as pd
 import sqlite3
 
 #Ler planilha:
-planilha = pd.read_excel("inicio/static/inicio/documentos/totalmatriculas.xlsx")
+planilha = pd.read_excel("inicio/static/inicio/src/totalmatriculas.xlsx")
 
 for index, DADOS in enumerate(planilha['direc']):
         direc = planilha.loc[index, "direc"]

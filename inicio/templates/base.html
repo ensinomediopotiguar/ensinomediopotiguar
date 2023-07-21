@@ -5,17 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+    <link rel="stylesheet" href="../../static/inicio/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <title>{% block title %}{% endblock %}</title>
     <link rel="shortcut icon" type="image/x-icon" rel="icon" href="{% static 'inicio/favicon.ico' %}">
 </head>
-
 <body>
+    <!-- Acessibilidade -->
+    <div class="container-fluid fixed-top" id="acessibilidade" style="background: linear-gradient(to right, #00f299, #0579e9)">
+        <section class="offset-1">
+            <!-- Aumentar Fonte -->
+            <button class="btn btn-outline-light btn-floating m-1" id="aumentarFonte" title="Aumentar fonte">
+                <i class="fa-solid fa-plus fa-2xs"></i>
+                <i class="fa-solid fa-font"></i>
+            </button>
+
+            <!-- Fonte Padão -->
+            <button class="btn btn-outline-light btn-floating m-1" id="padronizarFonte" title="Padronizar fonte">
+                <i class="fa-solid fa-font"></i>
+            </button>
+
+            <!-- Diminuir Fonte -->
+            <button class="btn btn-outline-light btn-floating m-1" id="diminuirFonte" title="Diminuir fonte">
+                <i class="fa-solid fa-font"></i>
+                <i class="fa-solid fa-minus fa-2xs"></i>
+            </button>
+
+            <!-- Contraste -->
+            <button class="btn btn-outline-light btn-floating m-1 mx-3" id="altoContraste" title="Alto contraste">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+            </button>
+        </section>
+    </div>
     <!-- Barra de Navegação -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary py-0 sticky-top" style="background: linear-gradient(to right, #00f260, #0575e6);">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary pt-5 sticky-top" style="background: linear-gradient(to right, #00f260, #0575e6);">
         <div class="container">
             <a class="navbar-brand text-dark" href="/">
-                <img src="../../static/inicio/imagens/LOGOTIPO_EMP.png" width="200px" class="d-inline-block align-text-top" alt="Logo">
+                <img src="../../static/inicio/img/LOGOTIPO_EMP.png" width="150px" class="d-inline-block align-text-top" alt="Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -44,16 +70,40 @@
                         <a class="nav-link for" href="#"><p class="blockquote">Formações</p></a> <!-- {% url 'formacoes' %} -->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link duv" href="{% url 'duvidas' %}"><p class="blockquote">Dúvidas (FAQ)</p></a>
+                        <a class="nav-link duv" href="{% url 'duvidas' %}"><p class="blockquote">Dúvidas</p></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link con" href="#"><p class="blockquote">Contato</p></a> <!-- {% url 'contato' %} -->
                     </li>
                 </ul>
             </div>
+            <a class="navbar-brand text-dark" href="http://www.educacao.rn.gov.br">
+                <img src="../../static/inicio/img/SEEC_RN_White.png" width="150px" class="d-inline-block align-text-top" alt="Logo">
+            </a>
         </div>
     </nav>
     <!-- END Barra de Navegação -->
 
     {% block content %}
     {% endblock %}
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <!-- END VLibras -->
+
+    <div>
+        <!-- Voltar para o topo da página -->
+        <a href="" id="voltar_topo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#0575e6" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+            </svg>
+        </a>
+    </div>
 
     <!-- Rodapé -->
     <footer class="text-center">
@@ -62,7 +112,7 @@
                 <div class="row my-0">
                     <div class="col-ms-6 col-lg-2 offset-lg-1">
                         <a href="http://www.educacao.rn.gov.br">
-                            <img src="../../static/inicio/imagens/cp_logo_governo.png" width="200px" alt="Logo">
+                            <img src="../../static/inicio/img/cp_logo_governo.png" width="200px" alt="Logo">
                         </a>
                     </div>
                     <div class="col-ms-6 col-lg-3 mt-4 ms-md-4">
@@ -96,7 +146,86 @@
         </div>
     </footer>
     <!-- END Rodapé -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-</body>
+    <style>
+        #voltar_topo {
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+        }
 
+        body {
+            font-size: 18px;
+        }
+
+        body p {
+	        font-size: inherit !important;
+        }
+    </style>
+
+    <script>
+        var btn = document.querySelector("#voltar_topo");
+
+        // Voltar ao topo
+        btn.addEventListener("click", function(event) {
+            event.preventDefault(); // Evita o comportamento padrão do botão
+
+            // Animação suave de rolagem até o topo da página
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+
+        // Acessibilidade
+        window.onload = function() {
+            var elementBody = document.querySelector('body');
+            var elementBtnIncreaseFont = document.getElementById('aumentarFonte');
+            var elementBtnFont = document.getElementById('padronizarFonte');
+            var elementBtnDecreaseFont = document.getElementById('diminuirFonte');
+            var btnContraste = document.getElementById('altoContraste');
+            // Padrão de tamanho, equivale a 100% do valor definido no Body
+            var fontSize = 100;
+            // Valor de incremento ou decremento, equivale a 10% do valor do Body
+            var increaseDecrease = 10;
+
+            // Evento de click para aumentar a fonte
+            elementBtnIncreaseFont.addEventListener('click', function(event) {
+                fontSize = fontSize + increaseDecrease + 10;
+                elementBody.style.fontSize = fontSize + '%';
+            });
+
+            // Evento de click para padronizar a fonte
+            elementBtnFont.addEventListener('click', function (event) {
+                elementBody.style.fontSize = '113%';
+                fontSize = 100;
+                increaseDecrease = 10;
+            });
+
+            // Evento de click para diminuir a fonte
+            elementBtnDecreaseFont.addEventListener('click', function(event) {
+                fontSize = fontSize - increaseDecrease;
+                elementBody.style.fontSize = fontSize + '%';
+            });
+
+            // Evento de click para ajustar o contraste
+            btnContraste.addEventListener('click', function(event) {
+                if (elementBody.style.background === 'black' && elementBody.style.color === 'white') {
+                    // Se o contraste já estiver aplicado, reverter para o estado normal
+                    elementBody.style.background = ''; // Limpa o estilo, voltando ao valor padrão
+                    elementBody.style.color = '';
+                } else {
+                    // Aplicar o contraste
+                    elementBody.style.background = 'black';
+                    elementBody.style.color = 'white';
+                }
+            });
+        }
+    </script>
+    <!-- VLibras -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+
+    <!-- BOOTSTRAP -->
+    <script src="../../static/inicio/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
