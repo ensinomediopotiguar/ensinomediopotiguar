@@ -20,12 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-7g$_40h3*&4c#_*r5@vj5$^u9-wf^bi)j^ldbudav9rlo5-n4@'
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '10.26.0.150']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '10.26.0.150', 'ensinomediopotiguar.educacao.rn.gov.br']
 
 
 # Application definition
@@ -38,16 +38,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'inicio',
-    'trilhas',
-    'normativas',
-    'referenciais',
+    'documentos',
     'mapa',
-    'noticias',
-    'formacoes',
     'duvidas',
     'municipio',
     'painel',
     'contato',
+    'evento',
+    'enem',
 ]
 
 MIDDLEWARE = [
@@ -129,10 +127,12 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-

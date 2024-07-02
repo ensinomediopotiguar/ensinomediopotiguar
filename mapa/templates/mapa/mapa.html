@@ -6,17 +6,17 @@
 {% block content %}
 <link rel="stylesheet" href="{% static 'inicio/css/mapa.css' %}">
 <div class="container-fluid my-5">
-    <h1 class="text-center">Mapeamento de escolas com o Ensino Médio Potiguar</h1>
+    <h2 class="text-center">Mapa das Diretorias Regionais de Ensino e Cultura do Rio Grande do Norte</h2>
     <!-- MAPA -->
     <div class="my-5 py-5">
         <div class="row">
-            <div class="col-12 col-sm-9 ps-ms-0">
+            <div class="col-12 col-sm-9 ps-ms-0 text-center">
                 <div id="mapa-estado">
                     <div id="mapa-svg">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="-38.5821 4.8314 3.613599999999998 2.1433" stroke-linecap="round" stroke-linejoin="round" id="mapa-estado-svg">
                             <g id="UF-RN" transform="scale(0.0001,-0.0001)">
                                 <!-- 1ª DIREC -->
-                                    <!-- Extremoz -->
+                                    <!-- Extremoz --> 
                                     <a class="direc-1" type="button" data-bs-toggle="modal" data-bs-target="#ModalExtremoz">
                                         <title>Extremoz</title>
                                         <path id="2403608" d="M-352036,-57432l114,426l-254,295l-95,590l-577,-122l-762,-1042l478,-95l477,340l619,-392Z" stroke-width="200" stroke="black"></path>
@@ -4208,7 +4208,7 @@
                 <h3 class="mb-5">DIRECs:</h3>
                 <h4>1ª DIREC - Natal</h4>
                 <hr>
-                <p><strong>Joás Ferreira de Andrade</strong> - Diretor</p>
+                <p><strong>Jarbas Brito de Araújo</strong> - Diretor</p>
                 <p> Centro Administrativo do Governo do Estado - Bl. I - Térreo - Lagoa Nova CEP: 59064-901 - Natal/RN</p>
                 <p>E-mail: 1dired@rn.gov.br</p>
                 <p>Telefones: 3232-7448 / 7649 / 2745 / 4248 / 7455 / 7648 / 7450 (FAX)</p>
@@ -4269,8 +4269,9 @@
                 <p>E-mail: 8dired@rn.gov.br / oitavadired@hotmail.com</p>
                 <p>Telefones: 3531-3916 FAX 3531-3917/9993-1067</p>
                 <br>
-                
-                <h4>9ª DIREC - Currais Novos</h4>
+            </div>
+            <div class="col-12 col-sm-6">
+                <h4 class="mt-5">9ª DIREC - Currais Novos</h4>
                 <hr>
                 <p><strong>Agnaldo Cassiano de Brito</strong> - Diretor</p>
                 <p>Rua Des. Tomaz Salustino, 50 - Centro CEP: 59380-000 - Currais Novos/RN</p>
@@ -4296,7 +4297,7 @@
                 
                 <h4>12ª DIREC - Mossoró</h4>
                 <hr>
-                <p><strong>José Jadson Arnaud Amâncio</strong> - Diretor</p>
+                <p><strong>Ana Maria Morais Costa</strong> - Diretora</p>
                 <p>Rua Cunha da Mota, 10 - Centro CEP: 59600-160 - Mossoró/RN</p>
                 <p>E-mail: 12direc@rn.gov.br / 12dired@rn.gov.br / dired.mossoro@gmail.com</p>
                 <p>Telefones: 3315-5668 / 5669 / 5671 / 5672 / 5670 / 3314-4268 / 3314-4587 (FAX)</p>
@@ -4850,6 +4851,9 @@
     var mat1Serie167 = "{{ dados.166.mat1Serie }}";
     var mat2Serie167 = "{{ dados.166.mat2Serie }}";
     var mat3Serie167 = "{{ dados.166.mat3Serie }}";
+</script>
+<script>
+    document.querySelector('.map').classList.add('active');
 </script>
 <script src="{% static 'inicio/js/mapa.js' %}"></script>
 {% endblock %}

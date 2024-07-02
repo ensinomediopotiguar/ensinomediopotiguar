@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block title %}Documentos - Oficinas Formativas{% endblock %}
+
+{% block content %}
+
+{% include 'documentos.html' %}
+
+<div class="container pb-5">
+    <h1 class="text-center">Documentos Referenciais</h1>
+
+    <div class="pb-3">
+        <p class="pt-5 blockquote"><strong>Oficinas Formativas</strong></p>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <p class="blockquote text-justify">
+                    As Oficinas Formativas constituem projetos semestrais que contemplem ações práticas
+                    voltadas às temáticas de Meio Ambiente, Esporte e Lazer, Cultura e Arte, Tecnologia e
+                    Inovação. São unidades curriculares obrigatórias e de livre escolha das temáticas para os
+                    estudantes, ofertadas a depender das condições da unidade escolar.
+                </p>
+            </div>
+            <div class="col-12 col-md-6">
+                <p class="text-center" style="font-size: 11px !important;">Clique na imagem para ampliar</p>
+                <p class="pb-3 text-center" data-bs-toggle="modal" data-bs-target="#myModalofi">
+                    <img src="../../static/inicio/img/oficinas.jpeg" class="img-fluid" width="480" alt="Oficinas Formativas">
+                </p>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModalofi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="../../static/inicio/img/oficinas.jpeg" alt="Imagem" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelector('.iti').classList.add('active');
+</script>
+{% endblock %}

@@ -1,0 +1,176 @@
+{% extends 'base.html' %}
+
+{% block title %}Submissão - Resumo{% endblock %}
+
+{% block content %}
+<div style="background: #eff0f3;">
+    <div class="container">
+        <div class="row pb-3 pt-5">
+            <div class="card p-0 m-0">
+                <img src="../../static/inicio/img/banner_seminario.jpeg" class="img-fluid" alt="Banner do evento">
+            </div>
+        </div>
+        <div class="row pb-3">
+            <div class="card p-5">
+                <h3 class="pb-5">Submissão - Resumo</h3>
+                <form method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
+                    {% csrf_token %}
+                    <!-- Bloco para exibir erros -->
+                    {% if form.non_field_errors %}
+                    <div class="alert alert-danger">
+                        {{ form.non_field_errors }}
+                    </div>
+                    {% endif %}
+                    <!-- Campos de submissão -->
+                    <h5 class="pb-3">Autoria</h5>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-floating pt-3 mb-1">
+                                {{ form.autor.label_tag }}
+                                <input type="text" class="form-control" id="floatingInput" name="{{ form.autor.name }}" placeholder="Nome do autor" required>
+                                <div class="invalid-feedback">
+                                    Por favor, preencha todos os campos!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Outros campos de autor e coautores -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-floating pt-3 mb-1">
+                                {{ form.coautor1.label_tag }}
+                                <input type="text" class="form-control" id="floatingInput" name="{{ form.coautor1.name }}" placeholder="Nome do coautor 1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-floating pt-3 mb-1">
+                                {{ form.coautor2.label_tag }}
+                                <input type="text" class="form-control" id="floatingInput" name="{{ form.coautor2.name }}" placeholder="Nome do coautor 2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-floating pt-3 mb-1">
+                                {{ form.coautor3.label_tag }}
+                                <input type="text" class="form-control" id="floatingInput" name="{{ form.coautor3.name }}" placeholder="Nome do coautor 3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-floating pt-3 mb-1">
+                                {{ form.coautor4.label_tag }}
+                                <input type="text" class="form-control" id="floatingInput" name="{{ form.coautor4.name }}" placeholder="Nome do coautor 4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-floating pt-3">
+                                {{ form.email.label_tag }}
+                                <input type="email" class="form-control" id="floatingInput" name="{{ form.email.name }}" placeholder="Email" required>
+                                <div class="invalid-feedback">
+                                    Por favor, preencha todos os campos!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-floating pt-3">
+                                {{ form.instituicao.label_tag }}
+                                <input type="text" class="form-control" id="floatingInput" name="{{ form.instituicao.name }}" placeholder="Instituição" required>
+                                <div class="invalid-feedback">
+                                    Por favor, preencha todos os campos!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="pt-5 pb-3">Trabalho</h5>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-floating pt-3">
+                                {{ form.titulo.label_tag }}
+                                <input type="text" class="form-control" id="floatingInput" name="{{ form.titulo.name }}" placeholder="Título" required>
+                                <div class="invalid-feedback">
+                                    Por favor, preencha todos os campos!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-floating pt-3">
+                                {{ form.palavrasChave.label_tag }}
+                                <input type="text" class="form-control" id="floatingInput" name="{{ form.palavrasChave.name }}" placeholder="Palavras-chave" required>
+                                <div class="invalid-feedback">
+                                    Por favor, preencha todos os campos!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Outros campos, como categoria, conforme necessário -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-floating pt-3">
+                                {{ form.eixo.label_tag }}
+                                <select class="form-select pt-3" id="floatingInput" name="{{ form.eixo.name }}" required>
+                                    <option selected></option>
+                                    {% for eixo in eixos %}
+                                        <option value="{{ eixo.id }}">{{ eixo.nome }}</option>
+                                    {% endfor %}
+                                </select>
+                                <div class="invalid-feedback">
+                                    Por favor, selecione um eixo!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Campo de upload de arquivo -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-floating pt-3">
+                                {{ form.paper.label_tag }}
+                                <input type="file" class="form-control" id="floatingInput" name="{{ form.paper.name }}" required>
+                                <div class="invalid-feedback">
+                                    Por favor, faça o upload do arquivo!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-12 pt-3">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
+                </form>                
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+    'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    const forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+        }, false)
+    })
+    })()
+</script>
+{% endblock %}

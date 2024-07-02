@@ -1,0 +1,190 @@
+{% extends 'base.html' %}
+
+{% block title %}Inscrição - Ofininas e Minicursos{% endblock %}
+
+{% block content %}
+<style>
+    .text-justify {
+        text-align: justify;
+    }
+</style>
+
+<div style="background: #eff0f3;">
+    <div class="container">
+        <div class="row pb-3 pt-5">
+            <div class="card p-0 m-0">
+                <img src="../../static/inicio/img/banner_seminario.jpeg" class="img-fluid" alt="Banner do evento">
+            </div>
+        </div>
+        <div class="row pb-3">
+            <div class="card text-center p-5">
+                <h3 class="pb-5">Inscreva-se nas oficinas ou minicursos do dia 23</h3>
+                <p class="blockquote text-justify mx-0 mx-md-5">
+                    Para mais informações, consulte a programação completa contendo os dias e horários das atividades do evento.
+                </p>
+            </div>
+        </div>
+        <div class="row pb-3">
+            <div class="card p-5">
+                <h3 class="pb-5">Inscrição</h3>
+                <form method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
+                    {% csrf_token %}
+                    <!-- Bloco para exibir erros -->
+                    {% if form.non_field_errors %}
+                    <div class="alert alert-danger">
+                        {{ form.non_field_errors }}
+                    </div>
+                    {% endif %}
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-floating pt-3 mb-1">
+                                {{ form.nome.label_tag }}
+                                <input type="text" class="form-control" id="floatingInput" name="{{ form.nome.name }}" placeholder="Nome completo" required>
+                                <div class="invalid-feedback">
+                                    Por favor, preecha todos os campos!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-floating pt-3 mb-1">
+                                {{ form.minicurso.label_tag }}
+                                <select class="form-select pt-3" id="minicursoSelect" name="{{ form.minicurso.name }}" required>
+                                    <option value="" selected></option>
+                                    {% for minicurso in minicursos %}
+                                        <option value="{{ minicurso.id }}">{{ minicurso.nome }}</option>
+                                    {% endfor %}
+                                </select>
+                                <div class="invalid-feedback">
+                                    Por favor, selecione um eixo!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bloco adicionado para exibir a descrição do minicurso selecionado -->
+                    <div class="row pt-3">
+                        <div class="col-12">
+                            <div class="mt-3" id="minicurso-info" style="display: none;">
+                                <!-- Aqui é onde a descrição e a área do minicurso serão exibidas dinamicamente -->
+                                <p><strong>Autor(es):</strong> <span id="minicurso-autor"></span></p>
+                                <p><strong>Eixo:</strong> <span id="minicurso-area"></span></p>
+                                <p class="blockquote text-justify"><strong>Descrição:</strong> <span id="minicurso-descricao"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pt-3 mb-3">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
+                </form>                
+            </div>
+        </div>
+    </div>
+</div>
+
+{% for minicurso in minicursos %}
+<script>
+    // Exibir a descrição do minicurso selecionado ao alterar a seleção
+    document.addEventListener('DOMContentLoaded', function () {
+        const minicursoSelect = document.getElementById('minicursoSelect');
+        const minicursoInfo = document.getElementById('minicurso-info');
+        const minicursoAutor = document.getElementById('minicurso-autor');
+        const minicursoArea = document.getElementById('minicurso-area');
+        const minicursoDescricao = document.getElementById('minicurso-descricao');
+
+        minicursoSelect.addEventListener('change', function () {
+            // Obter o valor da opção selecionada
+            const selectedValue = minicursoSelect.options[minicursoSelect.selectedIndex].value;
+
+            // Encontrar o minicurso selecionado nos dados disponíveis
+            const selectedMinicurso = selectedValue;
+
+                '{% if minicurso.id == 1 %}'
+                    '{% with minicurso=minicurso %}'
+                        if (selectedValue == '1') {
+                            minicursoAutor.innerText = '{{ minicurso.autor }}';
+                            minicursoArea.innerText = '{{ minicurso.area }}';
+                            minicursoDescricao.innerText = '{{ minicurso.descricao }}';
+                            minicursoInfo.style.display = 'block';
+                        }
+                    '{% endwith %}'
+                '{% elif minicurso.id == 2 %}'
+                    '{% with minicurso=minicurso %}'
+                        if (selectedValue == '2') {
+                            minicursoAutor.innerText = '{{ minicurso.autor }}';
+                            minicursoArea.innerText = '{{ minicurso.area }}';
+                            minicursoDescricao.innerText = '{{ minicurso.descricao }}';
+                            minicursoInfo.style.display = 'block';
+                        }
+                    '{% endwith %}'
+                '{% elif minicurso.id == 3 %}'
+                    '{% with minicurso=minicurso %}'
+                        if (selectedValue == '3') {
+                            minicursoAutor.innerText = '{{ minicurso.autor }}';
+                            minicursoArea.innerText = '{{ minicurso.area }}';
+                            minicursoDescricao.innerText = '{{ minicurso.descricao }}';
+                            minicursoInfo.style.display = 'block';
+                        }
+                    '{% endwith %}'
+                '{% elif minicurso.id == 4 %}'
+                    '{% with minicurso=minicurso %}'
+                        if (selectedValue == '4') {
+                            minicursoAutor.innerText = '{{ minicurso.autor }}';
+                            minicursoArea.innerText = '{{ minicurso.area }}';
+                            minicursoDescricao.innerText = '{{ minicurso.descricao }}';
+                            minicursoInfo.style.display = 'block';
+                        }
+                    '{% endwith %}'
+                '{% elif minicurso.id == 5 %}'
+                    '{% with minicurso=minicurso %}'
+                        if (selectedValue == '5') {
+                            minicursoAutor.innerText = '{{ minicurso.autor }}';
+                            minicursoArea.innerText = '{{ minicurso.area }}';
+                            minicursoDescricao.innerText = '{{ minicurso.descricao }}';
+                            minicursoInfo.style.display = 'block';
+                        }
+                    '{% endwith %}'
+                '{% elif minicurso.id == 6 %}'
+                    '{% with minicurso=minicurso %}'
+                        if (selectedValue == '6') {
+                            minicursoAutor.innerText = '{{ minicurso.autor }}';
+                            minicursoArea.innerText = '{{ minicurso.area }}';
+                            minicursoDescricao.innerText = '{{ minicurso.descricao }}';
+                            minicursoInfo.style.display = 'block';
+                        }
+                    '{% endwith %}'
+                '{% endif %}'
+
+                // Ocultar a div de descrição se nenhum minicurso estiver selecionado
+                if (!selectedValue || selectedValue < 1 || selectedValue > 6) {
+                    minicursoInfo.style.display = 'none';
+                }
+        });
+    });
+</script>
+{% endfor %}
+
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+            }, false)
+        })
+    })()
+</script>
+{% endblock %}

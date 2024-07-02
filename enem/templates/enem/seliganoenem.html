@@ -1,0 +1,179 @@
+{% extends 'base.html' %}
+
+{% block title %}Se Liga no Enem{% endblock %}
+
+{% block content %}
+<div class="container mt-5 text-center">
+    <img class="pb-1 w-25" src="../../../static/inicio/img/seliganoenem.png" alt="">
+</div>
+
+<img src="../../../static/inicio/img/ops!.jpeg" alt="Página em manutenção">
+
+<!-- 
+<div class="container text-center">
+    <div class="row row-cols-1 row-cols-lg-3 pt-4">
+        <div class="col offset-2 offset-md-0 py-3">
+            <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel" style="width: 300px;">
+                <a href="{% url 'prazos' %}">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="https://img.freepik.com/vetores-gratis/ilustracao-do-dia-dos-direitos-humanos-em-gradiente_23-2151049767.jpg?t=st=1714135749~exp=1714136349~hmac=7dd32e99d2f9997abdd9e9da45d8a1d2b177b1eb7bb12f0b9044ffdf6625d50a" class="d-block w-100" alt="..." style="height: 283px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="https://img.freepik.com/vetores-gratis/modelo-de-cartaz-vertical-do-dia-dos-direitos-humanos_23-2151049779.jpg?t=st=1714135760~exp=1714136360~hmac=772f493f822049016d82b77b17fc0cc5b215861e8b6102f36807df802f063621" class="d-block w-100" alt="..." style="height: 283px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="https://img.freepik.com/vetores-gratis/ilustracao-do-dia-dos-direitos-humanos-em-gradiente_23-2151049767.jpg?t=st=1714135749~exp=1714136349~hmac=7dd32e99d2f9997abdd9e9da45d8a1d2b177b1eb7bb12f0b9044ffdf6625d50a" class="d-block w-100" alt="..." style="height: 283px;">
+                        </div>
+                    </div>
+                </a>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="col offset-2 offset-md-0 py-3">
+            <div id="carouselExampleControls2" class="carousel slide carousel-fade" data-bs-ride="carousel" style="width: 300px;">
+                <a href="{% url 'prazos' %}">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="https://img.freepik.com/vetores-gratis/ilustracao-do-dia-dos-direitos-humanos-em-gradiente_23-2151049767.jpg?t=st=1714135749~exp=1714136349~hmac=7dd32e99d2f9997abdd9e9da45d8a1d2b177b1eb7bb12f0b9044ffdf6625d50a" class="d-block w-100" alt="..." style="height: 283px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="https://img.freepik.com/vetores-gratis/modelo-de-cartaz-vertical-do-dia-dos-direitos-humanos_23-2151049779.jpg?t=st=1714135760~exp=1714136360~hmac=772f493f822049016d82b77b17fc0cc5b215861e8b6102f36807df802f063621" class="d-block w-100" alt="..." style="height: 283px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="https://img.freepik.com/vetores-gratis/ilustracao-do-dia-dos-direitos-humanos-em-gradiente_23-2151049767.jpg?t=st=1714135749~exp=1714136349~hmac=7dd32e99d2f9997abdd9e9da45d8a1d2b177b1eb7bb12f0b9044ffdf6625d50a" class="d-block w-100" alt="..." style="height: 283px;">
+                        </div>
+                    </div>
+                </a>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="col offset-2 offset-md-0 py-3">
+            <div id="carouselExampleControls3" class="carousel slide carousel-fade" data-bs-ride="carousel" style="width: 300px;">
+                <a href="{% url 'posenem' %}">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="https://img.freepik.com/vetores-gratis/ilustracao-do-dia-dos-direitos-humanos-em-gradiente_23-2151049767.jpg?t=st=1714135749~exp=1714136349~hmac=7dd32e99d2f9997abdd9e9da45d8a1d2b177b1eb7bb12f0b9044ffdf6625d50a" class="d-block w-100" alt="..." style="height: 283px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="https://img.freepik.com/vetores-gratis/modelo-de-cartaz-vertical-do-dia-dos-direitos-humanos_23-2151049779.jpg?t=st=1714135760~exp=1714136360~hmac=772f493f822049016d82b77b17fc0cc5b215861e8b6102f36807df802f063621" class="d-block w-100" alt="..." style="height: 283px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="https://img.freepik.com/vetores-gratis/ilustracao-do-dia-dos-direitos-humanos-em-gradiente_23-2151049767.jpg?t=st=1714135749~exp=1714136349~hmac=7dd32e99d2f9997abdd9e9da45d8a1d2b177b1eb7bb12f0b9044ffdf6625d50a" class="d-block w-100" alt="..." style="height: 283px;">
+                        </div>
+                    </div>
+                </a>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="col offset-2 offset-md-0 py-3">
+            <div id="carouselExampleControls4" class="carousel slide carousel-fade" data-bs-ride="carousel" style="width: 300px;">
+                <a href="{% url 'dicas' %}">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="https://img.freepik.com/vetores-gratis/ilustracao-do-dia-dos-direitos-humanos-em-gradiente_23-2151049767.jpg?t=st=1714135749~exp=1714136349~hmac=7dd32e99d2f9997abdd9e9da45d8a1d2b177b1eb7bb12f0b9044ffdf6625d50a" class="d-block w-100" alt="..." style="height: 283px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="https://img.freepik.com/vetores-gratis/modelo-de-cartaz-vertical-do-dia-dos-direitos-humanos_23-2151049779.jpg?t=st=1714135760~exp=1714136360~hmac=772f493f822049016d82b77b17fc0cc5b215861e8b6102f36807df802f063621" class="d-block w-100" alt="..." style="height: 283px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="https://img.freepik.com/vetores-gratis/ilustracao-do-dia-dos-direitos-humanos-em-gradiente_23-2151049767.jpg?t=st=1714135749~exp=1714136349~hmac=7dd32e99d2f9997abdd9e9da45d8a1d2b177b1eb7bb12f0b9044ffdf6625d50a" class="d-block w-100" alt="..." style="height: 283px;">
+                        </div>
+                    </div>
+                </a>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="col offset-2 offset-md-0 py-3">
+            <div id="carouselExampleControls5" class="carousel slide carousel-fade" data-bs-ride="carousel" style="width: 300px;">
+                <a href="{% url 'redacao' %}">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="https://img.freepik.com/vetores-gratis/ilustracao-do-dia-dos-direitos-humanos-em-gradiente_23-2151049767.jpg?t=st=1714135749~exp=1714136349~hmac=7dd32e99d2f9997abdd9e9da45d8a1d2b177b1eb7bb12f0b9044ffdf6625d50a" class="d-block w-100" alt="..." style="height: 283px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="https://img.freepik.com/vetores-gratis/modelo-de-cartaz-vertical-do-dia-dos-direitos-humanos_23-2151049779.jpg?t=st=1714135760~exp=1714136360~hmac=772f493f822049016d82b77b17fc0cc5b215861e8b6102f36807df802f063621" class="d-block w-100" alt="..." style="height: 283px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="https://img.freepik.com/vetores-gratis/ilustracao-do-dia-dos-direitos-humanos-em-gradiente_23-2151049767.jpg?t=st=1714135749~exp=1714136349~hmac=7dd32e99d2f9997abdd9e9da45d8a1d2b177b1eb7bb12f0b9044ffdf6625d50a" class="d-block w-100" alt="..." style="height: 283px;">
+                        </div>
+                    </div>
+                </a>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="col offset-2 offset-md-0 pt-3 pb-5">
+            <div id="carouselExampleControls6" class="carousel slide carousel-fade" data-bs-ride="carousel" style="width: 300px;">
+                <a href="{% url 'conhecaoscursos' %}">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="https://img.freepik.com/vetores-gratis/ilustracao-do-dia-dos-direitos-humanos-em-gradiente_23-2151049767.jpg?t=st=1714135749~exp=1714136349~hmac=7dd32e99d2f9997abdd9e9da45d8a1d2b177b1eb7bb12f0b9044ffdf6625d50a" class="d-block w-100" alt="..." style="height: 283px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="https://img.freepik.com/vetores-gratis/modelo-de-cartaz-vertical-do-dia-dos-direitos-humanos_23-2151049779.jpg?t=st=1714135760~exp=1714136360~hmac=772f493f822049016d82b77b17fc0cc5b215861e8b6102f36807df802f063621" class="d-block w-100" alt="..." style="height: 283px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="https://img.freepik.com/vetores-gratis/ilustracao-do-dia-dos-direitos-humanos-em-gradiente_23-2151049767.jpg?t=st=1714135749~exp=1714136349~hmac=7dd32e99d2f9997abdd9e9da45d8a1d2b177b1eb7bb12f0b9044ffdf6625d50a" class="d-block w-100" alt="..." style="height: 283px;">
+                        </div>
+                    </div>
+                </a>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls6" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls6" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<style>
+    ul li .ene {
+        color: black;
+    }
+</style>
+
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %}Documentos - Referencial Curricular{% endblock %}
+
+{% block content %}
+
+{% include 'documentos.html' %}
+
+<div class="container pb-5">
+    <h1 class="text-center">Documentos Referenciais</h1>
+
+    <div class="pb-3">
+        <p class="pt-5 blockquote"><strong>Referencial Curricular</strong></p>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <p class="blockquote text-justify">
+                    A Secretaria de Estado da Educação, da Cultura, do Esporte e do Lazer (SEEC-RN) apresenta aos
+                    profissionais da educação, estudantes e suas famílias, demais profissionais das diversas instituições
+                    públicas e privadas de Educação Básica e Ensino Superior e para a sociedade em geral, o Referencial
+                    Curricular do Ensino Médio Potiguar, resultado de discussões, estudos, intercâmbios de experiências,
+                    reflexões acerca do currículo e da prática docente. Este Referencial consolida as orientações curriculares
+                    para a Educação Básica, articulando-se com o Documento Curricular das etapas da Educação Infantil e
+                    Ensino Fundamental, aprovado por meio da Resolução n° 102/2018-CEE/RN.
+                </p>
+                <p class="blockquote text-justify">
+                    Este documento consolida as orientações curriculares para a Educação Básica, articulando-se com o Documento
+                    Curricular das etapas da Educação Infantil e Ensino Fundamental, aprovado por meio da Resolução n° 102/2018-CEE/RN.
+                    O Referencial Curricular do Ensino Médio Potiguar é resultado de discussões, estudos, intercâmbios de experiências,
+                    reflexões acerca do currículo e da prática docente.
+                </p>
+            </div>
+            <div class="col-12 col-md-6 text-center">
+                <p style="font-size: 11px !important;">Clique nas imagens abaixo para acessar os documentos:</p>
+                <div class="col-12 mb-4">
+                    <a href="../../static/inicio/src/20230321_RCEMP - REFERENCIAL CURRICULAR DO ENSINO MÉDIO POTIGUAR.pdf" target="_blank">
+                        <img src="../../static/inicio/img/referencial.jpeg" width="220px" alt="Referencial Curricular">
+                    </a>
+                </div>
+                <div class="col-12">
+                    <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf" target="_blank">
+                        <img src="../../static/inicio/img/iftrilhas.jpeg" width="300px" alt="Trilhas de Aprofundamento">
+                    </a>
+                </div>                    
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelector('.ref').classList.add('active');
+</script>
+{% endblock %}

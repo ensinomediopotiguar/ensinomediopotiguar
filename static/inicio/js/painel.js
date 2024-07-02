@@ -9,7 +9,7 @@ if (parseFloat(metIdebEscola) === 0) {
     metIdebEscola = 'ND';
 }
 
-//Gráfico - Matrículas 2023
+//Gráfico - Matrículas 2024
 const ctxmat = document.getElementById('chartMat');
 new Chart(ctxmat, {
     type: 'bar',
@@ -44,7 +44,7 @@ new Chart(ctxmat, {
             },
             title: {
                 display: true,
-                text: 'MATRÍCULAS 2023'
+                text: 'MATRÍCULAS 2024'
             }
         }
     },

@@ -1,0 +1,1607 @@
+{% extends 'base.html' %}
+
+{% block title %}Dúvidas - Pé-de-Meia{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="pb-3">
+        <h1>Política Pública: Pé-de-Meia</h1>
+        <div class="row">
+            <div class="col-12 col-md-6 pt-5">
+                <p class="blockquote text-justify">
+                    O Pé-de-Meia é um programa de incentivo financeiro-educacional, na modalidade de poupança, destinado a promover a permanência e a conclusão escolar de estudantes matriculados no ensino médio público. Por meio do incentivo à permanência escolar, o programa quer democratizar o acesso e reduzir a desigualdade social entre os jovens do ensino médio, além de promover mais inclusão social pela educação, estimulando a mobilidade social.
+                </p>
+                <div class="pb-3">
+                    <p class="blockquote">
+                        <strong>Leis e Portarias:</strong>
+                    </p>
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <ol>
+                                <li>
+                                    <a href="https://www2.camara.leg.br/legin/fed/lei/2024/lei-14818-16-janeiro-2024-795255-publicacaooriginal-170861-pl.html" target="_blank">
+                                        LEI n° 14.818, de 16 de janeiro de 2024
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                                            <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                                        </svg>
+                                    </a>
+                                    <div class="col-12 col-md-9">
+                                        <p class="blockquote">
+                                            Institui incentivo financeiro.         
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/D11901.htm" target="_blank">
+                                        LEI n° 11.901, de 26 de janeiro de 2024                                        
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                                            <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                                        </svg>
+                                    </a>
+                                    <div class="col-12 col-md-9">
+                                        <p class="blockquote">
+                                            Regulamenta o incentivo.                                       
+                                        </p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <ol start="3">
+                                <li>
+                                    <a href="https://www.in.gov.br/web/dou/-/portaria-n-83-de-7-de-fevereiro-de-2024-542249506" target="_blank">
+                                        PORTARIA n° 83, de 7 de fevereiro de 2024                                        
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                                            <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                                        </svg>
+                                    </a>
+                                    <div class="col-12 col-md-9">
+                                        <p class="blockquote">
+                                            Normas e procedimentos.                                       
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="https://www.in.gov.br/web/dou/-/portaria-n-84-de-7-de-fevereiro-de-2024-542258771" target="_blank">
+                                        PORTARIA n° 84, de 7 de fevereiro de 2024                                        
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                                            <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                                        </svg>
+                                    </a>
+                                    <div class="col-12 col-md-9">
+                                        <p class="blockquote">
+                                            Calendário operacional.       
+                                        </p>                           
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="../../static/inicio/src/INPDFViewer.pdf">
+                                        PORTARIA Nº 210, DE 12 DE MARÇO DE 2024
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-pdf" viewBox="0 0 16 16">
+                                            <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+                                            <path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z"/>
+                                        </svg>
+                                    </a>
+                                    <div class="col-12 col-md-9">
+                                        <p class="blockquote">
+                                            Altera a Portaria MEC nº 83, de 7 de fevereiro de 2024, e a Portaria MEC nº 84, de 7 de fevereiro de 2024.
+                                        </p>                           
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <p class="offset-2 offset-md-4" style="font-size: 11px !important;">Clique nas imagens abaixo para acessar os documentos:</p>
+                <a class="offset-2" href="../../static/inicio/src/pe-de-meia-informativo-diretor.pdf" target="_blank">
+                    <img src="../../static/inicio/img/pedemeia-gestor.png" width="225px" alt="Informativo do Diretor">
+                </a>
+                <a class="offset-2 offset-md-0" href="../../static/inicio/src/pe-de-meia-informativo-professor.pdf" target="_blank">
+                    <img src="../../static/inicio/img/pedemeia-professor.png" width="225px" alt="Informativo do Professor">
+                </a>
+                <p class="offset-2 offset-md-4" style="font-size: 11px !important;"></p>
+                <a class="offset-2" href="../../static/inicio/src/pe-de-meia-cartaz-estudante-1.pdf" target="_blank">
+                    <img src="../../static/inicio/img/pedemeia-estudante2.png" width="225px" alt="Cartaz do Estudante - 1">
+                </a>
+                <a class="offset-2 offset-md-0" href="../../static/inicio/src/pe-de-meia-cartaz-estudante-2.pdf" target="_blank">
+                    <img src="../../static/inicio/img/pedemeia-estudante1.png" width="225px" alt="Cartaz do Estudante - 2">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <h1>Perguntas Frequentes:</h1>
+    <!-- Dúvidas -->
+    <div class="accordion pt-5">
+        <h2>Sobre o Programa</h2>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUm" aria-expanded="false" aria-controls="collapseUm">
+                    <strong>O que é o Programa Pé-de-Meia?</strong>
+                </button>
+            </h2>
+            <div id="collapseUm" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                   <p class="blockquote">
+                    O Programa Pé-de-Meia tem por finalidade coordenar, gerir e executar o incentivo financeiro-educacional, na modalidade poupança, criado pela Lei nº 14.818, de 16 de janeiro de 2024. O Programa é destinado à permanência e à conclusão escolar de estudantes matriculados no ensino médio público, e oferece incentivos relacionados a matrícula, frequência, conclusão escolar e à participação em exames educacionais nacionais e subnacionais.
+                   </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDois" aria-expanded="false" aria-controls="collapseDois">
+                    <strong>Qual a lei que institui o Programa Pé-de-Meia?</strong>
+                </button>
+            </h2>
+            <div id="collapseDois" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Lei nº 14.818, de 16 de janeiro de 2024, regulamentada pelo Decerto N° 11.901 de 26 de janeiro de 2024.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTres" aria-expanded="false" aria-controls="collapseTres">
+                    <strong>Quando o Programa terá início?</strong> 
+                </button>
+            </h2>
+            <div id="collapseTres" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        O programa Pé de Meia terá início em 2024, no primeiro semestre.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQuatro" aria-expanded="false" aria-controls="collapseQuatro">
+                    <strong>Quando será feito o pagamento da primeira parcela do incentivo?</strong>
+                </button>
+            </h2>
+            <div id="collapseQuatro" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        O primeiro pagamento será feito entre o fim de março e o começo de abril, relativo ao Incentivo Matrícula.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCinco" aria-expanded="false" aria-controls="collapseCinco">
+                    <strong>Qual o valor dos incentivos por estudante?</strong>
+                </button>
+            </h2>
+            <div id="collapseCinco" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Valores anuais por incentivo do Programa: <br>
+                        I - Incentivo Matrícula, no valor anual de R$ 200,00 (duzentos reais); <br>
+                        II - Incentivo Frequência, no valor total anual de R$ 1.800,00 (mil e oitocentos reais); <br>
+                        III - Incentivo Conclusão, no valor total anual de R$ 1.000,00 (mil reais); e <br>
+                        IV - Incentivo Enem, no valor total de R$ 200,00 (duzentos reais).
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeis" aria-expanded="false" aria-controls="collapseSeis">
+                    <strong>Quantas parcelas serão pagas por cada incentivo?</strong>
+                </button>
+            </h2>
+            <div id="collapseSeis" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        O Incentivo-Matrícula será pago em parcela única. O Incentivo-Frequência será pago em nove parcelas. Excepcionalmente em 2024, serão pagas oito parcelas do incentivo. O Incentivo-Conclusão será depositado anualmente em conta-poupança após a aprovação do estudante em cada ano letivo do ensino médio. O Incentivo-Conclusão será disponibilizado para saque ou movimentação APENAS após conclusão do ensino médio. O Incentivo-Enem será pago em parcela única. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSete" aria-expanded="false" aria-controls="collapseSete">
+                    <strong>Quais serão os critérios de elegibilidade para receber a poupança?</strong>
+                </button>
+            </h2>
+            <div id="collapseSete" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        São elegíveis ao Programa Pé-de-Meia os estudantes de baixa renda continuadamente matriculados no ensino médio das redes públicas, com idade compreendida entre 14 e 24 anos, que integrem famílias inscritas no Cadastro Único para Programas Sociais do Governo Federal (CadÚnico). Os estudantes elegíveis que integrem famílias beneficiárias do Programa Bolsa Família têm prioridade na concessão dos incentivos. No início de cada ano, o MEC publicará uma portaria com os critérios de elegibilidade para o período.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOito" aria-expanded="false" aria-controls="collapseOito">
+                    <strong>Quais serão os critérios de priorização para 2024?</strong>
+                </button>
+            </h2>
+            <div id="collapseOito" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        No ano de 2024, têm direito aos incentivos do Pé-de-Meia os estudantes de 14 a 24 anos matriculados no ensino médio em escolas públicas, desde que suas famílias estejam inscritas no Programa Bolsa Família durante o mês de janeiro do mesmo ano.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNove" aria-expanded="false" aria-controls="collapseNove">
+                    <strong>Quando será feita a verificação das informações de elegibilidade?</strong>
+                </button>
+            </h2>
+            <div id="collapseNove" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        A verificação das informações para manutenção da elegibilidade do estudante no Programa será feita no início de cada ano letivo.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDez" aria-expanded="false" aria-controls="collapseDez">
+                    <strong>Quais são os critérios de saída ou desligamento do Programa?</strong>
+                </button>
+            </h2>
+            <div id="collapseDez" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        São hipóteses de desligamento do Programa Pé-de-Meia: <br><br>
+                        I - requerimento do interessado; <br><br>
+                        II - perda dos requisitos de elegibilidade; <br><br>
+                        III - evasão ou reprovação por duas vezes consecutivas; <br><br>
+                        IV - abandono da escola por mais de dois anos; <br><br>
+                        V - falecimento; e <br><br>
+                        VI - situação comprovada de fraude ou irregularidade. <br><br>
+                        § 1º O desligamento voluntário ocorrerá mediante declaração do responsável legal ou do estudante maior de 18 (dezoito) anos. <br><br>
+                        § 2º O desligamento de que trata o inciso II do caput ocorrerá no ano subsequente à perda dos requisitos de elegibilidade. <br><br>
+                        § 3º Na hipótese prevista no inciso II do caput, o estudante poderá requerer, após a obtenção do certificado de conclusão do ensino médio, o montante do Incentivo-Conclusão acumulado por série cursada na rede pública, no prazo de até quatro anos, contado a partir da data de seu desligamento. <br><br>
+                        § 4º Nas hipóteses previstas nos incisos I, III, IV, V e VI do caput deste artigo, o estudante não fará jus ao recebimento do montante acumulado por ano letivo do Incentivo-Conclusão. <br><br>
+                        § 5º Na hipótese prevista no inciso VI do caput, o estudante não terá direito ao reingresso no Programa Pé-de-Meia, ainda que permaneça elegível.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnze" aria-expanded="false" aria-controls="collapseDoze">
+                    <strong>Caso um estudante perca um dos requisitos de elegibilidade antes do final do ano letivo, deixará de receber os incentivos?</strong>
+                </button>
+            </h2>
+            <div id="collapseOnze" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                   <p class="blockquote">
+                    Nesse caso, o estudante deixará de receber os incentivos apenas de um ano letivo para o outro. <br><br>
+                    São considerados perda de requisitos de elegibilidade: <br><br>
+                    Sair da escola pública; <br>
+                    Sair do Bolsa Família; <br>
+                    Ultrapassar 24 anos de idade; e <br>
+                    Passar a integrar família unipessoal.
+                   </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDoze" aria-expanded="false" aria-controls="collapseQuatorze">
+                    <strong>O rendimento escolar é considerado um dos fatores de elegibilidade?</strong>
+                </button>
+            </h2>
+            <div id="collapseDoze" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Não.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTreze" aria-expanded="false" aria-controls="collapseQuatorze">
+                    <strong>Estudantes beneficiários do Bolsa Família matriculados na rede privada poderão participar do Pé-de-Meia?</strong>
+                </button>
+            </h2>
+            <div id="collapseTreze" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Não. Apenas são elegíveis ao Programa Pé-de-Meia os estudantes continuadamente matriculados no ensino médio das redes públicas. <br><br>
+                        Caso um estudante beneficiário do Bolsa Família faça uma transferência para a rede pública, ele estará apto a receber os incentivos a partir de sua matrícula no ano letivo seguinte. <br><br>
+                        A habilitação resultará do cruzamento dos registros administrativos dos estudantes — recebidos por meio do Sistema Gestão Presente — com a base de dados do CadÚnico, aplicados os critérios de elegibilidade e priorização para o ano-referência. <br><br>
+                        Parágrafo único. A verificação das informações para manutenção dos estudantes no Programa será feita no início de cada ano letivo.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQuatorze" aria-expanded="false" aria-controls="collapseQuatorze">
+                    <strong>O Programa Pé-de-Meia será permanente?</strong>
+                </button>
+            </h2>
+            <div id="collapseQuatorze" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Os 3 (três) primeiros anos do Programa Pé-de-Meia comporão o ciclo inicial de implementação. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQuinze" aria-expanded="false" aria-controls="collapseQuatorze">
+                    <strong>Quais serão os critérios para disponibilização de cada incentivo?</strong>
+                </button>
+            </h2>
+            <div id="collapseQuinze" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        São critérios de disponibilização de cada incentivo: <br><br> 
+
+                        I. Ser inscrito no Cadastro Único (CadÚnico) para Programas Sociais do Governo Federal - CadÚnico;<br>
+                        II. Regularmente matriculado no ensino médio das redes públicas;  <br>
+                        III. Ter idade entre 14 e 24 anos; <br>
+                        IV. Possuir CPF; <br>
+                        V. Não ter reprovação por duas vezes consecutivas; <br>
+                        VI.Ter frequência mensal de 80% (oitenta por cento) das horas letivas no período de apuração;<br>
+                        VII. Para a concessão do incentivo Enem faz-se necessário a participação comprovada nos dois dias de realização do Exame Nacional do Ensino Médio - Enem e a obtenção de certificado de conclusão do ensino médio, e será deferida apenas uma vez ao estudante matriculado na terceira série do ensino médio. <br>
+                        VIII. Para a concessão do Incentivo Conclusão faz-se necessário a conclusão de cada série do ensino médio com aprovação, a obtenção de certificado de conclusão da etapa e, quando for o caso, a participação comprovada: <br><br>
+
+                        nos exames do Sistema de Avaliação da Educação Básica - Saeb; e <br>
+                        nos exames aplicados pelos sistemas de avaliação externa dos entes federativos para o ensino médio.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ESTUDANTE -->
+    <div class="accordion pt-5">
+        <h2>Estudante</h2>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEst1" aria-expanded="false" aria-controls="collapseEst1">
+                    <strong>Onde consulto minha frequência?</strong>
+                </button>
+            </h2>
+            <div id="collapseEst1" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        O estudante poderá consultar calendário de pagamento, situação do pagamento, FAQ do estudante, regras do programa e informações sobre conta e recebidos por meio do aplicativo Jornada do Estudante (MEC). Informações sobre frequência escolar, diretamente nas escolas.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEst2" aria-expanded="false" aria-controls="collapseEst2">
+                    <strong>O estudante precisa fazer alguma inscrição para o Programa?</strong>
+                </button>
+            </h2>
+            <div id="collapseEst2" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Não. Compete aos sistemas de ensino estaduais, distrital e municipais e às instituições federais que ofertam o ensino médio fornecer as informações sobre os estudantes e, quando for o caso, sobre os seus responsáveis, necessárias à execução das atividades operacionais e à verificação periódica dos requisitos vinculados aos incentivos financeiros do Programa. <br><br>
+
+                        Será criada automaticamente uma conta em nome do estudante, desde que ele seja elegível e público prioritário do Programa e que seus dados sejam corretamente fornecidos pelos sistemas de ensino ofertantes. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEst3" aria-expanded="false" aria-controls="collapseEst3">
+                    <strong>Caso o estudante se enquadre no programa e não receba os valores, o que ele pode fazer para resolver o problema?</strong>
+                </button>
+            </h2>
+            <div id="collapseEst3" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Depende de qual incentivo o aluno não esteja recebendo.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEst4" aria-expanded="false" aria-controls="collapseEst4">
+                    <strong>Estudante, em contato com a escola que oferta ensino médio, verificou que ela ainda não está participando do Programa Pé-de-Meia, o que fazer?</strong>
+                </button>
+            </h2>
+            <div id="collapseEst4" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Se essa escola oferta ensino médio regular precisa entrar em contato com a rede a qual participa (Secretaria de Educação Municipal/Estadual) para informações sobre o programa e adesão. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEst5" aria-expanded="false" aria-controls="collapseEst5">
+                    <strong>Iniciei o ano regularmente matriculado em uma unidade escolar de Ensino Médio da rede pública, mas deixei de frequentar a escola. Seguirei recebendo o incentivo?</strong>
+                </button>
+            </h2>
+            <div id="collapseEst5" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Ocorrerá o bloqueio de parcela do Incentivo Frequência quando se verificar, simultaneamente: <br><br>
+
+                        I - frequência inferior a 80% (oitenta por cento) das horas letivas no período de apuração; e <br><br>
+
+                        II - média de frequência inferior a 80% (oitenta por cento) das horas letivas considerando todo o período letivo cursado até o momento da apuração. <br><br>
+
+                        As parcelas bloqueadas poderão ser liberadas quando verificado o cumprimento de uma das hipóteses dispostas nos incisos I e II do caput. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEst6" aria-expanded="false" aria-controls="collapseEst6">
+                    <strong>Sou beneficiário do Bolsa Família, mas estou matriculado em uma unidade escolar da rede privada, tenho direito?</strong>
+                </button>
+            </h2>
+            <div id="collapseEst6" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Não. Apenas são elegíveis ao Programa Pé-de-Meia os estudantes regularmente matriculados no ensino médio regular das redes públicas. <br><br> 
+
+                        Caso um estudante beneficiário do Bolsa Família faça uma transferência para a rede pública, ele estará apto a receber os incentivos a partir de sua matrícula no ano letivo seguinte. <br><br>
+
+                        A habilitação resultará do cruzamento dos registros administrativos dos estudantes, recebidos por meio do Sistema Gestão Presente, com a base de dados do CadÚnico, aplicados os critérios de elegibilidade e priorização para o ano referência.  <br><br>
+
+                        A verificação das informações para manutenção do estudante no Programa será feita no início de cada ano letivo. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEst7" aria-expanded="false" aria-controls="collapseEst7">
+                    <strong>Preciso participar do ENEM ou apenas me inscrever ao final do 3° ano?</strong>
+                </button>
+            </h2>
+            <div id="collapseEst7" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        A concessão do Incentivo Enem terá como requisitos a participação comprovada nos dois dias de realização do Exame Nacional do Ensino Médio - Enem e a obtenção de certificado de conclusão do ensino médio, e será deferida apenas uma vez ao estudante matriculado na terceira série do ensino médio.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEst8" aria-expanded="false" aria-controls="collapseEst8">
+                    <strong>Sou estudante da EJA no Ensino Médio, poderei receber o Pé-de-Meia?</strong>
+                </button>
+            </h2>
+            <div id="collapseEst8" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Os estudantes da modalidade de Educação de Jovens e Adultos (EJA) elegíveis ao incentivo devem ter idade de 19 (dezenove) a 24 (vinte e quatro) anos. O acesso dos estudantes da EJA ao Programa Pé-de-Meia será objeto de regulamentação específica prevista ainda para o ano de 2024, porém o benefício incialmente do Programa ainda não contemplará os estudantes da EJA.  
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEst9" aria-expanded="false" aria-controls="collapseEst9">
+                    <strong>O que acontece se eu não participar de exames do Sistema de Avaliação da Educação Básica (Saeb) ou de avaliação dos estados para o ensino médio ou não participar do Exame Nacional do Ensino Médio (Enem) no 3° ano?</strong>
+                </button>
+            </h2>
+            <div id="collapseEst9" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        As informações relativas à aprovação do estudante ao final de cada série do ensino médio, bem como à sua participação nos exames do Saeb e nos exames realizados pelos sistemas de avaliação externa dos entes federativos é condição necessária para a verificação do requisito relativo ao Incentivo Conclusão e deverão ser transmitidas de forma simultânea, conforme calendário operacional do ano-referência. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEst10" aria-expanded="false" aria-controls="collapseEst10">
+                    <strong>Preciso fazer algum cadastro para receber o benefício?</strong>
+                </button>
+            </h2>
+            <div id="collapseEst10" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Será criada automaticamente uma conta nem nome do estudante desde que ele seja elegível e público prioritário do Programa e que seus dados sejam corretamente fornecidos pelos sistemas de ensino ofertantes.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEst11" aria-expanded="false" aria-controls="collapseEst11">
+                    <strong>Quais são os documentos necessários que preciso para ser beneficiado?</strong>
+                </button>
+            </h2>
+            <div id="collapseEst11" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        I. INFORMAÇÕES DO ESTUDANTE <br><br>
+
+                        1. Nome completo; <br><br>
+
+                        2. Data de nascimento; <br><br>
+
+                        3. Munícipio de nascimento; <br><br>
+
+                        4. CPF; <br><br>
+
+                        5. Documento de identificação com foto; <br><br>
+
+                        6. Endereço completo de residência do estudante; <br><br>
+
+                        7. Sexo; <br><br>
+
+                        8. Raça/cor conforme classificação do IBGE; e <br><br>
+
+                        9. Pessoa com deficiência, altas habilidades ou superdotação, quando for o caso.  <br><br>
+
+                        II. INFORMAÇÕES DA MÃE DO ESTUDANTE <br><br>
+
+                        1. Nome completo; e <br><br>
+
+                        2. CPF.   <br><br>
+
+                        III. INFORMAÇÕES DO RESPONSÁVEL LEGAL DO ESTUDANTE <br><br> 
+
+                        1. Nome completo; e <br><br> 
+
+                        2. CPF.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEst12" aria-expanded="false" aria-controls="collapseEst12">
+                    <strong>Estudantes que não possuem o CPF poderão receber o benefício?</strong>
+                </button>
+            </h2>
+            <div id="collapseEst12" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        O CPF é item obrigatório para a criação da conta. Sem ele, o estudante não terá como receber o benefício.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEst13" aria-expanded="false" aria-controls="collapseEst13">
+                    <strong>Como será realizado o pagamento?</strong>
+                </button>
+            </h2>
+            <div id="collapseEst13" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        O Ministério da Educação consolidará e enviará ao agente financeiro executor do Programa a relação dos estudantes habilitados, com as informações necessárias ao processo de abertura de conta para pagamento dos incentivos. <br><br>
+
+                        O agente financeiro executor do Programa deverá proceder à abertura de conta em nome do estudante, de natureza pessoal e intransferível, inclusive aos responsáveis pelo estudante, sem prejuízo da necessidade de representação ou assistência. <br><br>
+
+                        O crédito dos incentivos na conta do estudante (APP Caixa Tem) obedecerá ao calendário operacional do ano-referência e deverá considerar as situações de bloqueio e interrupção informadas pelo Ministério da Educação ao agente financeiro executor.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEst14" aria-expanded="false" aria-controls="collapseEst14">
+                    <strong>Como faço para retirar/utilizar a poupança?</strong>
+                </button>
+            </h2>
+            <div id="collapseEst14" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Para os estudantes menores de idade (Menores 18 anos) o responsável deverá consentir a movimentação da conta pelo APP Caixa Tem ou ir até uma Agência da Caixa Econômica Federal. Ao passo que, os estudantes maiores de idade (> 18 anos) poderão desbloquear a conta sozinho seja pelo APP Caixa Tem seja em uma Agência da Caixa Econômica Federal. Feito isso, poderá movimentar a conta e retirar a poupança seguindo os critérios estabelecidos. <br><br>
+
+                        O valor do Incentivo Conclusão será acumulado por série concluída com aprovação e somente será resgatado após a obtenção do certificado de conclusão do ensino médio. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEst15" aria-expanded="false" aria-controls="collapseEst15">
+                    <strong>Quem será o titular da conta-poupança?</strong>
+                </button>
+            </h2>
+            <div id="collapseEst15" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        O agente financeiro executor do Programa deverá proceder à abertura de conta em nome do estudante, de natureza pessoal e intransferível, inclusive aos responsáveis pelo estudante, sem prejuízo da necessidade de representação ou assistência. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEst16" aria-expanded="false" aria-controls="collapseEst16">
+                    <strong>No caso de estudantes menores de 18 anos, só o responsável legal poderá movimentar conta?</strong>
+                </button>
+            </h2>
+            <div id="collapseEst16" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Para os estudantes menores de idade (Menores 18 anos) o responsável deverá consentir a movimentação da conta pelo APP Caixa Tem ou ir até uma Agência da Caixa Econômica Federal.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEst17" aria-expanded="false" aria-controls="collapseEst17">
+                    <strong>Quando receberei as parcelas de pagamento e a poupança? / Qual será o calendário de pagamento das parcelas?</strong>
+                </button>
+            </h2>
+            <div id="collapseEst17" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        A gestão dos incentivos financeiro-educacionais do Programa Pé-de-Meia observará calendário operacional para cada ano-referência, com o cronograma de ações periódicas sob a responsabilidade do Ministério da Educação, dos sistemas de ensino e das instituições federais ofertante se do agente financeiro executor do Programa. <br><br>  
+
+                        Ato do Ministro de Estado da Educação definirá o calendário operacional do ano-referência até o dia 1º de março de cada ano. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEst18" aria-expanded="false" aria-controls="collapseEst18">
+                    <strong>Como poderei gastar/investir o valor recebido pela poupança?</strong>
+                </button>
+            </h2>
+            <div id="collapseEst18" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Os valores, uma vez recebidos, poderão ser utilizados da melhor forma que convier ao aluno.  <br><br>
+
+                        A Lei nº 14.818, de 16 de janeiro de 2024, § 3º prevê que:  <br><br>
+
+                        É facultado ao estudante, na forma do regulamento, aplicar parte dos recursos da poupança de que trata esta Lei em títulos públicos federais ou em valores mobiliários, especialmente os formatados para os estudos realizados na educação superior. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEst19" aria-expanded="false" aria-controls="collapseEst19">
+                    <strong>Onde posso acessar informações sobre o pagamento e minha conta?</strong>
+                </button>
+            </h2>
+            <div id="collapseEst19" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        O estudante poderá consultar informações escolares, calendário de pagamento, situação do pagamento, FAQ do estudante, regras do programa e informações sobre conta e recebidos por meio do aplicativo Jornada do Estudante (MEC). 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEst20" aria-expanded="false" aria-controls="collapseEst20">
+                    <strong>Iniciei o ano com frequência acima de 80%, mas no mês seguinte estive abaixo. Receberei a parcela daquele mês?</strong>
+                </button>
+            </h2>
+            <div id="collapseEst20" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        A parcela do incentivo-frequência do mês em que o estudante esteve abaixo dos 80% ficará retida. Quando ele estiver com a frequência média e a mensal acima dos 80%, ele receberá a parcela que estiver retroativa.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEst21" aria-expanded="false" aria-controls="collapseEst21">
+                    <strong>O que acontece caso o estudante tenha menos de 80% de frequência em um mês, mas nos meses seguintes volte a cumprir com o a frequência mínima?</strong>
+                </button>
+            </h2>
+            <div id="collapseEst21" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        A parcela do incentivo-frequência do mês em que o estudante esteve abaixo dos 80% ficará retida. Quando ele estiver com a frequência média acima dos 80%, ele receberá a parcela retroativa que estava retida. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEst22" aria-expanded="false" aria-controls="collapseEst22">
+                    <strong>Atendo às condicionalidades, mas não quero ser beneficiário. Como faço para não receber o incentivo?</strong>
+                </button>
+            </h2>
+            <div id="collapseEst22" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        O estudante que não quer ser beneficiário do Programa Pé-de-Meia deverá realizar o requerimento de desligamento voluntário que ocorrerá mediante declaração do responsável legal, ou do estudante maior de 18 (dezoito) anos, na forma dos Anexos II e III presentes na Portaria nº 83, de 7 de fevereiro de 2024. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEst23" aria-expanded="false" aria-controls="collapseEst23">
+                    <strong>Tenho atestado para justificar minhas faltas, o que devo fazer?</strong>
+                </button>
+            </h2>
+            <div id="collapseEst23" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Compete aos sistemas de ensino estaduais, distrital e municipais e às instituições federais que ofertam o ensino médio fornecer as informações sobre os estudantes e, quando for o caso, sobre os seus responsáveis, necessárias à execução das atividades operacionais e à verificação periódica dos requisitos vinculados aos incentivos financeiros do Programa.   <br><br>
+
+                        A informação sobre a frequência mensal transmitida pelos sistemas de ensino e pelas instituições federais ofertantes deverá considerar a aplicação de regras relativas à eventual justificação ou compensação de ausências definidas em sua respectiva legislação.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ADESAO -->
+    <div class="accordion pt-5">
+        <h2>Estudante - Adesão</h2>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdesaoUm" aria-expanded="false" aria-controls="collapseAdesaoUm">
+                    <strong>Sou estudante da EJA no ensino médio, poderei receber o Pé-de-Meia?</strong>
+                </button>
+            </h2>
+            <div id="collapseAdesaoUm" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                   <p class="blockquote">
+                        Os estudantes da modalidade de educação de jovens e adultos (EJA) elegíveis ao incentivo devem ter de 19 (dezenove) a 24 (vinte e quatro) anos. O acesso dos estudantes da EJA ao Programa Pé-de-Meia será objeto de regulamentação específica.
+                   </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdesaoDois" aria-expanded="false" aria-controls="collapseAdesaoDois">
+                    <strong>Preciso fazer algum cadastro para receber o benefício?</strong>
+                </button>
+            </h2>
+            <div id="collapseAdesaoDois" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Será criada automaticamente uma conta em nome do estudante, desde que ele seja elegível e público prioritário do Programa e que seus dados sejam corretamente fornecidos pelos sistemas de ensino ofertantes.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdesaoTres" aria-expanded="false" aria-controls="collapseAdesaoTres">
+                    <strong>Estudantes que não possuem o CPF poderão receber o benefício?</strong> 
+                </button>
+            </h2>
+            <div id="collapseAdesaoTres" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        O CPF é item obrigatório para a criação da conta. Sem ele, o estudante não terá como receber o benefício.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdesaoQuatro" aria-expanded="false" aria-controls="collapseAdesaoQuatro">
+                    <strong>Famílias unipessoais podem receber o benefício?</strong>
+                </button>
+            </h2>
+            <div id="collapseAdesaoQuatro" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Não são elegíveis ao Programa Pé-de-Meia estudantes que recebam os benefícios do Programa Bolsa Família de que tratam os incisos de I a V do § 1º do art. 7º da Lei nº 14.601, de 19 de junho de 2023, e que integrem famílias unipessoais.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdesaoCinco" aria-expanded="false" aria-controls="collapseAdesaoCinco">
+                    <strong>Quem pode participar do Programa Pé-de-Meia?</strong>
+                </button>
+            </h2>
+            <div id="collapseAdesaoCinco" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Nesta etapa inicial do Programa, podem participar os estudantes de 14 a 24 anos matriculados no ensino médio em escolas da rede pública e que fazem parte de famílias beneficiárias do Programa Bolsa Família.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdesaoSeis" aria-expanded="false" aria-controls="collapseAdesaoSeis">
+                    <strong>Do que o estudante precisa para participar do Programa Pé-de-Meia?</strong>
+                </button>
+            </h2>
+            <div id="collapseAdesaoSeis" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Ter CPF; matricular-se em um dos três anos do ensino médio até abril de 2024; fazer parte de uma família cadastrada no CadÚnico (estudantes que se cadastraram sozinhos e, portanto, fazem parte de famílias unipessoais não poderão participar do Programa); fazer parte de família beneficiária do Programa Bolsa Família.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- REDE -->
+    <div class="accordion pt-5">
+        <h2>Rede de Ensino e Unidades Escolares</h2>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeUm" aria-expanded="false" aria-controls="collapseRedeUm">
+                    <strong>Os estudantes de quais sistemas de ensino podem participar do Programa Pé-de-Meia?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeUm" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Participam do Programa Pé-de-Meia os estudantes matriculados nos sistemas de ensino estaduais, distrital e municipais e de instituições federais que ofertam o ensino médio público.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeDois" aria-expanded="false" aria-controls="collapseRedeDois">
+                    <strong>Como funciona a assinatura do Termo de Compromisso por parte dos Sistemas de Ensino?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeDois" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        A assinatura do termo de compromisso ocorrerá por meio de módulo do Sistema Integrado de Monitoramento Execução e Controle do Ministério da Educação - SIMEC e implicará a cessão e o compartilhamento, com o Ministério da Educação, de informações do conjunto de estudantes matriculados no ensino médio e, quando for o caso, de seus representantes legais.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeTres" aria-expanded="false" aria-controls="collapseRedeTres">
+                    <strong>Todo ente da federação deve aderir ao Programa Pé-de-Meia?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeTres" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Deverão assinar o Termo de Compromisso apenas os sistemas de ensino ofertantes do ensino médio regular público. Desse modo, a adesão e assinatura do termo de compromisso incumbe em âmbito municipal ao Dirigente Municipal, em nível Estadual cabe a Secretaria de Educação e em nível Federal fica a cargo do Reitor.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeQuatro" aria-expanded="false" aria-controls="collapseRedeQuatro">
+                    <strong>Qual o período de assinatura do termo de compromisso?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeQuatro" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        O Simec ficará aberto entre os dias 8 e 25 de fevereiro de 2024 para que os dirigentes possam assinar e indicar dois ou mais operadores responsáveis pelos envios das informações e pela gestão do Sistema.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeCinco" aria-expanded="false" aria-controls="collapseRedeCinco">
+                    <strong>O que acontece caso o sistema de ensino não assine o termo de compromisso ou não envie as informações dentro do prazo estipulado pelo calendário de operacionalização?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeCinco" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        O não compartilhamento das informações pelas instituições federais que ofertam o ensino médio e pelos sistemas de ensino no prazo previsto no termo de compromisso poderá ensejar o não pagamento de incentivos do Programa, bem como a responsabilização da autoridade competente, na forma da lei.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeSeis" aria-expanded="false" aria-controls="collapseRedeSeis">
+                    <strong>Quem fará a verificação das condicionalidades e elegibilidades dos participantes?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeSeis" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Compete ao Ministério da Educação gerir os procedimentos necessários ao ingresso dos estudantes no Programa Pé-de-Meia, à verificação das condicionalidades relativas aos incentivos financeiros definidos no Programa e à consolidação e envio, ao agente financeiro executor, das informações relativas aos estudantes autorizados a receber o repasse de cada incentivo.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeSete" aria-expanded="false" aria-controls="collapseRedeSete">
+                    <strong>De quem é a responsabilidade envio de dados do estudante?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeSete" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Compete aos sistemas de ensino estaduais, distrital e municipais e às instituições federais que ofertam o ensino médio fornecer as informações sobre os estudantes e, quando for o caso, sob seus responsáveis, necessárias à execução das atividades operacionais e à verificação periódica dos requisitos vinculados aos incentivos financeiros do Programa.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeOito" aria-expanded="false" aria-controls="collapseRedeOito">
+                    <strong>Quais são as responsabilidades da Caixa?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeOito" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Compete ao agente financeiro executor o processamento das informações enviadas pelo Ministério da Educação, a abertura das contas dos estudantes para o depósito dos valores relativos a cada incentivo financeiro e a operacionalização dos repasses, obedecendo a prazos e critérios definidos no calendário operacional do ano-referência do Programa.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeNove" aria-expanded="false" aria-controls="collapseRedeNove">
+                    <strong>Por onde os sistemas de ensino deverão enviar as informações dos estudantes?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeNove" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        A transferência das informações sobre os estudantes ocorrerá por meio do Sistema Gestão Presente para o Ministério da Educação, que verificará os critérios de elegibilidade e priorização, bem como o cumprimento dos requisitos do Programa Pé-de-Meia.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeDez" aria-expanded="false" aria-controls="collapseRedeDez">
+                    <strong>De quanto em quanto tempo a rede deverá enviar os dados dos estudantes?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeDez" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Todos os meses, os sistemas de ensino deverão enviar as informações de frequência dos estudantes do ensino médio, conforme o calendário e as regras previstos na Portaria nº 83, de 7 de fevereiro de 2024, e na Portaria nº 84, de 7 de fevereiro de 2024.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeOnze" aria-expanded="false" aria-controls="collapseRedeOnze">
+                    <strong>Sistemas de Ensino que ofertam ensino médio de formação de professores (curso normal - magistério) também poderão aderir ao Programa Pé-de-Meia?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeOnze" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Sim.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeDoze" aria-expanded="false" aria-controls="collapseRedeDoze">
+                    <strong>É necessário enviar a lista dos estudantes do ensino técnico matriculados na rede estadual na Educação Básica?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeDoze" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Não é obrigatório o envio dos alunos do concomitante, apenas dos estudantes integrados. Todavia, é sugerido o envio para consolidar na base de dados do Programa Pé-de-Meia, haja vista que pode acontecer da rede onde o aluno faz o Ensino Médio regular não enviar corretamente os dados e com esta base de dados será possível identificar e comunicar a rede ofertante do Ensino Médio regular.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeTreze" aria-expanded="false" aria-controls="collapseRedeTreze">
+                    <strong>Como os entes podem assinar o termo de compromisso no SIMEC?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeTreze" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        O termo de compromisso só poderá ser assinado pela autoridade maior do município/estado/instituto/universidade mediante acesso ao SIMEC.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeQuatorze" aria-expanded="false" aria-controls="collapseRedeQuatorze">
+                    <strong>Como acessar o SIMEC?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeQuatorze" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        O acesso ao portal do SIMEC deve ser realizado por meio do link:  <a href="https://simec.mec.gov.br/login.php">https://simec.mec.gov.br/login.php</a>. <br><br>
+                        Aos que já possuem cadastro no SIMEC, poderão acessá-lo com o mesmo login e senha utilizados no Gov.br. Os que ainda não possuem cadastro no SIMEC, deverão solicitar acesso no ícone “Não tem acesso ainda?” no site do SIMEC. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeQuinze" aria-expanded="false" aria-controls="collapseRedeQuinze">
+                    <strong>O Programa Pé-de-Meia é ofertado somente as instituições Estaduais?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeQuinze" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        O Programa Pé-de-Meia é ofertado a todos os sistemas de ensino que possuem ensino médio público, seja em âmbito municipal, estadual, distrital e federal.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeDezesseis" aria-expanded="false" aria-controls="collapseRedeDezesseis">
+                    <strong>Quais são as etapas da adesão ao Programa?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeDezesseis" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Compete aos sistemas de ensino estaduais, distrital e municipais e às instituições federais que ofertam o ensino médio proceder com a assinatura do Termo de Compromisso, indicando dois ou mais operadores responsáveis pelos envios das informações e gestão do Sistema;  <br><br>
+
+                        Compete aos sistemas de ensino estaduais, distrital e municipais e às instituições federais que ofertam o ensino médio fornecer as informações sobre os estudantes e, quando for o caso, sobre os seus responsáveis, necessárias à execução das atividades operacionais e à verificação periódica dos requisitos vinculados aos incentivos financeiros do Programa.  <br><br>
+
+                        O Ministério da Educação consolidará e enviará ao agente financeiro executor do Programa a relação dos estudantes habilitados, com as informações necessárias ao processo de abertura de conta para pagamento dos incentivos;  <br><br>
+
+                        O agente financeiro executor do Programa deverá proceder à abertura de conta em nome do estudante, de natureza pessoal e intransferível, inclusive aos responsáveis pelo estudante, sem prejuízo da necessidade de representação ou assistência;  <br><br>
+
+                        Compete ao Ministério da Educação gerar a folha de pagamento de cada um dos incentivos, com a relação dos estudantes autorizados a receber os repasses financeiros, considerando as informações transmitidas pelos sistemas de ensino e pelas instituições federais;  <br><br>
+
+                        A folha de pagamento será encaminhada ao agente financeiro executor do Programa Pé-de-Meia, que se responsabilizará pela disponibilização dos créditos nas contas dos estudantes;  <br><br>
+
+                        O crédito dos incentivos na conta do estudante obedecerá ao calendário operacional do ano-referência e deverá considerar as situações de bloqueio e interrupção informadas pelo Ministério da Educação ao agente financeiro executor. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeDezessete" aria-expanded="false" aria-controls="collapseRedeDezessete">
+                    <strong>Quais informações sobre a rede serão solicitadas na adesão?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeDezessete" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        DADOS DO ESTUDANTE: <br><br>
+
+                        CPF; <br><br>
+
+                        Nome Completo; <br><br>
+
+                        Data de Nascimento; <br><br>
+
+                        Nome da mãe; <br><br>
+
+                        Mês/ano frequência; <br><br>
+
+                        Quantidade de horas letivas; <br><br>
+
+                        Quantidade de horas presente;  <br><br>
+
+                        DADOS DO SISTEMA DE ENSINO:  <br><br>
+
+                        Código do Município; <br><br>
+
+                        Código INEP (caso possua); <br><br>
+
+                        Nome da escola; <br><br>
+
+                        Etapas de Ensino ofertada. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeDezoito" aria-expanded="false" aria-controls="collapseRedeDezoito">
+                    <strong>A escola precisa realizar alguma ação no Programa Pé-de-Meia?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeDezoito" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        A escola precisa garantir o envio dos dados dos alunos (frequência mensalmente). É pertinente às escolas, também, baixar e divulgar o kit comunicação elaborado pelo Programa Pé-de-Meia para facilitar o entendimento dos alunos, professores e gestores. <br><br>
+
+                        Compete aos sistemas de ensino estaduais, distrital e municipais e às instituições federais que ofertam o ensino médio fornecer as informações sobre os estudantes e, quando for o caso, sob seus responsáveis, necessárias à execução das atividades operacionais e à verificação periódica dos requisitos vinculados aos incentivos financeiros do Programa.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeDezenove" aria-expanded="false" aria-controls="collapseRedeDezenove">
+                    <strong>O que a minha rede precisa fazer após a adesão?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeDezenove" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Compete aos sistemas de ensino estaduais, distrital e municipais e às instituições federais que ofertam o ensino médio fornecer as informações sobre os estudantes e, quando for o caso, sob seus responsáveis, necessárias à execução das atividades operacionais e à verificação periódica dos requisitos vinculados aos incentivos financeiros do Programa.  <br><br>
+
+                        Todos os meses os sistemas de ensino deverão enviar as informações de frequência dos estudantes do ensino médio, conforme calendário e regras previstas nas portarias nº 83, de 7 de fevereiro de 2024 e nº 84, de 7 de fevereiro de 2024.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeVinte" aria-expanded="false" aria-controls="collapseRedeVinte">
+                    <strong>Quais são os papéis e responsabilidades de cada ente no Pé-de-Meia?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeVinte" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Compete aos sistemas de ensino estaduais, distrital e municipais e às instituições federais que ofertam o ensino médio proceder com a assinatura do Termo de Compromisso, indicando dois ou mais operadores responsáveis pelos envios das informações e gestão do Sistema;  <br><br>
+
+                        Compete aos sistemas de ensino estaduais, distrital e municipais e às instituições federais que ofertam o ensino médio fornecer as informações sobre os estudantes e, quando for o caso, sobre os seus responsáveis, necessárias à execução das atividades operacionais e à verificação periódica dos requisitos vinculados aos incentivos financeiros do Programa. <br><br> 
+
+                        O Ministério da Educação consolidará e enviará ao agente financeiro executor do Programa a relação dos estudantes habilitados, com as informações necessárias ao processo de abertura de conta para pagamento dos incentivos;  <br><br>
+
+                        O agente financeiro executor do Programa deverá proceder à abertura de conta em nome do estudante, de natureza pessoal e intransferível, inclusive aos responsáveis pelo estudante, sem prejuízo da necessidade de representação ou assistência;  <br><br>
+
+                        Compete ao Ministério da Educação gerar a folha de pagamento de cada um dos incentivos, com a relação dos estudantes autorizados a receber os repasses financeiros, considerando as informações transmitidas pelos sistemas de ensino e pelas instituições federais;  <br><br>
+
+                        A folha de pagamento será encaminhada ao agente financeiro executor do Programa Pé-de-Meia, que se responsabilizará pela disponibilização dos créditos nas contas dos estudantes;  <br><br>
+
+                        O crédito dos incentivos na conta do estudante obedecerá ao calendário operacional do ano-referência e deverá considerar as situações de bloqueio e interrupção informadas pelo Ministério da Educação ao agente financeiro executor.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeVinteUm" aria-expanded="false" aria-controls="collapseRedeVinteUm">
+                    <strong>Para qual etapa da Educação Básica o Programa Pé-de-Meia será destinado?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeVinteUm" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        O Programa Pé-de-Meia está destinado aos estudantes regularmente matriculados no ensino médio das redes públicas, cujas famílias estejam inscritas do Programa Bolsa Família em janeiro do mesmo ano, nos termos do § 2º do art. 3º do Decreto nº 11.901, de 26 de janeiro de 2024. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeVinteDois" aria-expanded="false" aria-controls="collapseRedeVinteDois">
+                    <strong>Estudantes matriculados em escolas de tempo integral poderão ser beneficiados?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeVinteDois" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Sim. <br><br>
+
+                        Quais os contatos para dúvidas sobre o Programa? <br><br>
+
+                        As dúvidas acerca do Programa Pé-de-Meia deverão ser realizadas por meio do portal do MEC, opção 7 no link: <a href="https://mecsp.metasix.solutions/portal">https://mecsp.metasix.solutions/portal</a> ou por meio do canal de atendimento 0800 616161, opção 4.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeVinteTres" aria-expanded="false" aria-controls="collapseRedeVinteTres">
+                    <strong>O valor do fomento financeiro é o mesmo para todas as secretarias?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeVinteTres" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Sim, conforme descrito a seguir:  <br><br>
+
+                        Valores anuais por incentivo do Programa: <br><br>
+
+                        I - Incentivo-Matrícula, no valor anual de R$ 200,00 (duzentos reais);<br><br> 
+
+                        II - Incentivo-Frequência, no valor total anual de R$ 1.800,00 (mil e oitocentos reais); <br><br>
+
+                        III - Incentivo-Conclusão, no valor total anual de R$ 1.000,00 (mil reais); e <br><br>
+
+                        IV - Incentivo-Enem, no valor total de R$ 200,00 (duzentos reais). 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeVinteQuatro" aria-expanded="false" aria-controls="collapseRedeVinteQuatro">
+                    <strong>Como vai se dar a verificação da frequência dos estudantes?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeVinteQuatro" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Compete aos sistemas de ensino estaduais, distrital e municipais e às instituições federais que ofertam o ensino médio fornecer as informações sobre os estudantes e, quando for o caso, sobre os seus responsáveis, necessárias à execução das atividades operacionais e à verificação periódica dos requisitos vinculados aos incentivos financeiros do Programa.  <br><br>
+
+                        A informação sobre a frequência mensal transmitida pelos sistemas de ensino e pelas instituições federais ofertantes deverá considerar a aplicação de regras relativas à eventual justificação ou compensação de ausências definidas em sua respectiva legislação.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeVinteCinco" aria-expanded="false" aria-controls="collapseRedeVinteCinco">
+                    <strong>Como vai se dar a verificação da aprovação dos estudantes?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeVinteCinco" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        O Incentivo Conclusão terá como requisitos a conclusão de cada série do ensino médio com aprovação, a obtenção de certificado de conclusão da etapa e, quando for o caso, a participação comprovada: <br><br>
+
+                        I - Nos exames do Sistema de Avaliação da Educação Básica - Saeb; e <br><br>
+
+                        II - Nos exames aplicados pelos sistemas de avaliação externa dos entes federativos para o ensino médio.  <br><br>
+
+                        O valor do Incentivo Conclusão será acumulado por série concluída com aprovação e somente será resgatado após a obtenção do certificado de conclusão do ensino médio.<br><br>
+
+                        Ao cursar novamente uma série que tenha abandonado ou na qual tenha sido reprovado, o estudante não fará jus ao Incentivo Conclusão relativo à respectiva série.  <br><br>
+
+                        As informações relativas à aprovação do estudante ao final de cada série do ensino médio, bem como à sua participação nos exames do Saeb e nos exames realizados pelos sistemas de avaliação externa dos entes federativos é condição necessária para a verificação do requisito relativo ao Incentivo Conclusão e deverão ser transmitidas de forma simultânea, conforme calendário operacional do ano-referência.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeVinteSeis" aria-expanded="false" aria-controls="collapseRedeVinteSeis">
+                    <strong>Existe alguma atualização que deve ser feita pela escola de necessidade de atualização de cadastro?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeVinteSeis" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Compete aos sistemas de ensino estaduais, distrital e municipais e às instituições federais que ofertam o ensino médio disponibilizar, através do Sistema Gestão Presente, as informações lícitas, verídicas e atualizadas estipuladas no presente Termo ou outras informações que sejam necessárias à execução, monitoramento e avaliação do Programa, mediante solicitação do MEC;  <br><br>
+
+                        Compete aos sistemas de ensino estaduais, distrital e municipais e às instituições federais que ofertam o ensino médio cumprir os prazos para a disponibilização e eventual correção ou atualização das informações necessárias à execução, monitoramento e avaliação do Programa, definidos em calendário operacional para cada ano-referência, na forma de ato do Ministro de Estado da Educação;   <br><br>
+
+                        Todos os meses os sistemas de ensino deverão enviar as informações de frequência dos estudantes do ensino médio, conforme calendário e regras previstas nas portarias nº 83, de 7 de fevereiro de 2024 e nº 84, de 7 de fevereiro de 2024. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeVinteSete" aria-expanded="false" aria-controls="collapseRedeVinteSete">
+                    <strong>A rede não informou os dados de um estudante elegível nos primeiros meses. O estudante receberá as parcelas retroativas?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeVinteSete" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Sim, desde que sua matrícula respeite os prazos previsto de verificação de matrícula e participação da família no Programa Bolsa Família.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeVinteOito" aria-expanded="false" aria-controls="collapseRedeVinteOito">
+                    <strong>Existe uma cota para cada estado, município ou rede federal?
+                        Já preenchi o Sistema Presença, é a mesma coisa?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeVinteOito" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Não.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeVinteNove" aria-expanded="false" aria-controls="collapseRedeVinteNove">
+                    <strong>Quem terá acesso ao Sistema Gestão Presente?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeVinteNove" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        As pessoas designadas pelas redes de ensino no SIMEC para operar o sistema.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeTrinta" aria-expanded="false" aria-controls="collapseRedeTrinta">
+                    <strong>Por que o Governo Federal criou o Programa Pé-de-Meia?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeTrinta" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        O Programa Pé-de-Meia tem por finalidade coordenar, gerir e executar o incentivo financeiro-educacional, na modalidade poupança, criado pela Lei nº 14.818, de 16 de janeiro de 2024. O Programa é destinado à permanência e à conclusão escolar de estudantes matriculados no ensino médio público, e oferece incentivos relacionados à matrícula, frequência, conclusão escolar e à participação em exames educacionais nacionais e subnacionais. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeTrintaUm" aria-expanded="false" aria-controls="collapseRedeTrintaUm">
+                    <strong>Quem é responsável pelo Programa Pé-de-Meia?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeTrintaUm" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Os Ministério da Educação e da Fazenda.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedeTrintaDois" aria-expanded="false" aria-controls="collapseRedeTrintaDois">
+                    <strong>Quais são as redes que oferecem ensino médio público regular (censo de 2023)?</strong>
+                </button>
+            </h2>
+            <div id="collapseRedeTrintaDois" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Redes municipais, estaduais, distrital e federais.  <br><br>
+
+                        Todos os dados pessoais tratados e recebidos respeitam à Lei Geral de Proteção de Dados Pessoais (Lei Nº 13.709, de 14 de agosto de 2018).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CADUNICO -->
+    <div class="accordion pt-5">
+        <h2>CadÚnico</h2>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCADUm" aria-expanded="false" aria-controls="collapseCADUm">
+                    <strong>Minha família faz parte do Cadastro Único para Programas Sociais (CadÚnico), mas não do Programa Bolsa Família. Posso ser beneficiário do Pé-de-Meia / O Programa é destinado apenas para quem é cadastrado no Bolsa Família?</strong>
+                </button>
+            </h2>
+            <div id="collapseCADUm" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                   <p class="blockquote">
+                    São elegíveis ao Programa Pé-de-Meia os estudantes de baixa renda regularmente matriculados no ensino médio das redes públicas, com idade compreendida entre 14 (quatorze) e 24 (vinte e quatro) anos, que integrem famílias inscritas no Cadastro Único para Programas Sociais do Governo Federal - CadÚnico.  <br><br>
+
+                    Os estudantes elegíveis que integrem famílias beneficiárias do Programa Bolsa Família, de que trata a Lei nº 14.601, de 19 de junho de 2023, têm prioridade na concessão dos incentivos financeiro-educacionais do Programa Pé-de-Meia.  
+                    
+                    Não são elegíveis ao Programa Pé-de-Meia os estudantes que recebam os benefícios do Programa Bolsa Família de que tratam os incisos I a V do § 1º do art. 7º da Lei nº 14.601, de 2023, e que integrem famílias unipessoais:  <br><br>
+                    
+                    I - Benefício de Renda de Cidadania, no valor de R$ 142,00 (cento e quarenta e dois reais) por integrante, destinado a todas as famílias beneficiárias do Programa Bolsa Família; <br><br>
+                    
+                     II - Benefício Complementar, destinado às famílias beneficiárias do Programa Bolsa Família cuja soma dos valores relativos aos benefícios financeiros de que trata o inciso I deste parágrafo seja inferior a R$ 600,00 (seiscentos reais), calculado pela diferença entre este valor e a referida soma;   <br><br>
+                    
+                    III - Benefício Primeira Infância, no valor de R$ 150,00 (cento e cinquenta reais) por criança, destinado às famílias beneficiárias que possuírem, em sua composição, crianças com idade entre 0 (zero) e 7 (sete) anos incompletos; <br><br>
+                    
+                     IV - Benefício Variável Familiar, no valor de R$ 50,00 (cinquenta reais), destinado às famílias beneficiárias que possuírem, em sua composição: <br><br>
+                    
+                     a) gestantes; <br><br>
+                    
+                     b) nutrizes; <br><br>
+                    
+                     c) crianças com idade entre 7 (sete) anos e 12 (doze) anos incompletos; ou <br><br>
+                    
+                     d) adolescentes, com idade entre 12 (doze) anos e 18 (dezoito) anos incompletos; <br><br>
+                    
+                    V - Benefício Extraordinário de Transição, destinado exclusivamente às famílias que constarem como beneficiárias do Programa Auxílio Brasil na data de entrada em vigor deste inciso, que será calculado pela diferença entre o valor recebido pela família em maio de 2023 e o que vier a receber em junho de 2023. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCADDois" aria-expanded="false" aria-controls="collapseCADDois">
+                    <strong>Como posso saber se eu ou algum membro da minha família está cadastrado no Cadúnico?</strong>
+                </button>
+            </h2>
+            <div id="collapseCADDois" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Acesse o Fale Conosco do MDS: <a href="https://www.gov.br/mds/pt-br/acesso-a-informacao/participacao-social/fale-conosco">https://www.gov.br/mds/pt-br/acesso-a-informacao/participacao-social/fale-conosco</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCADTres" aria-expanded="false" aria-controls="collapseCADTres">
+                    <strong>Como posso me inscrever no CadÚnico?</strong> 
+                </button>
+            </h2>
+            <div id="collapseCADTres" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Acesse o Fale Conosco do MDS: <a href="https://www.gov.br/mds/pt-br/acesso-a-informacao/participacao-social/fale-conosco">https://www.gov.br/mds/pt-br/acesso-a-informacao/participacao-social/fale-conosco</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCADQuatro" aria-expanded="false" aria-controls="collapseCADQuatro">
+                    <strong>O que pode levar a família do estudante a perder o benefício?</strong>
+                </button>
+            </h2>
+            <div id="collapseCADQuatro" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Deixar de pertencer ao Programa Bolsa Família.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCADCinco" aria-expanded="false" aria-controls="collapseCADCinco">
+                    <strong>Minha família passou a ser beneficiada pelo Programa Bolsa Família após o início do ano escolar, poderei fazer parte do Pé-de-Meia?</strong>
+                </button>
+            </h2>
+            <div id="collapseCADCinco" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        No ano de 2024 a única janela de elegibilidade no programa será no início do ano letivo. Nesse caso, o estudante será beneficiário do programa a partir do ano de 2025 se a família ainda estiver inscrita no Programa Bolsa Família. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCADSeis" aria-expanded="false" aria-controls="collapseCADSeis">
+                    <strong>Já sou beneficiário de outro Programa de bolsa/poupança em meu Estado. Poderei receber os dois benefícios?</strong>
+                </button>
+            </h2>
+            <div id="collapseCADSeis" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Sim.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCADSete" aria-expanded="false" aria-controls="collapseCADSete">
+                    <strong>Famílias unipessoais podem receber o benefício?</strong>
+                </button>
+            </h2>
+            <div id="collapseCADSete" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Não são elegíveis ao Programa Pé-de-Meia os estudantes que recebam os benefícios do Programa Bolsa Família de que tratam os incisos I a V do § 1º do art. 7º da Lei nº 14.601, de 2023 (Benefício de Renda de Cidadania, Benefício Complementar, Benefício Primeira Infância, Benefício Variável Familiar, Benefício Extraordinário de Transição) e que integrem famílias unipessoais.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCADOito" aria-expanded="false" aria-controls="collapseCADOito">
+                    <strong>Se o responsável no CadÚnico estiver hospitalizado, como o estudante deve proceder para abrir a conta-poupança?</strong>
+                </button>
+            </h2>
+            <div id="collapseCADOito" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        A conta poupança será aberta automaticamente em nome do estudante beneficiário.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCADNove" aria-expanded="false" aria-controls="collapseCADNove">
+                    <strong>No caso de falecimento do estudante, a família terá direito a receber o benefício?</strong>
+                </button>
+            </h2>
+            <div id="collapseCADNove" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        O estudante não fará jus ao benefício em caso de falecimento, em conformidade com o art. 23, V, § 4º: <br><br>
+
+                        Art. 23. São hipóteses de desligamento do Programa Pé-de-Meia:  <br><br>
+
+                        V - falecimento;   <br><br>
+
+                        § 4º Nas hipóteses previstas nos incisos I, III, IV, V e VI do caput, o estudante não fará jus ao recebimento do montante acumulado por ano letivo do Incentivo Conclusão. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCADDez" aria-expanded="false" aria-controls="collapseCADDez">
+                    <strong>Minha família está cadastrada no CadÚnico, mas não recebi a poupança. O que pode ter acontecido?</strong>
+                </button>
+            </h2>
+            <div id="collapseCADDez" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        No ano de 2024 apenas as famílias beneficiárias do Programa Bolsa Família serão atendidas no Programa Pé-de-Meia.  
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCADOnze" aria-expanded="false" aria-controls="collapseCADOnze">
+                    <strong>Tenho pais que estão desempregados há mais de um ano, não possuem renda e não fui contemplado. O que fazer nesse caso?</strong>
+                </button>
+            </h2>
+            <div id="collapseCADOnze" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                   <p class="blockquote">
+                        Se sua família estiver cadastrada no cadúnico e for beneficiária do Programa Bolsa Família, sua elegibilidade será verificada pelo Ministério da Educação.
+                   </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCADDoze" aria-expanded="false" aria-controls="collapseCADDoze">
+                    <strong>Sou da rede particular de ensino, posso ser beneficiário do Programa?</strong>
+                </button>
+            </h2>
+            <div id="collapseCADDoze" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Não. Apenas são elegíveis ao Programa Pé-de-Meia os estudantes regularmente matriculados no ensino médio regular das redes públicas.  <br><br>
+
+                        Caso um estudante beneficiário do Bolsa Família faça uma transferência para a rede pública, ele estará apto a receber os incentivos a partir de sua matrícula no ano letivo seguinte. <br><br>  
+
+                        A habilitação resultará do cruzamento dos registros administrativos dos estudantes, recebidos por meio do Sistema Gestão Presente, com a base de dados do CadÚnico, aplicados os critérios de elegibilidade e priorização para o ano referência.  <br><br>
+
+                        A verificação das informações para manutenção do estudante no Programa será feita no início de cada ano letivo.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCADTreze" aria-expanded="false" aria-controls="collapseCADTreze">
+                    <strong>Tenho CadÚnico, mas meu cadastro não está atualizado. O que fazer para minha filha ter direito ao benefício?</strong>
+                </button>
+            </h2>
+            <div id="collapseCADTreze" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p class="blockquote">
+                        Atualize seu cadastro o quanto antes para que o MEC possa verificar a admissibilidade da estudante
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Dúvidas -->
+</div>
+<style>
+    ul li .duv {
+        color: black;
+    }
+</style>
+<script>
+    document.querySelector('.duv').classList.add('active');
+</script>
+{% endblock %}

@@ -3,33 +3,27 @@
 {% block title %}Ensino Médio Potiguar{% endblock %}
 
 {% block content %}
-<div class="">
-    <div id="carouselIndicators" class="carousel slide carousel-fade" data-bs-ride="carrousel">
+<div class="pt-4">
+    <div id="carouselIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="3000">
-                <a href="{% url 'trilhas' %}">
-                    <img src="../../static/inicio/img/trilhas.png" class="d-block w-100" alt="...">
+                <a href="{% url 'novoensinomedio' %}">
+                    <img src="../../static/inicio/img/site.png" class="d-block w-100" alt="...">
                 </a>
             </div>
             <div class="carousel-item" data-bs-interval="3000">
-                <a href="{% url 'referenciais' %}">
-                    <img src="../../static/inicio/img/referenciais.png" class="d-block w-100" alt="...">
-                </a>
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-                <a href="{% url 'normativas' %}">
-                    <img src="../../static/inicio/img/normativas.png" class="d-block w-100" alt="...">
+                <a href="{% url 'documentos/referencial' %}">
+                    <img src="../../static/inicio/img/documentos.png" class="d-block w-100" alt="...">
                 </a>
             </div>
             <div class="carousel-item" data-bs-interval="3000">
                 <a href="{% url 'mapa' %}">
-                    <img src="../../static/inicio/img/mapa.png" class="d-block w-100" alt="...">
+                    <img src="../../static/inicio/img/painel.png" class="d-block w-100" alt="...">
                 </a>
             </div>
         </div>
@@ -45,11 +39,11 @@
 </div>
 <div class="container my-5">
     <div class="row pb-5">
-        <div class="col-lg-5">
-            <h1>Ensino Médio:</h1>
+        <div class="col-lg-5 mb-5">
+            <img src="../../static/inicio/img/ensinomedio.jpeg" width="200px" class="d-inline-block align-text-top" alt="Logo">
         </div>
         <div class="col-lg-7">
-            <p class="blockquote">
+            <p class="blockquote text-justify">
                 O Ensino Médio é uma etapa importante da Educação Básica que visa aprofundar os processos
                 de aprendizagem iniciados no Ensino Fundamental e preparar os estudantes para a
                 continuidade dos estudos e para o mundo do trabalho. Além disso, o Ensino Médio deve
@@ -61,7 +55,7 @@
                 da Educação Básica, e isso significa que ele deve garantir a formação integral do estudante.
 
             </p>
-            <p class="blockquote">
+            <p class="blockquote text-justify">
                 O Estado do Rio Grande do Norte, objetivando garantir a democratização do Ensino Médio,
                 em cumprimento à Lei nº 9.394/1996, oferta a educação em tempo integral e parcial, em
                 horário diurno e noturno, em diferentes modalidades, tais como: a Educação Profissional e
@@ -70,44 +64,53 @@
                 às necessidades e disponibilidades das juventudes potiguares. As ofertas mencionadas estão
                 distribuídas em todo o território sob a gestão de 16 Diretorias Regionais de Ensino e Cultura (DIRECs).
             </p>
-            <p class="blockquote">
+            <p class="blockquote text-justify">
                 Nesse sentido, a rede estadual de ensino do Rio Grande do Norte empenha-se na garantia do
                 acesso à esta etapa da educação básica, responsabilizando-se pela maior parte das
                 matrículas dos jovens do nosso estado.
             </p>
         </div>
     </div>
-    <div class="row">
-        <div class="col-lg-5">
-            <h1>Referencial Curricular:</h1>
-        </div>
-        <div class="col-lg-7">
-            <div class="container col-12">
-                <p class="blockquote pb-3">
-                    A Secretaria de Estado da Educação, da Cultura, do Esporte e do Lazer (SEEC- RN) apresenta aos
-                    profissionais da educação, estudantes e suas famílias, demais profissionais das diversas instituições
-                    públicas e privadas de Educação Básica e Ensino Superior e para a sociedade em geral, o Referencial
-                    Curricular do Ensino Médio Potiguar, resultado de discussões, estudos, intercâmbios de experiências,
-                    reflexões acerca do currículo e da prática docente. Este Referencial consolida as orientações curriculares
-                    para a Educação Básica, articulando-se com o Documento Curricular das etapas da Educação Infantil e
-                    Ensino Fundamental, aprovado por meio da Resolução n° 102/2018-CEE/RN.
-                </p>
-                <a class="ms-4 ms-md-5" href="../../static/inicio/src/20230321_RCEMP - REFERENCIAL CURRICULAR DO ENSINO MÉDIO POTIGUAR.pdf" target="_blank">
-                    <img class="ms-0 ms-md-5" src="../../static/inicio/img/REFERENCIAL.png" width="300px" alt="Referencial Curricular">
-                </a>
-                <p class="blockquote pt-3">
-                    Este documento consolida as orientações curriculares para a Educação Básica, articulando-se com o Documento
-                    Curricular das etapas da Educação Infantil e Ensino Fundamental, aprovado por meio da Resolução n° 102/2018-CEE/RN.
-                    O Referencial Curricular do Ensino Médio Potiguar é resultado de discussões, estudos, intercâmbios de experiências,
-                    reflexões acerca do currículo e da prática docente.
-                </p>
+
+    <!-- MODAL AVISOS-->
+    <div class="modal fade" id="modalAviso" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Pé-de-Meia</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../../static/inicio/img/pedemeia.png" alt="Imagem" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <a href="{% url 'pedemeia' %}" type="button" class="btn btn-primary">Saiba mais!</a>
+                </div>
             </div>
         </div>
-    </div>
+     </div>
 </div>
+
 <style>
-    ul li .ini {
-        color: black;
+    .text-justify {
+        text-align: justify;
     }
 </style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var carousel = new bootstrap.Carousel(document.getElementById('carouselIndicators'), {
+            interval: 3000
+        });
+    });
+</script>
+
+<script>
+    document.querySelector('.ini').classList.add('active');
+
+    document.addEventListener("DOMContentLoaded", function () {
+    var myModal = new bootstrap.Modal(document.getElementById("modalAviso"));
+    myModal.show();
+  });
+</script>
 {% endblock %}

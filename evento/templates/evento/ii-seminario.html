@@ -1,0 +1,371 @@
+{% extends 'base.html' %}
+
+{% block title %}II Seminário - EMP{% endblock %}
+
+{% block content %}
+<style>
+    .text-justify {
+        text-align: justify;
+    }
+
+    .custom-date-col {
+        width: 130px;
+    }
+</style>
+
+<div style="background: #eff0f3;">
+    <div class="container">
+        <div class="row pt-1">
+            <div class="col-12">
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert alert-success " role="alert">
+                            {{ message }}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fechar"></button>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="row pb-3 pt-5">
+            <div class="card p-0 m-0">
+                <img src="../../static/inicio/img/banner_seminario.jpeg" class="img-fluid" alt="Banner do evento">
+            </div>
+        </div>
+
+        <div class="row pb-3">
+            <div class="card p-5">
+                <div class="row">
+                    <div class="col-12 col-md-10 mt-1">
+                        <h3>I Seminário do Ensino Médio Potiguar</h3>
+                        <p style="font-size: 14px !important; color: gray;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                            </svg>
+                            22/11/2023 - 23/11/2023 - 8:30 - 16:30 - GMT-3 <br> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            </svg>
+                            Virtual
+                        </p>
+                    </div>
+                    <!-- <div class="col-12 col-md-2">
+                        <a href="{% url 'inscricao' %}" class="btn btn-success mt-2">Realizar Inscrição</a>
+                        <a href="{% url 'inscricaominicurso' %}" class="btn btn-success mt-2 pe-md-4">Fazer Minicurso</a>
+                        <a href="{% url 'submeterresumo' %}" class="btn btn-primary mt-2 pe-1 pe-md-3">Fazer Submissão</a>
+                        <a href="{% url 'submeterminicurso' %}" class="btn btn-primary mt-2 pe-1 pe-md-3">Enviar Minicurso</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="row pb-3">
+            
+            <div class="card text-center p-5">
+                <h3 class="pb-md-5">Sobre o evento</h3>
+                <p class="blockquote text-justify mx-0 mx-md-5">
+                    O SEMINÁRIO do Ensino Médio Potiguar é um espaço de diálogo, escuta, debate e valorização 
+                    das práticas educativas entre os professores, gestores, estudantes de graduação e pós-graduação 
+                    e demais profissionais da educação acerca do <strong>Currículo e das Práticas Pedagógicas no 
+                    Ensino Médio Potiguar</strong>. O Seminário promoverá momentos de aprendizagem e formação por meio da 
+                    realização de oficinas, minicursos, conferência, mesa-redonda, atividades culturais e artísticas, 
+                    exposições e sessões de apresentação de trabalhos, apresentação de livros, entre outras atividades 
+                    educativas. Nesse contexto, nosso propósito é reconhecer as boas práticas e construir pontes para 
+                    estruturação de ações que melhorem a qualidade da educação e, também, estimulem a participação individual e 
+                    coletiva na consolidação da educação pública de qualidade no Rio Grande do Norte.
+                </p>
+            </div>
+        </div>
+
+        <div class="row pb-3">
+            <div class="card p-5">
+                <h3 class="text-center pb-5">Chamada dos trabalhos</h3>
+                <p class="text-justify mx-0 mx-md-5">
+                    Público: Profissionais da SEEC e DIRECs, gestores escolares, coordenadores pedagógicos e apoios pedagógicos 
+                    das escolas, professores e estudantes de ensino médio e estudantes de graduação e pós-graduação.
+                </p>
+
+                <p class="mx-0 mx-md-5">
+                    <p class="text-center">Modalidades</p>
+                    <ul class="mx-0 mx-md-5">
+                        <li>Pesquisa - completa ou em andamento;</li>
+                        <li>Relatos de Experiência e Descrição de Práticas Pedagógicas;</li>
+                        <li>Produto Educacional: ebook, vídeo, podcast, jogo, aplicativo, práticas experimentais, entre outros.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="row pb-3">
+            <div class="card text-center p-5">
+                <h3 class="pb-5">Eixos de trabalhos para submissão</h3>
+                <ol class="text-justify mx-0 mx-md-5">
+                    <li class="pb-3">
+                        <p class="blockquote">
+                            <strong>Marcos Legais da reforma do Ensino Médio e suas implicações na Rede Estadual.</strong>
+                            Este eixo contempla trabalhos voltados à implementação da Lei nº 13.415, de 16 de fevereiro de 2017, 
+                            bem como relatos de experiências e produtos educacionais elaborados para o desenvolvimento das aulas ou do 
+                            planejamento pedagógico da Formação Geral Básica e/ou dos Itinerários Formativos (trilhas de aprofundamento) 
+                            do Ensino Médio Potiguar.
+                        </p>                    
+                    </li>
+                    <li class="pb-3">
+                        <p class="blockquote">
+                            <strong>Avaliação no Ensino Médio Potiguar: reflexão e práticas.</strong>
+                            Este eixo contempla trabalhos que visem refletir ou discutir sobre a avaliação da aprendizagem dos estudantes 
+                            do Ensino Médio Potiguar nas estruturas organizacionais das Instituições de Ensino (públicas ou privadas). 
+                            Receberá trabalhos que proponham reflexões, pesquisas e relatos de experiências sobre a temática.
+                        </p>
+                    </li>
+                    <li class="pb-3">
+                        <p class="blockquote">
+                            <strong>Educação Inclusiva no Ensino Médio Potiguar: desafios e conquistas.</strong>
+                            O eixo compreende trabalhos sobre práticas de educação inclusiva (direito de todos à educação) 
+                            pautados nos princípios da igualdade de oportunidades e valorização das diferenças humanas, nas escolas 
+                            de Ensino Médio Potiguar. Compreende, também, relatos de experiências e produtos educacionais que 
+                            possibilitem a inclusão digital e a formação de professores na educação inclusiva do Ensino Médio Potiguar.
+                        </p>
+                    </li>
+                    <li class="pb-3">
+                        <p class="blockquote">
+                            <strong>Práticas Inovadoras, Criativas e Interdisciplinares no Ensino Médio Potiguar.</strong>
+                            O eixo tem como objetivo explorar abordagens inovadoras e interdisciplinares no ensino médio do 
+                            estado do Rio Grande do Norte. Este eixo temático tem o foco voltado à inovação, criatividade, 
+                            cultura digital, metodologias ativas, aprendizagem baseada em projetos/problemas, gamificação, 
+                            cultura maker, pensamento computacional, robótica com foco na interdisciplinaridade, permitindo 
+                            uma análise mais profunda das práticas educacionais que visam aprimorar a experiência de aprendizagem 
+                            dos estudantes.
+                        </p>
+                    </li>
+                    <li class="pb-3">
+                        <p class="blockquote">
+                            <strong>O Ensino Médio Potiguar em Tempo Integral.</strong>
+                            O eixo discute os princípios da Educação em Tempo Integral no Ensino Médio - subsídios para a nova 
+                            Política do Ensino Médio; trazendo a vivência do conhecimento no campo do currículo dessa oferta, tendo em 
+                            vista pensar a inteireza do estudante; integralizando o currículo a partir das dimensões da ciência, do trabalho, 
+                            da tecnologia e da cultura na prática escolar, além de vivenciar e pensar algumas proposições: caminhos possíveis 
+                            na construção de uma perspectiva curricular integrada em tempo integral para o Ensino Médio Potiguar.
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="row pb-3">
+            <div class="card text-center p-5">
+                <h3 class="pb-5">Propostas para Minicursos e Oficinas</h3>
+                <p class="blockquote text-justify mx-0 mx-md-5">
+                    Os minicursos ou oficinas serão ofertados, preferencialmente, relacionados à temática do Seminário, com 
+                    uma  hora de duração. Serão aceitas propostas submetidas por docentes, gestores das escolas de Ensino Médio, servidores da SEEC-RN 
+                    e/ou discentes dos programas de pós-graduação, atendendo ao limite máximo de quatro proponentes.
+                </p>
+                <p class="blockquote text-justify mx-0 mx-md-5">Período de inscrição das propostas: 11/09 a  12/11/2023</p>
+            </div>
+        </div>
+
+        <div class="row pb-3">
+            <div class="card text-center p-5">
+                <h3 class="pb-5">Para a submissão e apresentação dos trabalhos</h3>
+                <p class="blockquote text-justify mx-0 mx-md-5">
+                    A submissão de trabalhos para este evento se caracteriza pelo envio de resumos ou trabalhos completos 
+                    referentes a pesquisas finalizadas ou em andamento, relatos de experiência e de práticas pedagógicas e 
+                    produtos educacionais que contribuam para a Educação e Formação de Professores do Ensino Médio Potiguar.
+                </p>
+                <p class="blockquote text-justify mx-0 mx-md-5">
+                    A submissão de trabalhos é direcionada para professores(as) da educação básica, ensino superior ou educação 
+                    não-formal e estudantes de licenciaturas e pós-graduação. Os resumos selecionados serão publicados em um Ebook especial 
+                    da SEEC/RN com registro ISBN. O lançamento está programado para ser realizado em dezembro. Não serão aceitos 
+                    trabalhos e modificações após o encerramento das submissões. 
+                </p>
+                <p class="blockquote text-justify mx-0 mx-md-5">
+                    Para submeter seus trabalhos, é necessário que todos os autores estejam inscritos no evento. A inscrição para 
+                    participação é gratuita e é necessária para posterior emissão do certificado, bem como para manter todos os autores 
+                    informados sobre o desenvolvimento do evento. 
+                    Acesse o <a href="https://docs.google.com/document/d/1nPUKIU0eDQByBRlvRuZ0nhPVzbSj5XEv/edit?usp=sharing&ouid=117705896483931232946&rtpof=true&sd=true" target="_blank">Modelo do Resumo Expandido.</a>
+                    Envie sua proposta de oficina ou minicurso, conforme o <a href="https://docs.google.com/document/d/13OCCCSeN-Y9JKLCpfudg6psISCcd0HQV/edit?usp=sharing&ouid=117705896483931232946&rtpof=true&sd=true" target="_blank">Modelo de Proposta de Oficinas e Minicursos.</a> 
+                </p>
+                <p class="blockquote text-justify mx-0 mx-md-5">
+                    Para mais informações, acesse o <a href="https://docs.google.com/document/d/1OD_oXZTvBPyCRT_bRkx4PKSs9lievQzb/edit?usp=sharing&ouid=117705896483931232946&rtpof=true&sd=true" target="_blank">Edital</a> e o documento com os <a href="https://docs.google.com/document/d/1M94qcFYM6cyVW1kRbe1pswMLmLIfUw8B/edit?usp=sharing&ouid=117705896483931232946&rtpof=true&sd=true" target="_blank">Procedimentos para submissão.</a>
+
+                </p>
+            </div>
+        </div>
+
+        <div class="row text-center pb-3">
+            <div class="card p-5">
+                <h3 class="pb-5">Comissão Científica</h3>
+
+                <div class="row">
+                    <div class="col-4">
+                        <p>
+                                Afonso Gomes Ferreira Filho 
+                            <br> Agivan Maria Lopes Godeiro
+                            <br> Amanda Caroline Damasceno Tavares
+                            <br> Andressa Jully Bento de Medeiros
+                            <br> Angélica Maria Ribeiro de Lima Oliveira
+                            <br> Anne Michelle de Araújo Dantas
+                            <br> Catarina Aracelle Porto do Nascimento
+                            <br> Ciáxares Magalhães Carvalho
+                            <br> Cicero Silvio da Silva Rocha
+                            <br> Ciclene Alves da Silva
+                            <br> Deyse Karla de Oliveira Martins
+                            <br> Dione Maria Fernandes dos Santos
+                            <br> Elça Virgínia Fernandes Gurgel
+                            <br> Erica Nazaré Arrais Pinto Pereira
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <p>
+                                Felipe Bezerra do Vale
+                            <br> Francisca Maria Gomes Cabral Soares
+                            <br> Francisco Rondinelli Moura de Oliveira
+                            <br> Frederico Affonso de Araújo Medeiros
+                            <br> Ivelusia Joyce Bezerra Varela
+                            <br> Jacqueline Maria Dantas de Sá
+                            <br> Jean Mac Cole Tavares Santos
+                            <br> Josenildo Gomes de Oliveira Souza
+                            <br> Kleiton Jullian Soares dos Santos
+                            <br> Louraci Santos Melo de Oliveira
+                            <br> Manoel Tavares dos Santos Neto
+                            <br> Márcia Betânia de Oliveira
+                            <br> Márcia Fernandes Bondade Lima
+                            <br> Márcio Jocerlan de Souza
+                        </p>
+                        
+                    </div>
+                    <div class="col-4">
+                        <p>
+                                Maria Carmem Silva Batista
+                            <br> Maria do Carmo de Sousa Severo
+                            <br> Maria José Hortência Barbosa
+                            <br> Maria Sheila Taniza Alves de Oliveira
+                            <br> Maria Vicência Arimatea dos Santos
+                            <br> Max Alexandre da Silva
+                            <br> Naama Pegado Ferreira
+                            <br> Paulo Marcelo Ribeiro Rocha
+                            <br> Rafael da Silva Pereira Roseno
+                            <br> Raimunda Almeida de Oliveira Barbosa
+                            <br> Rômulo Augusto Soares Gurgel
+                            <br> Wannise de Santana Lima
+                            <br> Zabdiel Lima de Medeiros
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row pb-3">
+            <div class="card p-5">
+                <h3 class="text-center pb-5">Cronograma</h3>
+
+                <div class="container col-12 col-md-8">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">Atividade</th>
+                                <th scope="col" class="custom-date-col">Data</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Lançamento do Evento.</th>
+                                <td>11/10</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Inscrições.</th>
+                                <td>11/10 a 20/11</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Submissão de Oficinas e Minicursos.</th>
+                                <td>11/10 a 16/11</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Divulgação de aceites de Oficinas e Minicursos.</th>
+                                <td>12/11</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Inscrições em Oficinas e Minicursos.</th>
+                                <td>12/11 a 20/11</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Submissão de Resumo Expandido.</th>
+                                <td>11/10 a 16/11</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Divulgação de Aceites de Resumo Expandido.</th>
+                                <td>12/11</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Divulgação de programação completa do Seminário.</th>
+                                <td>15/11</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Início do Seminário.</th>
+                                <td>22 e 23/11</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Envio do Certificado de participação, de participação em oficina e minicurso e de apresentação de trabalho.</th>
+                                <td>10/12</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Divulgação dos Anais do Evento.</th>
+                                <td>15/12</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="row pb-3">
+            <div class="card text-center p-5">
+                <h3 class="pb-5">Programação</h3>
+                
+                <div>
+                    <div class="row">
+                        <div class="col-12 col-md-5 offset-md-1 pt-5">
+                            <img src="../../static/inicio/img/prog_2223.jpeg" class="img-fluid" alt="Programação dia 22 e 23">
+                        </div>
+                        <div class="col-12 col-md-5 pt-5">
+                            <img src="../../static/inicio/img/prog_22.jpeg" class="img-fluid" alt="Programação dia 22">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-5 offset-md-1 pt-5">
+                            <img src="../../static/inicio/img/prog_23manha.jpeg" class="img-fluid" alt="Programação dia 23 - Manhã">
+                        </div>
+                        <div class="col-12 col-md-5 pt-5">
+                            <img src="../../static/inicio/img/prog_23tarde.jpeg" class="img-fluid" alt="Programação dia 23 - Tarde">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="row pb-3">
+            <div class="card text-center p-5">
+                <h3>Mapa</h3>
+            </div>
+        </div> -->
+
+        <div class="row pb-3">
+            <div class="card text-center p-5">
+                <div class="col-12 pb-2">
+                    <img src="../../static/inicio/img/logo_seminario.jpeg" width="250px" alt="Logo">
+                </div>
+                <h3 class="pb-1">Organizado por</h3>
+                <p class="blockquote">SUBCOORDENADORIA DE ENSINO MÉDIO - SUEM</p>
+                <div class="col">
+                    <a class="btn btn-outline-light border-secondary" role="button" href="mailto:suem@educar.rn.gov.br" style="text-decoration: none; color: gray;"><strong>ENTRAR EM CONTATO</strong></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelector('.eve').classList.add('active');
+</script>
+{% endblock %}

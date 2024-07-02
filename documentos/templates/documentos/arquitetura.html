@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+{% block title %}Documentos - Arquitetura Curricular{% endblock %}
+
+{% block content %}
+
+{% include 'documentos.html' %}
+
+<div class="container pb-5">
+    <h1 class="text-center">Documentos Referenciais</h1>
+
+    <p class="pt-5 blockquote">
+        <strong>Arquitetura Curricular</strong>
+    </p>
+    <div class="pb-3">
+        <p class="blockquote text-justify">
+            A Arquitetura Curricular do Ensino Médio Potiguar busca garantir uma educação de qualidade social,
+            respeitando as identidades e as necessidades das juventudes do Estado, adotando formato progressivo
+            com relação à distribuição de carga-horária dos IFs, iniciando com uma carga-horária menor na 1ª
+            série e maior nas séries subsequentes. Tal arranjo favorece a formação do conjunto de competências
+            e habilidades essenciais a serem aprofundadas e ampliadas nos IFs de forma gradativa.
+        </p>
+        <p class="text-center" style="font-size: 11px !important;">Clique nas imagens para ampliar</p>
+        <div class="row">                
+            <div class="col-12 col-md-4">
+                <p class="pb-3 text-center" data-bs-toggle="modal" data-bs-target="#myModal1">
+                    <img src="../../static/inicio/img/arqdiu.jpeg" class="img-fluid"  width="360" alt="Arquitetura Curricular - Diurno">
+                </p>
+            </div>
+            <div class="col-12 col-md-4">
+                <p class="pb-3 text-center" data-bs-toggle="modal" data-bs-target="#myModal2">
+                    <img src="../../static/inicio/img/arqnot.jpeg" class="img-fluid" width="360" alt="Arquitetura Curricular - Noturno">
+                </p>
+            </div>
+            <div class="col-12 col-md-4">
+                <p class="pb-3 text-center" data-bs-toggle="modal" data-bs-target="#myModal3">
+                    <img src="../../static/inicio/img/arqemti.jpeg" class="img-fluid" width="360" alt="Arquitetura Curricular - Integral">
+                </p>
+            </div>
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="../../static/inicio/img/arqdiu.jpeg" alt="Imagem" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="../../static/inicio/img/arqnot.jpeg" alt="Imagem" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="../../static/inicio/img/arqemti.jpeg" alt="Imagem" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelector('.arq').classList.add('active');
+</script>
+{% endblock %}

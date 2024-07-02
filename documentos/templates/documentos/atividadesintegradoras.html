@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+
+{% block title %}Documentos - Atividade Integradoras{% endblock %}
+
+{% block content %}
+
+{% include 'documentos.html' %}
+
+<div class="container pb-5">
+    <h1 class="text-center">Documentos Referenciais</h1>
+
+    <div class="pb-3">
+        <p class="pt-5 blockquote">
+            <strong>Atividades Integradoras</strong>
+        </p>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <p class="blockquote text-justify">
+                    São compostas por <strong>Orientação Acadêmica</strong>, <strong>Práticas Experimentais</strong> e <strong>Eletivas  Orientadas</strong>, 
+                    organizam-se a partir das competências e habilidades das áreas do conhecimento e  são 
+                    norteadas pelos eixos estruturantes dos Itinerários Formativos;
+                </p>
+                <p class="blockquote text-justify">
+                    <strong>Orientação Acadêmica</strong> tem como caráter o acompanhamento pedagógico da  aprendizagem dos 
+                    estudantes, desenvolvendo autonomia e autodidatismo, com foco no  Protagonismo Juvenil 
+                    e na equidade. Tem como premissa: aprender a aprender, fazer,  conhecer e conviver;
+                </p>
+                <p class="blockquote text-justify">
+                    As <strong>Práticas Experimentais</strong> serão realizadas em laboratórios e outros ambientes,  
+                    envolvendo os estudantes em investigações científicas, de modo a desenvolver  
+                    habilidades e a capacidade de resolução de problemas;
+                </p>
+                <p class="blockquote text-justify">
+                    As <strong>Eletivas Orientadas</strong> possibilitam a superação das dificuldades de aprendizagem de  
+                    forma continuada por meio da construção de competências e habilidades dos objetos de  
+                    conhecimento dos componentes curriculares nas áreas de conhecimento.
+                </p>
+            </div>
+            <div class="col-12 col-md-6 text-center">
+                <p style="font-size: 11px !important;">Clique na imagem abaixo para acessar o documento:</p>
+                <div class="col-12">
+                    <a href="../../static/inicio/src/Caderno Norteador de Eletivas Orientadas VF.pdf" target="_blank">
+                        <img src="../../static/inicio/img/cadeletivas.jpeg" width="220px" alt="Referencial Curricular">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <p class="text-center" style="font-size: 11px !important;">Clique nas imagens para ampliar</p>
+            <div class="col-12 col-md-6">
+                <p class="pb-3 text-center" data-bs-toggle="modal" data-bs-target="#myModalele">
+                    <img src="../../static/inicio/img/eletiva.jpeg" class="img-fluid" width="480" alt="Eletiva Orientada">
+                </p>
+            </div>
+            <div class="col-12 col-md-6">
+                <p class="pb-3 text-center" data-bs-toggle="modal" data-bs-target="#myModalori">
+                    <img src="../../static/inicio/img/orientacao.jpeg" class="img-fluid" width="480" alt="Orientação">
+                </p>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModalele" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="../../static/inicio/img/eletiva.jpeg" alt="Imagem" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="myModalori" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="../../static/inicio/img/orientacao.jpeg" alt="Imagem" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelector('.iti').classList.add('active');
+</script>
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %}Documentos - Oficinas Formativas{% endblock %}
+
+{% block content %}
+
+{% include 'documentos.html' %}
+
+<div class="container pb-5">
+    <h1 class="text-center">Documentos Referenciais</h1>                
+            
+    <div class="pb-3">
+        <p class="pt-5 blockquote">
+            <strong>Projeto de Vida</strong>
+        </p>
+
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <p class="blockquote text-justify pb-3">
+                    Projeto de Vida promove a reflexão nas dimensões pessoal, cidadã e profissional em 
+                    articulação com as áreas do conhecimento e seus respectivos componentes curriculares 
+                    da  Formação Geral Básica, apoiando o estudante na escolha do percurso formativo e, 
+                    sobretudo,  das Trilhas de Aprofundamento ofertadas, contribuindo para que os 
+                    estudantes reconheçam  suas competências, habilidades, saberes, desejos e a relação 
+                    deles com suas aspirações e com o  meio social. 
+                </p>
+            </div>
+            <div class="col-12 col-md-6">
+                <p class="text-center" style="font-size: 11px !important;">Clique na imagem para ampliar</p>
+                <p class="pb-3 text-center container-fluid" data-bs-toggle="modal" data-bs-target="#myModalpro">
+                    <img src="../../static/inicio/img/projetovida.png" class="img-fluid" width="520" alt="Projeto de Vida">
+                </p>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModalpro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="../../static/inicio/img/projetovida.png" alt="Imagem" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelector('.iti').classList.add('active');
+</script>
+{% endblock %}

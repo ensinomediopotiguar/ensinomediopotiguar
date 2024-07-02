@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block title %}Documentos - Estruturas Curriculares{% endblock %}
+
+{% block content %}
+
+{% include 'documentos.html' %}
+
+
+<div class="container pb-5">
+    <h1 class="text-center">Documentos Referenciais</h1>
+
+    <p class="pt-5 blockquote">
+        <strong>Estruturas Curriculares</strong>
+    </p>
+    <div>
+        <p class="text-center" style="font-size: 11px !important;">Clique nas imagens abaixo para acessar os documentos:</p>
+        <div class="row">
+            <div class="col-12 col-md-4 offset-2 offset-md-0">
+                <p class="pb-2 pt-4">
+                    <strong>Diurno:</strong>
+                </p>
+                <a href="../../static/inicio/src/DIURNO-NEM.pdf" target="_blank">
+                    <img src="../../static/inicio/img/NEM-DIURNO.jpeg" class="img-fluid" width="240px" alt="Referencial Curricular - Diurno (Novo Ensino Médio)">
+                </a>
+            </div>
+            <div class="col-12 col-md-4 offset-2 offset-md-0">
+                <p class="pb-1 pt-4">
+                    <strong>Noturno:</strong>                      
+                </p>
+                <a href="../../static/inicio/src/NOTURNO-NEM.pdf" target="_blank">
+                    <img src="../../static/inicio/img/NEM-NOTURNO.jpeg" class="img-fluid" width="240px" alt="Referencial Curricular - Noturno (Novo Ensino Médio)">
+                </a>
+            </div>
+            <div class="col-12 col-md-4 offset-2 offset-md-0">
+                <p class="pb-1 pt-4">
+                    <strong>Integral:</strong>                      
+                </p>
+                <a href="../../static/inicio/src/INTEGRAL-EM.pdf" target="_blank">
+                    <img src="../../static/inicio/img/NEM-INTEGRAL.jpeg" class="img-fluid" width="240px" alt="Referencial Curricular - Integral">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelector('.est').classList.add('active');
+</script>
+{% endblock %}

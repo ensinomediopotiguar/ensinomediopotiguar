@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+
+{% block title %}Inscrição{% endblock %}
+
+{% block content %}
+<div style="background: #eff0f3;">
+    <div class="container">
+        <div class="row pb-3 pt-5">
+            <div class="card p-0 m-0">
+                <img src="../../static/inicio/img/banner_seminario.jpeg" class="img-fluid" alt="Banner do evento">
+            </div>
+        </div>
+        <div class="row pb-3">
+            <div class="card p-5">
+                <h3 class="pb-5">Inscrição</h3>
+                <form method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
+                    {% csrf_token %}
+                    <!-- Bloco para exibir erros -->
+                    {% if form.non_field_errors %}
+                    <div class="alert alert-danger">
+                        {{ form.non_field_errors }}
+                    </div>
+                    {% endif %}
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-floating pt-3 mb-1">
+                                {{ form.nome.label_tag }}
+                                <input type="text" class="form-control" id="floatingInput" name="{{ form.nome.name }}" placeholder="Nome completo" required>
+                                <div class="invalid-feedback">
+                                    Por favor, preecha todos os campos!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-12">
+                            <div class="form-floating pt-3">
+                                {{ form.email.label_tag }}
+                                <input type="email" class="form-control" id="floatingInput" name="{{ form.email.name }}" placeholder="Email" required>
+                                <div class="invalid-feedback">
+                                    Por favor, preecha todos os campos!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-12">
+                            <div class="form-floating pt-3">
+                                {{ form.telefone.label_tag }}
+                                <input type="tel" class="form-control" id="floatingInput" name="{{ form.telefone.name }}" placeholder="Telefone celular" required>
+                                <div class="invalid-feedback">
+                                    Por favor, preecha todos os campos!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-12">
+                            <div class="form-floating pt-3">
+                                {{ form.instituicao.label_tag }}
+                                <input type="text" class="form-control" id="floatingInput" name="{{ form.instituicao.name }}" placeholder="Instituição" required>
+                                <div class="invalid-feedback">
+                                    Por favor, preecha todos os campos!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <div class="form-floating pt-3">
+                                {{ form.categoria.label_tag }}
+                                <select class="form-select pt-3" id="floatingInput" name="{{ form.categoria.name }}" required>
+                                    <option selected> </option>
+                                    <option value="Estudantes da Educação Básica">Estudantes da Educação Básica</option>
+                                    <option value="Estudantes de Graduação">Estudantes de Graduação</option>
+                                    <option value="Estudantes de Pós-Graduação">Estudantes de Pós-Graduação</option>
+                                    <option value="Profissionais da Educação Básica">Profissionais da Educação Básica</option>
+                                    <option value="Profissionais da Educação Superior">Profissionais da Educação Superior</option>
+                                    <option value="Demais Interessados">Demais Interessados</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Por favor, preecha todos os campos!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
+                </form>                
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+    'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    const forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+        }, false)
+    })
+    })()
+</script>
+{% endblock %}

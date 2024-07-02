@@ -1,3 +1,6 @@
+import {Chart} from 'chart.js';
+import ChartDataLabels from 'chartjs-plugin-datalabels';
+
 Chart.defaults.color = '#000'; // Cor da fonte no gráfico
 
 ///Gerar Gráficos
@@ -9,7 +12,7 @@ if (parseFloat(metIdebEscola) === 0) {
     metIdebEscola = 'ND';
 }
 
-//Gráfico - Matrículas 2023
+//Gráfico - Matrículas 2024
 const ctxmat = document.getElementById('chartMat');
 new Chart(ctxmat, {
     type: 'bar',
@@ -36,6 +39,7 @@ new Chart(ctxmat, {
             },
         ],
     },
+    plugins: [ChartDataLabels],
     options: {
         responsive: true,
         plugins: {
@@ -44,11 +48,16 @@ new Chart(ctxmat, {
             },
             title: {
                 display: true,
-                text: 'MATRÍCULAS 2023'
+                text: 'MATRÍCULAS 2024'
+            },
+            datalabels: {
+                color: 'white', // Cor dos rótulos de dados
+                font: {
+                    size: 14 // Tamanho da fonte dos rótulos de dados
+                }
             }
         }
     },
-    plugins: [ChartDataLabels]
 });
 //Gráfico - Matrículas por Oferta
 const ctxmatdino = document.getElementById('chartMatDiNo');
@@ -62,6 +71,7 @@ new Chart(ctxmatdino, {
             borderWidth: 1,
         }],
     },
+    plugins: [ChartDataLabels],
     options: {
         responsive: true,
         plugins: {
@@ -71,10 +81,15 @@ new Chart(ctxmatdino, {
             title: {
                 display: true,
                 text: 'MATRÍCULAS POR OFERTA'
+            },
+            datalabels: {
+                color: 'white', // Cor dos rótulos de dados
+                font: {
+                    size: 14 // Tamanho da fonte dos rótulos de dados
+                }
             }
         }
     },
-    plugins: [ChartDataLabels]
 });
 //Gráfico - Modalidades
 const ctxmod = document.getElementById('chartMod');
@@ -97,6 +112,7 @@ new Chart(ctxmod, {
             },
         ],
     },
+    plugins: [ChartDataLabels],
     options: {
         responsive: true,
         plugins: {
@@ -106,10 +122,15 @@ new Chart(ctxmod, {
             title: {
                 display: true,
                 text: 'MATRÍCULAS POR MODALIDADES'
+            },
+            datalabels: {
+                color: 'white', // Cor dos rótulos de dados
+                font: {
+                    size: 14 // Tamanho da fonte dos rótulos de dados
+                }
             }
         }
     },
-    plugins: [ChartDataLabels]
 });
 //Gráfico - IDEB
 const ctxideb = document.getElementById('chartIDEB');
@@ -119,19 +140,20 @@ new Chart(ctxideb, {
         labels:  [''],
         datasets: [
             {
-                label: 'IDEB RN - 2021',
+                label: 'IDEB RN - 2022',
                 data: [parseFloat(idebRN.replace(",", "."))],
                 backgroundColor: 'rgb(255, 117, 25, 100)',
                 borderWidth: 1,
             },
             {
-                label: 'IDEB ESCOLA - 2021',
+                label: 'IDEB ESCOLA - 2022',
                 data: [parseFloat(idebEscola.replace(",", "."))],
                 backgroundColor: 'rgb(0, 153, 153)',
                 borderWidth: 1,
             },
         ],
     },
+    plugins: [ChartDataLabels],
     options: {
         responsive: true,
         plugins: {
@@ -142,9 +164,14 @@ new Chart(ctxideb, {
                 display: true,
                 text: 'IDEB'
             },
+            datalabels: {
+                color: 'white', // Cor dos rótulos de dados
+                font: {
+                    size: 14 // Tamanho da fonte dos rótulos de dados
+                }
+            }
         }
     },
-    plugins: [ChartDataLabels]
 });
 //Gráfico - META IDEB
 const ctxmetideb = document.getElementById('chartMETAIDEB');
@@ -167,6 +194,7 @@ new Chart(ctxmetideb, {
             },
         ],
     },
+    plugins: [ChartDataLabels],
     options: {
         responsive: true,
         plugins: {
@@ -176,10 +204,15 @@ new Chart(ctxmetideb, {
             title: {
                 display: true,
                 text: 'META IDEB'
+            },
+            datalabels: {
+                color: 'white', // Cor dos rótulos de dados
+                font: {
+                    size: 14 // Tamanho da fonte dos rótulos de dados
+                }
             }
         }
     },
-    plugins: [ChartDataLabels]
 });
 //Gráfico - SIMAIS
 const ctxsimais = document.getElementById('chartSIMAIS');
@@ -202,6 +235,7 @@ new Chart(ctxsimais, {
             },
         ],
     },
+    plugins: [ChartDataLabels],
     options: {
         responsive: true,
         plugins: {
@@ -211,10 +245,15 @@ new Chart(ctxsimais, {
             title: {
                 display: true,
                 text: 'SIMAIS 2022'
+            },
+            datalabels: {
+                color: 'white', // Cor dos rótulos de dados
+                font: {
+                    size: 14 // Tamanho da fonte dos rótulos de dados
+                }
             }
         }
     },
-    plugins: [ChartDataLabels]
 });
 //Gráfico - META SIMAIS
 const ctxmetsimais = document.getElementById('chartMETASIMAIS');
@@ -237,6 +276,7 @@ new Chart(ctxmetsimais, {
             },
         ],
     },
+    plugins: [ChartDataLabels],
     options: {
         responsive: true,
         plugins: {
@@ -246,10 +286,15 @@ new Chart(ctxmetsimais, {
             title: {
                 display: true,
                 text: 'META SIMAIS 2024'
+            },
+            datalabels: {
+                color: 'white', // Cor dos rótulos de dados
+                font: {
+                    size: 14 // Tamanho da fonte dos rótulos de dados
+                }
             }
         }
     },
-    plugins: [ChartDataLabels]
 });
 //Gráfico - Taxa de Aprovação - 1ª Série
 const ctxta1s = document.getElementById('chartTA1s');
@@ -263,6 +308,7 @@ new Chart(ctxta1s, {
             borderWidth: 1,
         }],
     },
+    plugins: [ChartDataLabels],
     options: {
         responsive: true,
         plugins: {
@@ -272,10 +318,15 @@ new Chart(ctxta1s, {
             title: {
                 display: true,
                 text: '1ª SÉRIE (%)'
+            },
+            datalabels: {
+                color: 'white', // Cor dos rótulos de dados
+                font: {
+                    size: 14 // Tamanho da fonte dos rótulos de dados
+                }
             }
         }
     },
-    plugins: [ChartDataLabels]
 });
 //Gráfico - Taxa de Aprovação - 2ª Série
 const ctxta2s = document.getElementById('chartTA2s');
@@ -289,6 +340,7 @@ new Chart(ctxta2s, {
             borderWidth: 1,
         }],
     },
+    plugins: [ChartDataLabels],
     options: {
         responsive: true,
         plugins: {
@@ -298,10 +350,15 @@ new Chart(ctxta2s, {
             title: {
                 display: true,
                 text: '2ª SÉRIE (%)'
+            },
+            datalabels: {
+                color: 'white', // Cor dos rótulos de dados
+                font: {
+                    size: 14 // Tamanho da fonte dos rótulos de dados
+                }
             }
         }
     },
-    plugins: [ChartDataLabels]
 });
 //Gráfico - Taxa de Aprovação - 3ª Série
 const ctxta3s = document.getElementById('chartTA3s');
@@ -315,6 +372,7 @@ new Chart(ctxta3s, {
             borderWidth: 1,
         }],
     },
+    plugins: [ChartDataLabels],
     options: {
         responsive: true,
         plugins: {
@@ -324,10 +382,15 @@ new Chart(ctxta3s, {
             title: {
                 display: true,
                 text: '3ª SÉRIE (%)'
+            },
+            datalabels: {
+                color: 'white', // Cor dos rótulos de dados
+                font: {
+                    size: 14 // Tamanho da fonte dos rótulos de dados
+                }
             }
         }
     },
-    plugins: [ChartDataLabels]
 });
 //Gráfico - AVALIAÇÃO GERAL DA ESCOLA
 /*
@@ -351,6 +414,7 @@ new Chart(ctxavaliacao, {
             },
         ],
     },
+    plugins: [ChartDataLabels],
     options: {
         responsive: true,
         plugins: {
@@ -391,6 +455,7 @@ new Chart(ctxnota1, {
             },
         ],
     },
+    plugins: [ChartDataLabels],
     options: {
         responsive: true,
         plugins: {
@@ -441,6 +506,7 @@ new Chart(ctxnota2, {
             },
         ],
     },
+    plugins: [ChartDataLabels],
     options: {
         responsive: true,
         plugins: {
@@ -491,6 +557,7 @@ new Chart(ctxnota3, {
             },
         ],
     },
+    plugins: [ChartDataLabels],
     options: {
         responsive: true,
         plugins: {

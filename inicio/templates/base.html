@@ -3,86 +3,120 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../../static/inicio/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLRV1Z20M5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-FLRV1Z20M5');
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
     <link rel="stylesheet" href="../../static/inicio/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <title>{% block title %}{% endblock %}</title>
-    <link rel="shortcut icon" type="image/x-icon" rel="icon" href="{% static 'inicio/favicon.ico' %}">
+    <title>{% block title %}Ensino Médio Potiguar{% endblock %}</title>
+    <div itemscope itemtype="https://schema.org/WebSite">
+        <meta itemprop="url" content="http://ensinomediopotiguar.educacao.rn.gov.br/"/>
+        <meta itemprop="name" content="Ensino Médio Potiguar"/>
+    </div>
+    <style>
+        .navbar-nav {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+        }
+        .nav-link {
+            color: white;
+        }
+
+        .dropdown-toggle::after {
+            position: absolute;
+            right: -5px;
+            top: 40%;
+            transform: translateY(-50%);
+        }
+    </style>
 </head>
 <body>
-    <!-- Acessibilidade -->
-    <div class="container-fluid fixed-top" id="acessibilidade" style="background: linear-gradient(to right, #00f299, #0579e9)">
-        <section class="offset-1">
-            <!-- Aumentar Fonte -->
-            <button class="btn btn-outline-light btn-floating m-1" id="aumentarFonte" title="Aumentar fonte">
-                <i class="fa-solid fa-plus fa-2xs"></i>
-                <i class="fa-solid fa-font"></i>
-            </button>
+    <div class="sticky-top">
+        <!-- Acessibilidade -->
+        <div class="container-fluid" id="acessibilidade" style="background: rgb(222, 222, 222)">
+            <section class="offset-1">
+                <!-- Aumentar Fonte -->
+                <a class="btn" id="aumentarFonte" title="Aumentar fonte">
+                    <i class="fa-solid fa-plus fa-2xs"></i>
+                    <i class="fa-solid fa-font fa-xs"></i>
+                </a>
 
-            <!-- Fonte Padão -->
-            <button class="btn btn-outline-light btn-floating m-1" id="padronizarFonte" title="Padronizar fonte">
-                <i class="fa-solid fa-font"></i>
-            </button>
+                <!-- Fonte Padão -->
+                <a class="btn" id="padronizarFonte" title="Padronizar fonte">
+                    <i class="fa-solid fa-font fa-xs"></i>
+                </a>
 
-            <!-- Diminuir Fonte -->
-            <button class="btn btn-outline-light btn-floating m-1" id="diminuirFonte" title="Diminuir fonte">
-                <i class="fa-solid fa-font"></i>
-                <i class="fa-solid fa-minus fa-2xs"></i>
-            </button>
+                <!-- Diminuir Fonte -->
+                <a class="btn" id="diminuirFonte" title="Diminuir fonte">
+                    <i class="fa-solid fa-font fa-xs"></i>
+                    <i class="fa-solid fa-minus fa-2xs"></i>
+                </a>
 
-            <!-- Contraste -->
-            <button class="btn btn-outline-light btn-floating m-1 mx-3" id="altoContraste" title="Alto contraste">
-                <i class="fa-solid fa-circle-half-stroke"></i>
-            </button>
-        </section>
-    </div>
-    <!-- Barra de Navegação -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary pt-5 sticky-top" style="background: linear-gradient(to right, #00f260, #0575e6);">
-        <div class="container">
-            <a class="navbar-brand text-dark" href="/">
-                <img src="../../static/inicio/img/LOGOTIPO_EMP.png" width="150px" class="d-inline-block align-text-top" alt="Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0 pt-lg-2">
-                    <li class="nav-item">
-                        <a class="nav-link ini" aria-current="page" href="/"><p class="blockquote">Início</p></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link tri" href="{% url 'trilhas' %}"><p class="blockquote">Trilhas</p></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link doc" href="{% url 'normativas' %}"><p class="blockquote">Normativas</p></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link ref" href="{% url 'referenciais' %}"><p class="blockquote">Referenciais</p></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link map" href="{% url 'mapa' %}"><p class="blockquote">Mapa</p></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link not" href="#"><p class="blockquote">Notícias</p></a> <!-- {% url 'noticias' %} -->
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link for" href="#"><p class="blockquote">Formações</p></a> <!-- {% url 'formacoes' %} -->
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link duv" href="{% url 'duvidas' %}"><p class="blockquote">Dúvidas</p></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link con" href="#"><p class="blockquote">Contato</p></a> <!-- {% url 'contato' %} -->
-                    </li>
-                </ul>
-            </div>
-            <a class="navbar-brand text-dark" href="http://www.educacao.rn.gov.br">
-                <img src="../../static/inicio/img/SEEC_RN_White.png" width="150px" class="d-inline-block align-text-top" alt="Logo">
-            </a>
+                <!-- Contraste -->
+                <a class="btn mx-3" id="altoContraste" title="Alto contraste">
+                    <i class="fa-solid fa-circle-half-stroke fa-xs"></i>
+                </a>
+            </section>
         </div>
-    </nav>
-    <!-- END Barra de Navegação -->
+        <!-- Barra de Navegação -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary py-1" style="background: linear-gradient(to right, #00f260, #0575e6);">
+            <div class="container">
+                <a class="navbar-brand text-dark" href="/">
+                    <img src="../../static/inicio/img/LOGOTIPO_EMP.png" width="125px" class="d-inline-block align-text-top" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav nav-underline ms-auto me-auto pt-lg-2">
+                        <li class="nav-item">
+                            <a class="nav-link ini" aria-current="page" href="/"><p class="blockquote text-center mt-3">INÍCIO</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link doc" href="{% url 'documentos/referencial' %}"><p class="blockquote text-center mt-3">DOCUMENTOS</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link map" href="{% url 'mapa' %}"><p class="blockquote text-center mt-2">PAINEL DE<br> INDICADORES</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ene" href="{% url 'seliganoenem' %}"><p class="blockquote text-center mt-2">SE LIGA <br> NO ENEM</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link eve" href="{% url 'evento' %}"><p class="blockquote text-center mt-3">EVENTOS</p></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle duv" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <p class="blockquote text-center mt-3">DÚVIDAS (FAQ)</p>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="{% url 'novoensinomedio' %}">ENSINO MEDIO POTIGUAR</a></li>
+                                <li><a class="dropdown-item" href="{% url 'pedemeia' %}">PÉ-DE-MEIA</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link con" href="{% url 'contato' %}"><p class="blockquote text-center mt-3">CONTATO</p></a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="navbar-brand text-dark" href="http://www.educacao.rn.gov.br">
+                    <img src="../../static/inicio/img/SEEC_RN_White.png" width="120px" class="d-inline-block align-text-top" alt="Logo">
+                </a>
+            </div>
+        </nav>
+        <!-- END Barra de Navegação -->
+    </div>
 
     {% block content %}
     {% endblock %}
@@ -151,6 +185,9 @@
             position: fixed;
             bottom: 50px;
             right: 50px;
+            opacity: 0; /* Inicialmente, o botão estará oculto */
+            pointer-events: none; /* Impede que o botão seja clicado quando estiver oculto */
+            transition: opacity 0.3s ease; /* Adiciona uma transição suave para a visibilidade */
         }
 
         body {
@@ -165,11 +202,24 @@
     <script>
         var btn = document.querySelector("#voltar_topo");
 
+        // Função para verificar a posição da rolagem e mostrar/ocultar o botão
+        function toggleBackToTopButton() {
+            if (window.scrollY > window.innerHeight / 2) {
+                btn.style.opacity = "1";
+                btn.style.pointerEvents = "auto";
+            } else {
+                btn.style.opacity = "0";
+                btn.style.pointerEvents = "none";
+            }
+        }
+
+        // Event listener para verificar a posição da rolagem ao carregar a página e durante o rolamento
+        window.addEventListener("scroll", toggleBackToTopButton);
+        window.addEventListener("load", toggleBackToTopButton);
+
         // Voltar ao topo
         btn.addEventListener("click", function(event) {
-            event.preventDefault(); // Evita o comportamento padrão do botão
-
-            // Animação suave de rolagem até o topo da página
+            event.preventDefault();
             window.scrollTo({
                 top: 0,
                 behavior: "smooth"

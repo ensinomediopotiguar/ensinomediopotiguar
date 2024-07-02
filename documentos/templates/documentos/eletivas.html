@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block title %}Documentos - Eletivas{% endblock %}
+
+{% block content %}
+
+{% include 'documentos.html' %}
+
+
+<div class="container pb-5">
+    <h1 class="text-center">Documentos Referenciais</h1>
+
+    <div class="pb-3">
+        <p class="pt-5 blockquote">
+            <strong>Eletivas</strong>
+        </p>
+
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <p class="blockquote text-justify">
+                    O Referencial Curricular do Estado do Rio Grande do Norte, numa perspectiva de valorizar 
+                    o protagonismo e a autonomia dos estudantes potiguares, disponibiliza Unidades Curriculares 
+                    Eletivas, respeitando as escolhas e os interesses dos estudantes. As eletivas têm caráter 
+                    interdisciplinar, organizam-se a partir das competências e habilidades das áreas do conhecimento, 
+                    e são norteadas pelos eixos estruturantes dos Itinerários Formativos. Além disso, as eletivas são 
+                    elaboradas de forma autônoma pela escola, semestralmente, a partir da escuta dos estudantes e 
+                    priorizando metodologias ativas.
+                </p>
+            </div>
+            <div class="col-12 col-md-6">
+                <p class="text-center" style="font-size: 11px !important;">Clique na imagem para ampliar</p>
+                <p class="pb-3 text-center" data-bs-toggle="modal" data-bs-target="#myModalele">
+                    <img src="../../static/inicio/img/eletivas.png" class="img-fluid" width="480" alt="Eletivas">
+                </p>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModalele" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="../../static/inicio/img/eletivas.png" alt="Imagem" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelector('.iti').classList.add('active');
+</script>
+{% endblock %}

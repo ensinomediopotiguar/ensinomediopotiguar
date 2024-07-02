@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Documentos - Itinerários formativos{% endblock %}
+
+{% block content %}
+
+{% include 'documentos.html' %}
+
+<div class="container pb-5">
+    <h1 class="text-center">Documentos Referenciais</h1>
+
+    <div class="pb-3">
+        <p class="pt-5 blockquote">
+            <strong>Itinerários Formativos</strong>
+        </p>
+        <p class="blockquote text-justify pb-3">
+            Os Itinerários Formativos, estão articulados indissociavelmente à Formação Geral Básica, buscando
+            a ampliação das aprendizagens. Norteados por Eixos Estruturantes, os Itinerários Formativos exercem papel
+            fundamental na flexibilização curricular, ofertando práticas pedagógicas interdisciplinares e
+            transdisciplinares.
+        </p>
+        <p class="blockquote text-justify pb-3">
+            O objetivo dos Itinerários é desenvolver habilidades específicas e estão organizados em unidades curriculares
+            pré-estabelecidas. Os mesmos são compostos por Trilhas de Aprofundamento propedêutico, Unidades Curriculares
+            Eletivas, Projeto de Vida.
+        </p>
+    </div>
+</div>
+
+<script>
+    document.querySelector('.iti').classList.add('active');
+</script>
+{% endblock %}

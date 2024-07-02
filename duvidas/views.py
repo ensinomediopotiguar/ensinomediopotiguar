@@ -1,4 +1,7 @@
 from django.shortcuts import render
 
-def duvidas(request):
-    return render(request, 'duvidas/duvidas.html')
+def novoensinomedio(request):
+    return render(request, 'duvidas/novoensinomedio.html')
+
+def pedemeia(request):
+    return render(request, 'duvidas/pedemeia.html')

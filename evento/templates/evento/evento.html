@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %}Evento{% endblock %}
+
+{% block content %}
+<style>
+    .text-justify {
+        text-align: justify;
+    }
+
+    .custom-date-col {
+        width: 130px;
+    }
+</style>
+
+<div style="background: #eff0f3;">
+    <div class="container">
+        <div class="row pt-1">
+            <div class="col-12">
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert alert-success " role="alert">
+                            {{ message }}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fechar"></button>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- <div class="row pb-3 pt-2" style="visibility: hidden;">
+            <div class="card p-0 m-0">
+                <img src="../../static/inicio/img/banner_seminario.jpeg" class="img-fluid" alt="Banner do evento">
+            </div>
+        </div>  -->
+
+        <div class="temporario pt-5 my-5"></div>
+
+        <div class="row pb-3 pt-2">
+            <div class="card p-0 m-0">
+                <a href="{% url 'i-seminario' %}">
+                    <img src="../../static/inicio/img/banner_seminario.jpeg" class="img-fluid" alt="Banner do evento">
+                </a>
+            </div>
+        </div>
+
+        <div class="temporario py-5"></div>
+    </div>
+</div>
+
+<script>
+    document.querySelector('.eve').classList.add('active');
+</script>
+{% endblock %}

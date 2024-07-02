@@ -1,0 +1,772 @@
+{% extends 'base.html' %}
+
+{% block title %}Documentos - Trilhas de Aprofundamento{% endblock %}
+
+{% block content %}
+
+{% include 'documentos.html' %}
+
+<style>
+    .font-list li {
+        font-size: 12px !important;
+    }
+
+    /* Cores */
+    .bg-grey {
+        background-color: #dde0e5;
+    }
+
+    .text-purple {
+        color: #6f42c1;
+    }
+
+    .border-purple {
+        border-color: #6f42c1;
+    }
+
+    .text-pink {
+        color: #d63384;
+    }
+
+    .border-pink {
+        border-color: #d63384;
+    }
+
+    .text-orange {
+        color: #fd7e14;
+    }
+
+    .border-orange {
+        border-color: #fd7e14;
+    }
+</style>
+
+<div class="container pb-5">
+    <h1 class="text-center">Documentos Referenciais</h1>
+
+    <div class="pb-3">
+        <p class="pt-5 blockquote">
+            <strong>Trilhas de Aprofundamento</strong>
+        </p>
+        
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div>
+                    <p class="blockquote text-justify pb-3">
+                        Este documento apresenta os conceitos e a organização dos Itinerários Formativos (IFs) para o
+                        Ensino Médio Potiguar, com ênfase nas Trilhas de Aprofundamento propedêuticas, exclusivas e
+                        integradas, produzidas durante as oficinas, além das orientações a serem mobilizadas para a
+                        sua implementação a partir da 2ª série do ensino médio. (<a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf">Clique aqui para acessar o documento</a>)
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div>
+                    <p class="text-center" style="font-size: 11px !important;">Clique na imagem para ampliar</p>
+                    <p class="blockquote pb-3 text-center" data-bs-toggle="modal" data-bs-target="#myModaltri">
+                        <img src="../../static/inicio/img/trilhasapro.png" class="img-fluid" width="520px" alt="Trilhas de Aprofundamento">
+                    </p>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="card bg-grey text-white">
+                    <img src="../../static/inicio/img/Trilhas_de_Aprofundamento.jpg" class="card-img d-none d-md-block" alt="Imagem de Fundo">
+                    <div class="card-respon">
+                        <div class="card-title pt-1">
+                            <div class="container card rounded bg-success text-center" style="width: 25rem;">
+                                <P class="fw-bold text-light mt-2">TRILHAS DE APROFUNDAMENTO <br> DO ENSINO MÉDIO POTIGUAR</P>
+                            </div>
+                        </div>
+                        <div class="font-list">
+                            <div class="row">
+                                <div class="col-12 col-md-4 pt-4">
+                                    <h5 class="text-center text-danger">NATUREZA</h5>
+                                    <div class="card bg-grey border-danger border-4">
+                                        <ol>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage141"><a href="#">Sustentabilidade Ambiental no Rio Grande do Norte.</a></li>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage155"><a href="#">O Estado que Descobriu o Vento.</a></li>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage169"><a href="#">A Natureza é do Homem ou o Homem é da Natureza?</a></li>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage183"><a href="#">CSI Escolar: Desvendando Mistérios.</a></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-5 offset-md-3 pt-4">
+                                    <h5 class="text-center text-orange">HUMANAS + MATEMÁTICA</h5>
+                                    <div class="card bg-grey border-orange border-4">
+                                        <ol>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage360"><a href="#">A Terra para Viver, Comer  e Empreender.</a></li>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage371"><a href="#">Energia Renovável é Realmente Limpa?</a></li>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage384"><a href="#">Cartografia dos Corpos: A Diversidade Entre os Números e a Sociedade.</a></li>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage398"><a href="#">Vacinação: Ciência x <i>Fake News</i></a></li>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage412"><a href="#">Multiformes: Um Mundo de Escolhas?</a></li>
+                                        </ol>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-4 pt-4">
+                                    <h5 class="text-center text-success">LINGUAGENS</h5>
+                                    <div class="card bg-grey border-success border-4">
+                                        <ol>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage32"><a href="#">Tô Com Fome, Quero Merendar: Direito e Nutrição!</a></li>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage46"><a href="#">Eu, Você e o Outro: O Jovem Democrático.</a></li>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage61"><a href="#">Integrando Saúde e Educação</a></li>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage76"><a href="#">O que Você Consome Define Quem Você é?</a></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-5 offset-md-3 pt-4 pt-md-0">
+                                    <h5 class="text-center text-warning">NATUREZA + HUMANAS</h5>
+                                    <div class="card bg-grey border-warning border-4">
+                                        <ol>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage286"><a href="#">UMA REVOLUÇÃO EM MIM: Qualidade de Vida e Formação Integral do Ser.</a></li>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage301"><a href="#">Conexão-Sustentabilidade: O Ser Humano e Suas Tecnologias.</a></li>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage315"><a href="#">FATO OU <i>FAKE</i>: O Conhecimento Científico <i>versus</i> a Desinformação.</a></li>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage329"><a href="#">Gênero, Sexualidade e Saúde: Esse Papo dá <i>Match</i>?</a></li>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage344"><a href="#">Eita Nordeste Arretado! Espantando os Fantasmas do Atraso.</a></li>
+                                        </ol>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-4 pt-4">
+                                    <h5 class="text-center text-primary">HUMANAS</h5>
+                                    <div class="card bg-grey border-primary border-4">
+                                        <ol>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage89"><a href="#">A Gota Serena.</a></li>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage100"><a href="#">O Corpo Humano como Espaço Político.</a></li>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage114"><a href="#"><i>Homo Políticus</i>: Empoderamento juvenil.</a></li>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage128"><a href="#">O Preço do Progresso.</a></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-5 offset-md-3 pt-4 pt-md-0">
+                                    <h5 class="text-center text-pink">NATUREZA + MATEMÁTICA</h5>
+                                    <div class="card bg-grey border-pink border-4">
+                                        <ol>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage421"><a href="#">Lixo: Do Problema à Solução.</a></li>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage435"><a href="#">Somos 8 bilhões de Habitantes, e Agora?</a></li>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage450"><a href="#">A Formação Integral do Indivíduo com Base na Educação para a Vida.</a></li>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage464"><a href="#">Vamos dar <i>Unfollow Nesse Tabu?</i></a></li>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage477"><a href="#">O Impacto da Evolução Tecnológica na Saúde Física e Mental das Pessoas.</a></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12 col-md-5 offset-md-4 pt-4 pt-md-0">
+                                    <h5 class="text-center text-purple">LINGUAGENS + HUMANAS</h5>
+                                    <div class="card bg-grey border-purple border-4">
+                                        <ol>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage198"><a href="#">"Me Nota": Onde Cabe a Nossa Cultura?</a></li>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage212"><a href="#">Construção e Desconstrução dos Corpos: Somos Quem Podemos Ser?</a></li>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage227"><a href="#">Concepções do Nordeste: Conhecer para Desconstruir.</a></li>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage241"><a href="#">Política, Cidadania e Saúde: A Produção de Discursos na Contemporaneidade.</a></li>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage255"><a href="#">Cidadania: Expectativas e Realidades em um Mundo Multicultural.</a></li>
+                                            <li data-bs-toggle="modal" data-bs-target="#myModalpage272"><a href="#">O Sertão ou o SERtão Nordestino?</a></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModaltri" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/trilhasapro.png" alt="Imagem" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Trilhas -->
+            <div class="modal fade" id="myModalpage141" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page141.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=141" target="_blank"  type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade" id="myModalpage155" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page155.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=155" target="_blank"  type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModalpage169" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page169.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=169" target="_blank"  type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModalpage183" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page183.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=183" target="_blank"  type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModalpage360" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page360.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=360" target="_blank"  type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModalpage371" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page371.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=371" target="_blank"  type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModalpage384" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page384.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=384" target="_blank"  type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModalpage398" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page398.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=398" target="_blank"  type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModalpage412" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page412.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=412" target="_blank"  type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModalpage32" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page32.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=32"  target="_blank" type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModalpage46" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page46.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=46"  target="_blank" type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModalpage61" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page61.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=61"  target="_blank" type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModalpage76" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page76.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=76"  target="_blank" type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModalpage286" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page286.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=286" target="_blank"  type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModalpage301" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page301.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=301" target="_blank"  type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModalpage315" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page315.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=315" target="_blank"  type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModalpage329" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page329.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=329" target="_blank"  type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModalpage344" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page344.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=344" target="_blank"  type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModalpage89" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page89.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=89"  target="_blank" type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModalpage100" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page100.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=100" target="_blank"  type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModalpage114" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page114.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=114" target="_blank"  type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModalpage128" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page128.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=128" target="_blank"  type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModalpage421" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page421.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=421" target="_blank"  type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModalpage435" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page435.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=435" target="_blank"  type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModalpage450" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page450.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=450" target="_blank"  type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModalpage464" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page464.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=464" target="_blank"  type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModalpage477" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page477.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=477" target="_blank"  type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModalpage198" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page198.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=198" target="_blank"  type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModalpage212" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page212.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=212" target="_blank"  type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModalpage227" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page227.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=227" target="_blank"  type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModalpage241" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page241.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=241" target="_blank"  type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModalpage255" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page255.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=255" target="_blank"  type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModalpage272" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-50">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Resumo das trilhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../static/inicio/img/page272.jpg" alt="Imagem" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../../static/inicio/src/20230315_IF_Trilhas de Aprofundamento_v1.1.pdf#page=272" target="_blank"  type="button" class="btn btn-primary">Mais informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelector('.iti').classList.add('active');
+</script>
+
+<script>
+    function toggleCardOverlay() {
+        const card = document.querySelector(".card-respon");
+        if (window.innerWidth >= 768) {
+            card.classList.add("card-img-overlay");
+        } else {
+            card.classList.remove("card-img-overlay");
+        }
+    }
+    
+    // Chame a função para definir a classe inicialmente com base no tamanho da tela
+    toggleCardOverlay();
+    
+    // Adicione um ouvinte de evento para verificar quando a janela for redimensionada
+    window.addEventListener("resize", toggleCardOverlay);
+</script>
+{% endblock %}

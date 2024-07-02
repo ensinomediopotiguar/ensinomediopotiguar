@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% block title %}Documentos - Publicações{% endblock %}
+
+{% block content %}
+
+{% include 'documentos.html' %}
+
+<div class="container pb-5">
+    <h1 class="text-center">Documentos Referenciais</h1>
+
+    <div class="pb-3">
+        <p class="pt-5 blockquote"><strong>Publicações</strong></p>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <p class="blockquote text-justify">
+                    Este espaço hospeda as produções da Subcoordenadoria do Ensino Médio Potiguar- SUEM, 
+                    formações, fóruns, oficinas, entre outros, assim como trabalhos produzidos pelos 
+                    professores e estudantes nas escolas da nossa rede. O objetivo dessa aba é dar suporte 
+                    pedagógico para o trabalho em sala de aula junto aos estudantes, assim como incentivar 
+                    novas produções e a troca de experiências exitosas na rede do Ensino Médio Potiguar.
+                </p>
+            </div>
+            <div class="col-12 col-md-6 text-center">
+                <p style="font-size: 11px !important;">Clique nas imagens abaixo para acessar os documentos:</p>
+                <a href="../../static/inicio/src/Ebook - Língua Portuguesa_V1.pdf" target="_blank">
+                    <img src="../../static/inicio/img/ebooklp.jpeg" width="200px" alt="E-Book Língua Portuguesa">
+                </a>
+                <a href="../../static/inicio/src/Ebook - Matemática_V1.pdf" target="_blank">
+                    <img src="../../static/inicio/img/ebookmt.jpeg" width="200px" alt="E-Book Matemática">
+                </a>
+            </div>
+        </div>
+        <div class="row pt-5">
+            <p class="pt-5 blockquote"><strong>Anais - I Seminário do Ensino Médio Potiguar</strong></p>
+            <div class="col-12 col-md-6">
+                <p class="blockquote text-justify">
+                    Este e-book é resultado da seleção dos
+                    trabalhos submetidos e apresentados no I
+                    Seminário do Ensino Médio Potiguar. O evento
+                    objetivou proporcionar aos professores, gestores,
+                    estudantes e demais profissionais da rede
+                    estadual de educação um espaço de diálogo e
+                    socialização de experiências acerca das Práticas
+                    Pedagógicas e Arquitetura Curricular no Ensino
+                    Médio Potiguar.
+                </p>
+                <p class="blockquote text-justify">
+                    O Seminário promoveu momentos de
+                    aprendizagem e formação por meio da
+                    realização de oficinas, minicursos, conferência,
+                    mesa-redonda, exposições e sessões de
+                    apresentação de trabalhos.
+                </p>
+                <p class="blockquote text-justify">
+                    Aqui estão reunidas as produções com o
+                    intuído disponibilizar ao público em geral as
+                    boas práticas pedagógicas desenvolvidas no
+                    âmbito do Ensino Médio no Rio Grande do Norte,
+                    bem como possibilitar reflexões sobre ações que
+                    possam melhor a qualidade da educação e
+                    estimular a participação individual e coletiva na
+                    consolidação da educação pública de qualidade
+                    no Rio Grande do Norte.
+                </p>
+            </div>
+            <div class="col-12 col-md-6 text-center">
+                <p style="font-size: 11px !important;">Clique na imagem abaixo para acessar o documento:</p>
+                <a href="../../static/inicio/src/Anais do Seminário.pdf" target="_blank">
+                    <img src="../../static/inicio/img/anais_seminario.jpeg" width="200px" alt="E-Book Língua Portuguesa">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelector('.pub').classList.add('active');
+</script>
+{% endblock %}

@@ -78,10 +78,10 @@
             <strong class="text-dark !important" id="nameEJA">EJA - Médio</strong>
         </div>
     </div>
-    <!-- TOTAL DE MATRÍCULAS 2023 -->
+    <!-- TOTAL DE MATRÍCULAS 2024 -->
     <div class="row pt-2 py-3">
         <div class="col-12 text-primary text-center bg-white p-3">
-            <strong>TOTAL DE MATRÍCULAS 2023</strong>
+            <strong>TOTAL DE MATRÍCULAS 2024</strong>
         </div>
     </div>
     <div class="row pt-1">
@@ -91,7 +91,7 @@
                     <div>
                         <canvas height="300px" id="chartMat"></canvas>
                     </div>
-                    <p style="font-size: 10px !important">Fonte: SigEduc 2023</p>
+                    <p style="font-size: 10px !important">Fonte: SigEduc mar/2024</p>
                 </div>
             </div>
         </div>
@@ -101,7 +101,7 @@
                     <div>
                         <canvas height="300px" id="chartMatDiNo"></canvas>
                     </div>
-                    <p style="font-size: 10px !important">Fonte: SigEduc 2023</p>
+                    <p style="font-size: 10px !important">Fonte: SigEduc mar/2024</p>
                 </div>
             </div>
         </div>
@@ -111,7 +111,7 @@
                     <div>
                         <canvas height="300px" id="chartMod"></canvas>
                     </div>
-                    <p style="font-size: 10px !important">Fonte: SigEduc 2023</p>
+                    <p style="font-size: 10px !important">Fonte: SigEduc mar/2024</p>
                 </div>
             </div>
         </div>
@@ -129,7 +129,7 @@
                     <div>
                         <canvas id="chartTA1s"></canvas>
                     </div>
-                    <p class="pt-3" style="font-size: 10px !important">Fonte: Censo Escolar 2022</p>
+                    <p class="pt-3" style="font-size: 10px !important">Fonte: SEEC/SUEM 2024</p>
                 </div>
             </div>
         </div>
@@ -139,7 +139,7 @@
                     <div>
                         <canvas id="chartTA2s"></canvas>
                     </div>
-                    <p class="pt-3" style="font-size: 10px !important">Fonte: Censo Escolar 2022</p>
+                    <p class="pt-3" style="font-size: 10px !important">Fonte: SEEC/SUEM 2024</p>
                 </div>
             </div>
         </div>
@@ -149,7 +149,7 @@
                     <div>
                         <canvas id="chartTA3s"></canvas>
                     </div>
-                    <p class="pt-3" style="font-size: 10px !important">Fonte: Censo Escolar 2022</p>
+                    <p class="pt-3" style="font-size: 10px !important">Fonte: SEEC/SUEM 2024</p>
                 </div>
             </div>
         </div>
@@ -309,6 +309,7 @@
         </a>
     </div>
 </div>
+
 <style>
     #voltar {
         text-decoration: none
@@ -378,7 +379,7 @@
 <!-- Biblioteca para Visualização de Dados -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <!-- Plugin Para mostrar o rótulo nos gráficos -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js" integrity="sha512-JPcRR8yFa8mmCsfrw4TNte1ZvF1e3+1SdGMslZvmrzDYxS69J7J49vkFL8u6u8PlPJK+H3voElBtUCzaXj+6ig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
 <!-- Gerar Gráficos -->
 <script>
     const nanEscola = document.getElementById('NaNEsc'); // Não Atingiu Nota Mínima
@@ -419,6 +420,6 @@
         nanRN.style.display = 'none';
     }
 </script>
-<script src="{% static 'inicio/js/painel.js' %}"></script>
+<script type="module" src="{% static 'inicio/js/painel.js' %}"></script>
 <!-- END Gerar Gráficos -->
 {% endfor %}
