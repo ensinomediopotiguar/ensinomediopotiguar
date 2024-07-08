@@ -6,17 +6,14 @@ def seliganoenem(request):
 def prazos(request):
     return render(request, 'enem/prazos.html')
 
-def posenem(request):
-    return render(request, 'enem/posenem.html')
+def depois(request):
+    return render(request, 'enem/depois.html')
 
 def dicas(request):
     return render(request, 'enem/dicas.html')
 
-def redacao(request):
-    return render(request, 'enem/redacao.html')
+def cursos(request):
+    return render(request, 'enem/cursos.html')
 
-def conhecaoscursos(request):
-    return render(request, 'enem/conhecaoscursos.html')
-
-def teste(request):
-    return render(request, 'enem/teste.html')
+def estudecgnt(request):
+    return render(request, 'enem/estudecgnt.html')
