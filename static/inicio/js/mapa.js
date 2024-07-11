@@ -37,7 +37,7 @@ new Chart(ctxetz, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -78,7 +78,7 @@ new Chart(ctxmcb, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -119,7 +119,7 @@ new Chart(ctxntl, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -160,7 +160,7 @@ new Chart(ctxsga, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -201,7 +201,7 @@ new Chart(ctxars, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -242,7 +242,7 @@ new Chart(ctxbfs, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -283,7 +283,7 @@ new Chart(ctxcgm, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -324,7 +324,7 @@ new Chart(ctxgnn, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -365,7 +365,7 @@ new Chart(ctxmag, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -406,7 +406,7 @@ new Chart(ctxnft, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -447,7 +447,7 @@ new Chart(ctxpnr, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -488,7 +488,7 @@ new Chart(ctxsjm, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -529,7 +529,7 @@ new Chart(ctxsgn, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -570,7 +570,7 @@ new Chart(ctxtbs, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -611,7 +611,7 @@ new Chart(ctxvrz, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -652,7 +652,7 @@ new Chart(ctxvlf, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -693,7 +693,7 @@ new Chart(ctxbjn, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -734,7 +734,7 @@ new Chart(ctxets, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -775,7 +775,7 @@ new Chart(ctxjrc, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -816,7 +816,7 @@ new Chart(ctxjda, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -857,7 +857,7 @@ new Chart(ctxldt, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -898,7 +898,7 @@ new Chart(ctxlgp, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -939,7 +939,7 @@ new Chart(ctxlgs, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -980,7 +980,7 @@ new Chart(ctxmtn, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -1021,7 +1021,7 @@ new Chart(ctxmtg, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -1062,7 +1062,7 @@ new Chart(ctxnvz, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -1103,7 +1103,7 @@ new Chart(ctxpsf, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -1144,7 +1144,7 @@ new Chart(ctxpsg, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -1185,7 +1185,7 @@ new Chart(ctxpdv, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -1226,7 +1226,7 @@ new Chart(ctxstn, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -1267,7 +1267,7 @@ new Chart(ctxsjc, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -1308,7 +1308,7 @@ new Chart(ctxssb, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -1349,7 +1349,7 @@ new Chart(ctxsrn, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -1390,7 +1390,7 @@ new Chart(ctxvza, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -1431,7 +1431,7 @@ new Chart(ctxbcn, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -1472,7 +1472,7 @@ new Chart(ctxbjs, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -1513,7 +1513,7 @@ new Chart(ctxcrv, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -1554,7 +1554,7 @@ new Chart(ctximm, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -1595,7 +1595,7 @@ new Chart(ctxlgv, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -1636,7 +1636,7 @@ new Chart(ctxrcl, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -1677,7 +1677,7 @@ new Chart(ctxrbs, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -1718,7 +1718,7 @@ new Chart(ctxstm, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -1759,7 +1759,7 @@ new Chart(ctxspp, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -1800,7 +1800,7 @@ new Chart(ctxspd, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -1841,7 +1841,7 @@ new Chart(ctxstome, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -1882,7 +1882,7 @@ new Chart(ctxses, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -1923,7 +1923,7 @@ new Chart(ctxsrc, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -1964,7 +1964,7 @@ new Chart(ctxcrm, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -2005,7 +2005,7 @@ new Chart(ctxmgp, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -2046,7 +2046,7 @@ new Chart(ctxprz, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -2087,7 +2087,7 @@ new Chart(ctxrfg, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -2128,7 +2128,7 @@ new Chart(ctxsmg, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -2169,7 +2169,7 @@ new Chart(ctxtpu, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -2210,7 +2210,7 @@ new Chart(ctxtrs, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -2251,7 +2251,7 @@ new Chart(ctxatr, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -2292,7 +2292,7 @@ new Chart(ctxgln, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -2333,7 +2333,7 @@ new Chart(ctxgmr, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -2374,7 +2374,7 @@ new Chart(ctxmcu, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -2415,7 +2415,7 @@ new Chart(ctxpdc, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -2456,7 +2456,7 @@ new Chart(ctxptm, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -2497,7 +2497,7 @@ new Chart(ctxcamred, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -2538,7 +2538,7 @@ new Chart(ctxcoreze, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -2579,7 +2579,7 @@ new Chart(ctxjacana, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -2620,7 +2620,7 @@ new Chart(ctxjapi, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -2661,7 +2661,7 @@ new Chart(ctxlajpin, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -2702,7 +2702,7 @@ new Chart(ctxsancru, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -2743,7 +2743,7 @@ new Chart(ctxbentra, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -2784,7 +2784,7 @@ new Chart(ctxsitnov, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -2825,7 +2825,7 @@ new Chart(ctxtangara, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -2866,7 +2866,7 @@ new Chart(ctxafobez, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -2907,7 +2907,7 @@ new Chart(ctxangicos, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -2948,7 +2948,7 @@ new Chart(ctxbodo, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -2989,7 +2989,7 @@ new Chart(ctxferped, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -3030,7 +3030,7 @@ new Chart(ctxlajes, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -3071,7 +3071,7 @@ new Chart(ctxtpedave, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -3112,7 +3112,7 @@ new Chart(ctxsanmat, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -3153,7 +3153,7 @@ new Chart(ctxacari, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -3194,7 +3194,7 @@ new Chart(ctxcardan, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -3235,7 +3235,7 @@ new Chart(ctxcercor, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -3276,7 +3276,7 @@ new Chart(ctxcruzeta, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -3317,7 +3317,7 @@ new Chart(ctxcurnov, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -3358,7 +3358,7 @@ new Chart(ctxequador, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -3399,7 +3399,7 @@ new Chart(ctxFlorania, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -3440,7 +3440,7 @@ new Chart(ctxlagnov, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -3481,7 +3481,7 @@ new Chart(ctxParelhas, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -3522,7 +3522,7 @@ new Chart(ctxsanser, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -3563,7 +3563,7 @@ new Chart(ctxsaovic, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -3604,7 +3604,7 @@ new Chart(ctxtenlau, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -3645,7 +3645,7 @@ new Chart(ctxCaico, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -3686,7 +3686,7 @@ new Chart(ctxIpueira, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -3727,7 +3727,7 @@ new Chart(ctxjarpir, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -3768,7 +3768,7 @@ new Chart(ctxjarser, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -3809,7 +3809,7 @@ new Chart(ctxJucurutu, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -3850,7 +3850,7 @@ new Chart(ctxourbra, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -3891,7 +3891,7 @@ new Chart(ctxsaofer, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -3932,7 +3932,7 @@ new Chart(ctxjoasab, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -3973,7 +3973,7 @@ new Chart(ctxjosser, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -4014,7 +4014,7 @@ new Chart(ctxsernor, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -4055,7 +4055,7 @@ new Chart(ctxtimbat, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -4096,7 +4096,7 @@ new Chart(ctxAssu, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -4137,7 +4137,7 @@ new Chart(ctxcamgra, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -4178,7 +4178,7 @@ new Chart(ctxCarnaubais, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -4219,7 +4219,7 @@ new Chart(ctxIpanguacu, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -4260,7 +4260,7 @@ new Chart(ctxItaja, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -4301,7 +4301,7 @@ new Chart(ctxParau, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -4342,7 +4342,7 @@ new Chart(ctxsaoraf, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -4383,7 +4383,7 @@ new Chart(ctxtripot, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -4424,7 +4424,7 @@ new Chart(ctxarebra, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -4465,7 +4465,7 @@ new Chart(ctxBarauna, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -4506,7 +4506,7 @@ new Chart(ctxgovdix, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -4547,7 +4547,7 @@ new Chart(ctxGrossos, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -4588,7 +4588,7 @@ new Chart(ctxMossoro, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -4629,7 +4629,7 @@ new Chart(ctxsermel, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -4670,7 +4670,7 @@ new Chart(ctxTibau, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -4711,7 +4711,7 @@ new Chart(ctxUpanema, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -4752,7 +4752,7 @@ new Chart(ctxApodi, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -4793,7 +4793,7 @@ new Chart(ctxCaraubas, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -4834,7 +4834,7 @@ new Chart(ctxfelgue, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -4875,7 +4875,7 @@ new Chart(ctxItau, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -4916,7 +4916,7 @@ new Chart(ctxrodfer, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -4957,7 +4957,7 @@ new Chart(ctxsevmel, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -4998,7 +4998,7 @@ new Chart(ctxtabgra, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -5039,7 +5039,7 @@ new Chart(ctxalmafo, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -5080,7 +5080,7 @@ new Chart(ctxantmar, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -5121,7 +5121,7 @@ new Chart(ctxfrugom, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -5162,7 +5162,7 @@ new Chart(ctxJanduis, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -5203,7 +5203,7 @@ new Chart(ctxjoadia, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -5244,7 +5244,7 @@ new Chart(ctxLucrecia, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -5285,7 +5285,7 @@ new Chart(ctxMartins, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -5326,7 +5326,7 @@ new Chart(ctxmestar, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -5367,7 +5367,7 @@ new Chart(ctxolhbor, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -5408,7 +5408,7 @@ new Chart(ctxPatu, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -5449,7 +5449,7 @@ new Chart(ctxrafgod, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -5490,7 +5490,7 @@ new Chart(ctxriacru, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -5531,7 +5531,7 @@ new Chart(ctxserpin, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -5572,7 +5572,7 @@ new Chart(ctxUmarizal, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -5613,7 +5613,7 @@ new Chart(ctxVicosa, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -5654,7 +5654,7 @@ new Chart(ctxagunov, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -5695,7 +5695,7 @@ new Chart(ctxAlexandria, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -5736,7 +5736,7 @@ new Chart(ctxcelpes, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -5777,7 +5777,7 @@ new Chart(ctxdousev, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -5818,7 +5818,7 @@ new Chart(ctxEncanto, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -5859,7 +5859,7 @@ new Chart(ctxfradan, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -5900,7 +5900,7 @@ new Chart(ctxjospen, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -5941,7 +5941,7 @@ new Chart(ctxluigom, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -5982,7 +5982,7 @@ new Chart(ctxmajsal, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -6023,7 +6023,7 @@ new Chart(ctxmarvie, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -6064,7 +6064,7 @@ new Chart(ctxParana, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -6105,7 +6105,7 @@ new Chart(ctxpaufer, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -6146,7 +6146,7 @@ new Chart(ctxPiloes, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -6187,7 +6187,7 @@ new Chart(ctxPortalegre, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -6228,7 +6228,7 @@ new Chart(ctxraffer, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -6269,7 +6269,7 @@ new Chart(ctxriasan, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -6310,7 +6310,7 @@ new Chart(ctxsaofra, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -6351,7 +6351,7 @@ new Chart(ctxsaomig, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -6392,7 +6392,7 @@ new Chart(ctxtenana, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -6433,7 +6433,7 @@ new Chart(ctxvenver, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -6474,7 +6474,7 @@ new Chart(ctxbenfer, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -6515,7 +6515,7 @@ new Chart(ctxcainor, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -6556,7 +6556,7 @@ new Chart(ctxJandaira, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -6597,7 +6597,7 @@ new Chart(ctxjarang, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -6638,7 +6638,7 @@ new Chart(ctxjoacam, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -6679,7 +6679,7 @@ new Chart(ctxParazinho, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -6720,7 +6720,7 @@ new Chart(ctxpedgra, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -6761,7 +6761,7 @@ new Chart(ctxpedpre, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -6802,7 +6802,7 @@ new Chart(ctxpocbra, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
@@ -6843,7 +6843,7 @@ new Chart(ctxsaoben, {
             },
             title: {
                 display: true,
-                text: 'TOTAL DE MATRÍCULAS 2023'
+                text: 'TOTAL DE MATRÍCULAS 2024'
             }
         }
     },
