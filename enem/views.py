@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 def seliganoenem(request):
-    return render(request, 'enem/seliganoenem.html')
+    return render(request, 'seliganoenem.html')
 
 def prazos(request):
     return render(request, 'enem/prazos.html')
