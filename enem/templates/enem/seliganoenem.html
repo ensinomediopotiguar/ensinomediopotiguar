@@ -14,7 +14,7 @@
                 <div class="cards-top">
                     <div class="card border-0 card1" id="card1" onclick="handleCardClick(this, 'Prazos', '../enem/prazos')">
                         <div class="card-inner">
-                            <img class="card-front" src="../../../static/inicio/img/seligaprazos.png" alt="Prazos">
+                            <img class="card-front" src="../../../static/inicio/img/prazos.png" alt="Prazos">
                             <img class="card-back" src="../../../static/inicio/img/prazos_verso.png" alt="Prazos Verso">
                         </div>
                     </div>
@@ -104,40 +104,88 @@ function loadContent(url) {
 
 </div>
 <style>
-    .card-front, .card-back{
-        width: 7rem;
+    @media screen and (max-width: 900px){ /*Tela mobile*/
+        .principal-div{
+            display: flex;
+            flex-direction: row;
+        }
+        .card-front, .card-back{
+            width: 20vw;
+            height: 12vh;
+        }
+        .card-inner{
+            align-self: center;
+            width: 20vw;
+            height: 12vh;
+        }
+        .card{
+            width: 20vw;
+            height: 12vh;
+        }
+        .cards-container{
+            position: sticky;
+            top: 25vh;
+        }
+        .cards-div{
+            width: 20vw;
+        }
+        .cards-top, .cards-bottom{
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            justify-content: space-evenly;
+        }
+        .info{
+            width: 75vw;
+            padding: 0;
+        }
+        ul li .ene {
+            color: black;
+        }
+        p{
+            font-size: 10px;
+        }
     }
-    .card-inner{
-        align-self: center;
-        width: 7rem;
+    @media screen and (min-width:901px){ /*Tela desktop*/
+        .card-front, .card-back{
+            width: 8vw;
+        }
+        .card-inner{
+            align-self: center;
+            width: 8vw;
+        }
+        .card{
+            width: 8vw;
+        }
+        .principal-div{
+            display: flex;
+            flex-direction: row;
+            padding-left: 1rem;
+        }
+        .cards-container{
+            position: sticky;
+            top: 200px;
+        }
+        .cards-div{
+            width: 25vw;
+        }
+        .cards-top, .cards-bottom{
+            display: flex;
+            flex-direction: row;
+            gap: 0;
+            justify-content: space-evenly;
+        }
+        .info{
+            width: 75vw;
+            padding: 0;
+        }
+        ul li .ene {
+            color: black;
+        }
     }
-    .card{
-        width: 7rem;
-    }
-    .principal-div{
-        display: flex;
-        flex-direction: row;
-        padding-left: 1rem;
-    }
-    .cards-container{
-       position: sticky;
-       top: 200px;
-    }
-    .cards-div{
-        width: 33vw;
-    }
-    .cards-top, .cards-bottom{
-        display: flex;
-        flex-direction: row;
-        gap: 0;
-        justify-content: space-evenly;
-    }
-    .info{
-        width: 66vw;
-        padding: 0;
-    }
-    ul li .ene {
-        color: black;
+
+    .text-justification{
+        text-align: justify;
     }
 </style>
 
