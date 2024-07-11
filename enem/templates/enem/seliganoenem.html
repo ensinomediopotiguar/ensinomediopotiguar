@@ -5,46 +5,51 @@
 {% block content %}
 <style>@import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');</style>
 <link rel="stylesheet" href="../../../static/enem/css/enem.css">
-<div class="container mt-5 text-center">
-    <img class="pb-1 w-25" src="../../../static/inicio/img/seliganoenem.png" alt="">
-</div>
-<div>
-    <div class='container-fluid'>
-        <div class="content">
-            <div class="card border-0 card1" id="card1" onclick="handleCardClick(this, 'Prazos', '../enem/prazos')">
-                <div class="card-inner">
-                    <img class="card-front" src="../../../static/inicio/img/seligaprazos.png" alt="Prazos">
-                    <img class="card-back" src="../../../static/inicio/img/prazos_verso.png" alt="Prazos Verso">
+
+<div class="pt-4">
+    <img class="seligafoto d-block w-100" src="../../../static/inicio/img/CARROSSEL-SITE.gif""  alt="">
+    <div class="w-100 pt-4 principal-div">
+        <div class="cards-div">
+            <div class="cards-container">
+                <div class="cards-top">
+                    <div class="card border-0 card1" id="card1" onclick="handleCardClick(this, 'Prazos', '../enem/prazos')">
+                        <div class="card-inner">
+                            <img class="card-front" src="../../../static/inicio/img/seligaprazos.png" alt="Prazos">
+                            <img class="card-back" src="../../../static/inicio/img/prazos_verso.png" alt="Prazos Verso">
+                        </div>
+                    </div>
+                    <div class="card border-0 card2" id="card2" onclick="handleCardClick(this, 'Cursos', '../enem/cursos')">
+                        <div class="card-inner">
+                            <img class="card-front" src="../../../static/inicio/img/cursos.png" alt="Cursos">
+                            <img class=" card-back" src="../../../static/inicio/img/cursos_verso.png" alt="Fechar Cursos">
+                        </div>
+                    </div>
+                    <div class="card border-0 card3" id="card3" onclick="handleCardClick(this, 'Aulas', '../enem/estudecgnt')">
+                        <div class="card-inner">
+                            <img class="card-front" src="../../../static/inicio/img/aulas.png" alt="Aulas">
+                            <img class="card-back" src="../../../static/inicio/img/aulas_verso.png" alt="Fechar Aulas">
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card border-0 card2" id="card2" onclick="handleCardClick(this, 'Cursos', '../enem/cursos')">
-                <div class="card-inner">
-                    <img class="card-front" src="../../../static/inicio/img/cursos.png" alt="Cursos">
-                    <img class="card-back" src="../../../static/inicio/img/cursos_verso.png" alt="Fechar Cursos">
-                </div>
-            </div>
-            <div class="card border-0 card3" id="card3" onclick="handleCardClick(this, 'Aulas', '../enem/estudecgnt')">
-                <div class="card-inner">
-                    <img class="card-front" src="../../../static/inicio/img/aulas.png" alt="Aulas">
-                    <img class="card-back" src="../../../static/inicio/img/aulas_verso.png" alt="Fechar Aulas">
-                </div>
-            </div>
-            <div class="card border-0 card4" id="card4" onclick="handleCardClick(this, 'Dicas', '../enem/dicas')">
-                <div class="card-inner">
-                    <img class="card-front" src="../../../static/inicio/img/dicas.png" alt="Dicas">
-                    <img class="card-back" src="../../../static/inicio/img/dicas_verso.png" alt="Fechar Dicas">
-                </div>
-            </div>
-            <div class="card border-0 card5" id="card5" onclick="handleCardClick(this, 'Pós-enem', '../enem/depois')">
-                <div class="card-inner">
-                    <img class="card-front" src="../../../static/inicio/img/depois.png" alt="Depois">
-                    <img class="card-back" src="../../../static/inicio/img/depois_verso.png" alt="Fechar Depois">
+                <div class="cards-bottom">
+                    <div class="card border-0 card4" id="card4" onclick="handleCardClick(this, 'Dicas', '../enem/dicas')">
+                        <div class="card-inner" >
+                            <img class="card-front" src="../../../static/inicio/img/dicas.png" alt="Dicas">
+                            <img class="card-back" src="../../../static/inicio/img/dicas_verso.png" alt="Fechar Dicas">
+                        </div>
+                    </div>
+                    <div class="card border-0 card5" id="card5" onclick="handleCardClick(this, 'Pós-enem', '../enem/depois')">
+                        <div class="card-inner">
+                            <img class="card-front" src="../../../static/inicio/img/depois.png" alt="Depois">
+                            <img class="card-back" src="../../../static/inicio/img/depois_verso.png" alt="Fechar Depois">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="info visible" id="info" onloadedmetadata="loadContent('../enem/detalhesseliga')"></div>
     </div>
 </div>
-<div class="info" id="info"></div>
 
 <script>
 function handleCardClick(card, shortInfo, url) {
@@ -64,11 +69,13 @@ function handleCardClick(card, shortInfo, url) {
     if (isCurrentlyFlipped) {
         card.querySelector('.card-inner').classList.remove('is-flipped');
         infoBox.innerHTML = '';
-        infoBox.classList.remove('visible');
+        // infoBox.classList.remove('visible');
     } else {
         card.querySelector('.card-inner').classList.add('is-flipped');
         loadContent(url);
     }
+
+    window.scrollTo(0, 250);
 
     var anyFlipped = false;
     cards.forEach(function(c) {
@@ -80,6 +87,7 @@ function handleCardClick(card, shortInfo, url) {
     if (!anyFlipped) {
         cards.forEach(function(c) {
             c.classList.remove('esmaecido');
+            loadContent('../enem/detalhesseliga');
         });
     }
 }
@@ -89,7 +97,6 @@ function loadContent(url) {
         .then(response => response.text())
         .then(data => {
             document.getElementById('info').innerHTML = data;
-            document.getElementById('info').classList.add('visible');
         })
         .catch(error => console.error('Erro ao carregar conteúdo:', error));
 }
@@ -97,6 +104,38 @@ function loadContent(url) {
 
 </div>
 <style>
+    .card-front, .card-back{
+        width: 7rem;
+    }
+    .card-inner{
+        align-self: center;
+        width: 7rem;
+    }
+    .card{
+        width: 7rem;
+    }
+    .principal-div{
+        display: flex;
+        flex-direction: row;
+        padding-left: 1rem;
+    }
+    .cards-container{
+       position: sticky;
+       top: 200px;
+    }
+    .cards-div{
+        width: 33vw;
+    }
+    .cards-top, .cards-bottom{
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-evenly;
+    }
+    .info{
+        width: 66vw;
+        padding: 0;
+    }
     ul li .ene {
         color: black;
     }
