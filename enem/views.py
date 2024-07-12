@@ -17,3 +17,6 @@ def cursos(request):
 
 def estudecgnt(request):
     return render(request, 'enem/estudecgnt.html')
+
+def detalhesseliga(request):
+    return render(request, 'enem/detalhesseliga.html')
