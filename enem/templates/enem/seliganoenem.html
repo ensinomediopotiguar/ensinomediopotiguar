@@ -46,8 +46,10 @@
                     </div>
                 </div>
             </div>
+        </div>  
+        <div class="info visible" id="info" >
+            
         </div>
-        <div class="info visible" id="info" ></div>
     </div>
 </div>
 
@@ -98,7 +100,9 @@ function loadContent(url) {
         .then(data => {
             document.getElementById('info').innerHTML = data;
         })
-        .catch(error => console.error('Erro ao carregar conteúdo:', error));
+        .catch(error => {
+            console.error('Erro ao carregar conteúdo:', error);
+        });
 }
 
 document.addEventListener('DOMContentLoaded', function() {
