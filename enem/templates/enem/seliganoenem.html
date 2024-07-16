@@ -54,7 +54,10 @@
 </div>
 
 <script>
+var contentCache = {};
+
 function handleCardClick(card, shortInfo, url) {
+    
     var cards = document.querySelectorAll('.card');
     var isCurrentlyFlipped = card.querySelector('.card-inner').classList.contains('is-flipped');
     var infoBox = document.getElementById('info');
@@ -74,7 +77,11 @@ function handleCardClick(card, shortInfo, url) {
         // infoBox.classList.remove('visible');
     } else {
         card.querySelector('.card-inner').classList.add('is-flipped');
-        loadContent(url);
+        if (contentCache[url]) {
+            infoBox.innerHTML = contentCache[url];
+        } else {
+            loadContent(url);
+        }
     }
 
     window.scrollTo(0, 150);
@@ -89,8 +96,13 @@ function handleCardClick(card, shortInfo, url) {
     if (!anyFlipped) {
         cards.forEach(function(c) {
             c.classList.remove('esmaecido');
-            loadContent('../enem/detalhesseliga');
         });
+        console.log('OPA2')
+        if (contentCache[url]) {
+            infoBox.innerHTML = contentCache[url];
+        } else {
+            loadContent('../enem/detalhesseliga');
+        }
     }
 }
 
@@ -98,6 +110,10 @@ function loadContent(url) {
     fetch(url)
         .then(response => response.text())
         .then(data => {
+            
+            contentCache[url] = data;
+            console.log("OPA");
+            // Update the info box with the loaded content
             document.getElementById('info').innerHTML = data;
         })
         .catch(error => {
