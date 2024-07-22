@@ -30,31 +30,44 @@
 
   .videos {
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
   }
 
   .aula {
     padding: 10px;
     font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .aula p.text-center{
+    margin-bottom:5px;
   }
 
   .nav-tabs {
     background-color: #00BF63;
-    border-radius: 5px;
+    border-radius: 10px;
     justify-content: space-between;
   }    
 
   .nav-link-aulas {
     border: none;
     background: none;
+    border-radius: 5px;
+    font-weight: 900;
     color: #ffffff;
     margin: 5px auto;
     opacity: 1; /* Opacidade padrão */
     transition: opacity 0.3s ease; /* Transição suave para a opacidade */
+    text-decoration: underline;
   }
 
-  .nav-link-aulas.dimmed {
+  .dimmed {
     opacity: 0.5; /* Opacidade esmaecida */
+    text-decoration: none;
   }
 
   .nav-link-aulas:hover, .nav-link-aulas:focus {
@@ -76,9 +89,7 @@
   
   .nav-link-componentes:hover, .nav-link-componentes:focus {
     text-decoration: underline;
-    color: #00BF63;
   }
-
 
 </style>
           
@@ -96,17 +107,17 @@
       Por meio dessa plataforma, será ofertada aos estudantes uma variedade de recursos educacionais digitais, como vídeos, animações, imagens, áudios e textos. 
   </p>
   <br>
-
+  
   <div class="container mt-3 mb-5">
     <h3 class="road-rage-regular text-center">Confira as aulas aqui!</h3>
     
     <!-- Navegação Horizontal -->
     <nav aria-label="Conteúdos do Enem">
       <div class="nav nav-tabs" id="nav-tab" role="tablist">
-        <button class="nav-link-aulas active" id="nav-linguagens-tab" data-bs-toggle="collapse" data-bs-target="#collapseLinguagens" aria-expanded="false" aria-controls="collapseLinguagens" aria-label="Linguagens e Redação">Linguagens e Redação</button>
-        <button class="nav-link-aulas" id="nav-matematica-tab" data-bs-toggle="collapse" data-bs-target="#collapseMatematica" aria-expanded="false" aria-controls="collapseMatematica" aria-label="Matemática">Matemática</button>
-        <button class="nav-link-aulas" id="nav-humanas-tab" data-bs-toggle="collapse" data-bs-target="#collapseHumanas" aria-expanded="false" aria-controls="collapseHumanas" aria-label="Ciências Humanas">Ciências Humanas</button>
-        <button class="nav-link-aulas" id="nav-natureza-tab" data-bs-toggle="collapse" data-bs-target="#collapseNatureza" aria-expanded="false" aria-controls="collapseNatureza" aria-label="Ciências da Natureza">Ciências da Natureza</button>
+        <button class="nav-link-aulas active " id="nav-linguagens-tab" data-bs-toggle="collapse" data-bs-target="#collapseLinguagens" aria-expanded="false" aria-controls="collapseLinguagens" aria-label="Linguagens e Redação">Linguagens e Redação</button>
+        <button class="nav-link-aulas dimmed" id="nav-matematica-tab" data-bs-toggle="collapse" data-bs-target="#collapseMatematica" aria-expanded="false" aria-controls="collapseMatematica" aria-label="Matemática">Matemática</button>
+        <button class="nav-link-aulas dimmed" id="nav-humanas-tab" data-bs-toggle="collapse" data-bs-target="#collapseHumanas" aria-expanded="false" aria-controls="collapseHumanas" aria-label="Ciências Humanas">Ciências Humanas</button>
+        <button class="nav-link-aulas dimmed" id="nav-natureza-tab" data-bs-toggle="collapse" data-bs-target="#collapseNatureza" aria-expanded="false" aria-controls="collapseNatureza" aria-label="Ciências da Natureza">Ciências da Natureza</button>
       </div>
     </nav>
 
@@ -116,12 +127,12 @@
         <div class="row mt-3">
           <!-- Navegação Vertical Linguagens e Redação -->
           <div class="col-md-3">
-            <nav class="nav flex-column" aria-label="Componentes">
+            <nav class="nav flex-column div-aulas" aria-label="Componentes">
               <button class="nav-link-componentes" data-bs-toggle="collapse" data-bs-target="#collapseLiteratura" aria-expanded="false" aria-controls="collapseLiteratura" aria-label="Literatura">LITERATURA</button>                  
-              <button class="nav-link-componentes" data-bs-toggle="collapse" data-bs-target="#collapseIngles" aria-expanded="false" aria-controls="collapseIngles" aria-label="English">ENGLISH</button>
-              <button class="nav-link-componentes" data-bs-toggle="collapse" data-bs-target="#collapseEspanhol" aria-expanded="false" aria-controls="collapseEspanhol" aria-label="Español">ESPAÑOL</button>
-              <button class="nav-link-componentes" data-bs-toggle="collapse" data-bs-target="#collapsePortugues" aria-expanded="false" aria-controls="collapsePortugues" aria-label="Português">PORTUGUÊS</button>
-              <button class="nav-link-componentes" data-bs-toggle="collapse" data-bs-target="#collapseRedacao" aria-expanded="false" aria-controls="collapseRedacao" aria-label="Redação">REDAÇÃO</button>
+              <button class="nav-link-componentes dimmed" data-bs-toggle="collapse" data-bs-target="#collapseIngles" aria-expanded="false" aria-controls="collapseIngles" aria-label="English">ENGLISH</button>
+              <button class="nav-link-componentes dimmed" data-bs-toggle="collapse" data-bs-target="#collapseEspanhol" aria-expanded="false" aria-controls="collapseEspanhol" aria-label="Español">ESPAÑOL</button>
+              <button class="nav-link-componentes dimmed" data-bs-toggle="collapse" data-bs-target="#collapsePortugues" aria-expanded="false" aria-controls="collapsePortugues" aria-label="Português">PORTUGUÊS</button>
+              <button class="nav-link-componentes dimmed" data-bs-toggle="collapse" data-bs-target="#collapseRedacao" aria-expanded="false" aria-controls="collapseRedacao" aria-label="Redação">REDAÇÃO</button>
             </nav>
           </div>
           <!-- Conteúdo Linguagens e Redação -->
@@ -130,11 +141,8 @@
               <div class="videos mt-2">
                 <div class="aula">
                   <p class="text-center">Aula 01 <br> Introdução a Literatura</p>
-                  <iframe width="200px" src="https://www.youtube.com/embed/RAtnbJA3BUg?si=r3rddPaYzLg5TN6b" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="aula">
-                  <p class="text-center">Aula 02 <br> Introdução a Literatura</p>
-                  <iframe width="200px" src="https://www.youtube.com/embed/RAtnbJA3BUg?si=r3rddPaYzLg5TN6b" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe class="iframe-paused" width="200px" src="https://www.youtube.com/embed/RAtnbJA3BUg?si=r3rddPaYzLg5TN6b?autoplay=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                 
                 </div>
               </div>
             </div>
@@ -142,35 +150,27 @@
               <div class="videos mt-2">
                 <div class="aula">
                   <p class="text-center">Aula 01 <br> Estratégias De Leitura: Skimming</p>
-                  <iframe width="200px" src="https://www.youtube.com/embed/hHr1y_i8Yq8?si=-lotzCgbx6d2Pv5l" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe class="iframe-paused" width="200px" src="https://www.youtube.com/embed/hHr1y_i8Yq8?si=-lotzCgbx6d2Pv5l" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  
                 </div>
-                <div class="aula">
-                  <p class="text-center">Aula 02 <br> Introdução a Literatura</p>
-                  <iframe width="200px" src="https://www.youtube.com/embed/RAtnbJA3BUg?si=r3rddPaYzLg5TN6b" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+
               </div>
             </div>
             <div class="collapse" id="collapseEspanhol" data-bs-parent="#accordionLinguagens">
               <div class="videos mt-2">
                 <div class="aula">
                   <p class="text-center">Aula 01 <br>  Por que Espanhol?</p>
-                  <iframe width="200px" src="https://www.youtube.com/embed/13_NyAG1C34?si=B72F9KQA-gjEChFN" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="aula">
-                  <p class="text-center">Aula 02 <br> Introdução a Literatura</p>
-                  <iframe width="200px" src="https://www.youtube.com/embed/RAtnbJA3BUg?si=r3rddPaYzLg5TN6b" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe class="iframe-paused" width="200px" src="https://www.youtube.com/embed/13_NyAG1C34?si=B72F9KQA-gjEChFN" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  
                 </div>
               </div>
-            </div>
+            </div>  
             <div class="collapse" id="collapsePortugues" data-bs-parent="#accordionLinguagens">
               <div class="videos mt-2">
                 <div class="aula">
                   <p class="text-center">Aula 01 <br>  Interpretação de Texto e Análise Linguística</p>
-                  <iframe width="200px" src="https://www.youtube.com/embed/pnNOgAKwlGo?si=rFPXQUweuUzupBr9" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="aula">
-                  <p class="text-center">Aula 02 <br> Introdução a Literatura</p>
-                  <iframe width="200px" src="https://www.youtube.com/embed/RAtnbJA3BUg?si=r3rddPaYzLg5TN6b" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe class="iframe-paused" width="200px" src="https://www.youtube.com/embed/pnNOgAKwlGo?si=rFPXQUweuUzupBr9" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  
                 </div>
               </div>
             </div>
@@ -178,11 +178,8 @@
               <div class="videos mt-2">
                 <div class="aula">
                   <p class="text-center">Aula 01 <br> Texto Dissertativo Argumentativo</p>
-                  <iframe width="200px" src="https://www.youtube.com/embed/BnnpsXXLd24?si=J9ZQmqoYQT3DnSmU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="aula">
-                  <p class="text-center">Aula 02 <br> Introdução a Literatura</p>
-                  <iframe width="200px" src="https://www.youtube.com/embed/RAtnbJA3BUg?si=r3rddPaYzLg5TN6b" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe class="iframe-paused" width="200px" src="https://www.youtube.com/embed/BnnpsXXLd24?si=J9ZQmqoYQT3DnSmU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  
                 </div>
               </div>
             </div>
@@ -194,11 +191,11 @@
         <div class="row mt-3">
           <!-- Navegação Vertical Humanas -->
           <div class="col-md-3">
-            <nav class="nav flex-column" aria-label="Componentes">
+            <nav class="nav flex-column div-aulas" aria-label="Componentes">
               <button class="nav-link-componentes" data-bs-toggle="collapse" data-bs-target="#collapseFilosofia" aria-expanded="false" aria-controls="collapseFilosofia" aria-label="Filosofia">FILOSOFIA</button>                  
-              <button class="nav-link-componentes" data-bs-toggle="collapse" data-bs-target="#collapseGeografia" aria-expanded="false" aria-controls="collapseGeografia" aria-label="Geografia">GEOGRAFIA</button>
-              <button class="nav-link-componentes" data-bs-toggle="collapse" data-bs-target="#collapseHistoria" aria-expanded="false" aria-controls="collapseHistoria" aria-label="História">HISTÓRIA</button>                
-              <button class="nav-link-componentes" data-bs-toggle="collapse" data-bs-target="#collapseSociologia" aria-expanded="false" aria-controls="collapseSociologia" aria-label="História">SOCIOLOGIA</button>                
+              <button class="nav-link-componentes dimmed" data-bs-toggle="collapse" data-bs-target="#collapseGeografia" aria-expanded="false" aria-controls="collapseGeografia" aria-label="Geografia">GEOGRAFIA</button>
+              <button class="nav-link-componentes dimmed" data-bs-toggle="collapse" data-bs-target="#collapseHistoria" aria-expanded="false" aria-controls="collapseHistoria" aria-label="História">HISTÓRIA</button>                
+              <button class="nav-link-componentes dimmed" data-bs-toggle="collapse" data-bs-target="#collapseSociologia" aria-expanded="false" aria-controls="collapseSociologia" aria-label="Sociologia">SOCIOLOGIA</button>                
             </nav>
           </div>
           <!-- Conteúdo Humanas -->
@@ -207,11 +204,7 @@
               <div class="videos mt-2">
                 <div class="aula">
                   <p class="text-center">Aula 01 <br> Introdução ao estudo de Filosofia</p>
-                  <iframe width="200px" src="https://www.youtube.com/embed/xZdTvQhDfmM?si=fCsU62Pio0gMCeCr" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="aula">
-                  <p class="text-center">Aula 02 <br> Introdução a Literatura</p>
-                  <iframe width="200px" src="https://www.youtube.com/embed/RAtnbJA3BUg?si=r3rddPaYzLg5TN6b" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe class="iframe-paused" width="200px" src="https://www.youtube.com/embed/xZdTvQhDfmM?si=fCsU62Pio0gMCeCr" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
             </div>
@@ -219,11 +212,7 @@
               <div class="videos mt-2">
                 <div class="aula">
                   <p class="text-center">Aula 01 <br> Regionalização Mundial</p>
-                  <iframe width="200px" src="https://www.youtube.com/embed/j9-oE7ggWFw?si=WYxJRCi6-qLGTIdD" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="aula">
-                  <p class="text-center">Aula 02 <br> Introdução a Literatura</p>
-                  <iframe width="200px" src="https://www.youtube.com/embed/RAtnbJA3BUg?si=r3rddPaYzLg5TN6b" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe class="iframe-paused" width="200px" src="https://www.youtube.com/embed/j9-oE7ggWFw?si=WYxJRCi6-qLGTIdD" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
             </div> 
@@ -231,11 +220,7 @@
               <div class="videos mt-2">
                 <div class="aula">
                   <p class="text-center">Aula 01 <br> Introdução ao Estudo da História</p>
-                  <iframe width="200px" src="https://www.youtube.com/embed/k08d510GuAo?si=bOao-8jIZJZDZhpK" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="aula">
-                  <p class="text-center">Aula 02 <br> Introdução a Literatura</p>
-                  <iframe width="200px" src="https://www.youtube.com/embed/RAtnbJA3BUg?si=r3rddPaYzLg5TN6b" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe class="iframe-paused" width="200px" src="https://www.youtube.com/embed/k08d510GuAo?si=bOao-8jIZJZDZhpK" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
             </div>
@@ -243,11 +228,7 @@
               <div class="videos mt-2">
                 <div class="aula">
                   <p class="text-center">Aula 01 <br> Sociologia do trabalho</p>
-                  <iframe width="200px" src="https://www.youtube.com/embed/fm6ni5OT5xY?si=0VZNCNQy44eT4yoa" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="aula">
-                  <p class="text-center">Aula 02 <br> Introdução a Literatura</p>
-                  <iframe width="200px" src="https://www.youtube.com/embed/RAtnbJA3BUg?si=r3rddPaYzLg5TN6b" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe class="iframe-paused" width="200px" src="https://www.youtube.com/embed/fm6ni5OT5xY?si=0VZNCNQy44eT4yoa" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
             </div>                               
@@ -259,7 +240,7 @@
         <div class="row mt-3">
           <!-- Navegação Vertical Matemática -->
           <div class="col-md-3">
-            <nav class="nav flex-column" aria-label="Componentes">
+            <nav class="nav flex-column div-aulas" aria-label="Componentes">
               <button class="nav-link-componentes" data-bs-toggle="collapse" data-bs-target="#collapseConteudoMat" aria-expanded="false" aria-controls="collapseConteudoMat" aria-label="Matemática">MATEMÁTICA</button>
             </nav>
           </div>
@@ -269,11 +250,23 @@
               <div class="videos mt-2">
                 <div class="aula">
                   <p class="text-center">Aula 01 <br> Prog. Aritmética e Prog. Geométrica</p>
-                  <iframe width="200px" src="https://www.youtube.com/embed/58_sudOPuYw?si=XHgkGcKE4iF6d5nA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe class="iframe-paused" width="200px" src="https://www.youtube.com/embed/58_sudOPuYw?si=XHgkGcKE4iF6d5nA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div class="aula">
-                  <p class="text-center">Aula 02 <br> Introdução a Literatura</p>
-                  <iframe width="200px" src="https://www.youtube.com/embed/RAtnbJA3BUg?si=r3rddPaYzLg5TN6b" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <p class="text-center">Aula 01 <br> Prog. Aritmética e Prog. Geométrica</p>
+                  <iframe class="iframe-paused" width="200px" src="https://www.youtube.com/embed/58_sudOPuYw?si=XHgkGcKE4iF6d5nA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="aula">
+                  <p class="text-center">Aula 01 <br> Prog. Aritmética e Prog. Geométrica</p>
+                  <iframe class="iframe-paused" width="200px" src="https://www.youtube.com/embed/58_sudOPuYw?si=XHgkGcKE4iF6d5nA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="aula">
+                  <p class="text-center">Aula 01 <br> Prog. Aritmética e Prog. Geométrica</p>
+                  <iframe class="iframe-paused" width="200px" src="https://www.youtube.com/embed/58_sudOPuYw?si=XHgkGcKE4iF6d5nA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="aula">
+                  <p class="text-center">Aula 01 <br> Prog. Aritmética e Prog. Geométrica</p>
+                  <iframe class="iframe-paused" width="200px" src="https://www.youtube.com/embed/58_sudOPuYw?si=XHgkGcKE4iF6d5nA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
             </div>                
@@ -285,10 +278,10 @@
         <div class="row mt-3">
           <!-- Navegação Vertical Natureza -->
           <div class="col-md-3">
-            <nav class="nav flex-column" aria-label="Componentes">                  
+            <nav class="nav flex-column div-aulas" aria-label="Componentes">                  
               <button class="nav-link-componentes" data-bs-toggle="collapse" data-bs-target="#collapseBiologia" aria-expanded="false" aria-controls="collapseBiologia" aria-label="Biologia">BIOLOGIA</button>
-              <button class="nav-link-componentes" data-bs-toggle="collapse" data-bs-target="#collapseFisica" aria-expanded="false" aria-controls="collapseFisica" aria-label="Física">FÍSICA</button>
-              <button class="nav-link-componentes" data-bs-toggle="collapse" data-bs-target="#collapseQuimica" aria-expanded="false" aria-controls="collapseQuimica" aria-label="Química">QUÍMICA</button>
+              <button class="nav-link-componentes dimmed" data-bs-toggle="collapse" data-bs-target="#collapseFisica" aria-expanded="false" aria-controls="collapseFisica" aria-label="Física">FÍSICA</button>
+              <button class="nav-link-componentes dimmed" data-bs-toggle="collapse" data-bs-target="#collapseQuimica" aria-expanded="false" aria-controls="collapseQuimica" aria-label="Química">QUÍMICA</button>
             </nav>
           </div>
           <!-- Conteúdo Natureza -->
@@ -297,11 +290,7 @@
               <div class="videos mt-2">
                 <div class="aula">
                   <p class="text-center">Aula 01 <br> Cadeias e teias alimentares</p>
-                  <iframe width="200px" src="https://www.youtube.com/embed/2sXIe3rTrOI?si=_98mudb8wX2sAj0F" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="aula">
-                  <p class="text-center">Aula 02 <br> Introdução a Literatura</p>
-                  <iframe width="200px" src="https://www.youtube.com/embed/RAtnbJA3BUg?si=r3rddPaYzLg5TN6b" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe class="iframe-paused" width="200px" src="https://www.youtube.com/embed/2sXIe3rTrOI?si=_98mudb8wX2sAj0F" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
             </div>
@@ -309,24 +298,16 @@
               <div class="videos mt-2">
                 <div class="aula">
                   <p class="text-center">Aula 01 <br> Energia Mecânica</p>
-                  <iframe width="200px" src="https://www.youtube.com/embed/0qCiBm3NNZs?si=SmJTJLvxIhGs7hFs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="aula">
-                  <p class="text-center">Aula 02 <br> Introdução a Literatura</p>
-                  <iframe width="200px" src="https://www.youtube.com/embed/RAtnbJA3BUg?si=r3rddPaYzLg5TN6b" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe class="iframe-paused" width="200px" src="https://www.youtube.com/embed/0qCiBm3NNZs?si=SmJTJLvxIhGs7hFs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
             </div>
             <div class="collapse" id="collapseQuimica" data-bs-parent="#accordionNatureza">
               <div class="videos mt-2">
-                <div class="aula">
+                <!-- <div class="aula">
                   <p class="text-center">Aula 01 <br> Introdução a Literatura</p>
                   <iframe width="200px" src="https://www.youtube.com/embed/RAtnbJA3BUg?si=r3rddPaYzLg5TN6b" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="aula">
-                  <p class="text-center">Aula 02 <br> Introdução a Literatura</p>
-                  <iframe width="200px" src="https://www.youtube.com/embed/RAtnbJA3BUg?si=r3rddPaYzLg5TN6b" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+                </div> -->
               </div>
             </div>                
           </div>
@@ -336,15 +317,3 @@
   </div>
 </div>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const navLinks = document.querySelectorAll('.nav-link-aulas .nav-link-componentes');
-    
-    navLinks.forEach(link => {
-      link.addEventListener('click', function () {
-        navLinks.forEach(link => link.classList.add('dimmed')); // Esmaecer todos os botões
-        this.classList.remove('dimmed'); // Remover esmaecimento do botão clicado
-      });
-    });
-  });
-</script>

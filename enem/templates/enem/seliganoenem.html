@@ -3,6 +3,7 @@
 {% block title %}Se Liga no Enem{% endblock %}
 
 {% block content %}
+<head> <script src="https://www.youtube.com/iframe_api"></script></head>
 <style>@import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');</style>
 <link rel="stylesheet" href="../../../static/enem/css/enem.css">
 
@@ -105,15 +106,69 @@ function handleCardClick(card, shortInfo, url) {
     }
 }
 
+function loadVideosScript(){
+    const navAreas = document.querySelectorAll('.nav-link-aulas');
+    const navComponentes = document.querySelectorAll('.div-aulas');
+    var videos = document.querySelectorAll('.show');
+    // const iframes = divsWithVideos.querySelectorAll('iframe');
+    
+
+    navAreas.forEach(area => { 
+      area.addEventListener('click', function () {
+        if(!area.classList.contains('dimmed')){
+            area.classList.add('dimmed');
+        }else{
+            navAreas.forEach(area => area.classList.add('dimmed')); // Esmaecer todos os botões
+            this.classList.remove('dimmed'); // Remover esmaecimento do botão clicado
+            reloadVideos();
+        }
+      });
+    });
+
+    navComponentes.forEach((filho) => {
+        const filhos = Array.from(filho.children);
+        filhos.forEach(comp => {
+            comp.addEventListener('click', function () {
+                if(!(comp.classList.contains('dimmed'))){
+                    comp.classList.add('dimmed');
+                }else{
+                    filhos.forEach(comp => comp.classList.add('dimmed')); // Esmaecer todos os botões
+                    this.classList.remove('dimmed'); // Remover esmaecimento do botão clicado
+
+                    reloadVideos();
+                }
+            });
+                
+        });
+    });
+    
+    function reloadVideos(){
+        videos.forEach(video =>{
+            const childDivs = video.children;
+            if(childDivs.item(0).classList.contains('videos')){
+                const iframes = childDivs.item(0).querySelectorAll('iframe');
+                iframes.forEach(iframe =>{
+                    iframe.src = iframe.src;
+                    setTimeout(getVideos,1000);
+                });
+            }
+        });
+    }
+    function getVideos(){
+        videos = document.querySelectorAll('.show');
+    }
+}
+
 function loadContent(url) {
     fetch(url)
         .then(response => response.text())
         .then(data => {
-            
             contentCache[url] = data;
-            console.log("OPA");
             // Update the info box with the loaded content
             document.getElementById('info').innerHTML = data;
+            if(url == '../enem/estudecgnt'){
+                loadVideosScript();
+            }
         })
         .catch(error => {
             console.error('Erro ao carregar conteúdo:', error);
