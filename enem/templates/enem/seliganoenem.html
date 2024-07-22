@@ -78,11 +78,12 @@ function handleCardClick(card, shortInfo, url) {
         // infoBox.classList.remove('visible');
     } else {
         card.querySelector('.card-inner').classList.add('is-flipped');
-        if (contentCache[url]) {
-            infoBox.innerHTML = contentCache[url];
-        } else {
+        if(!contentCache[url] || url == '../enem/estudecgnt'){
             loadContent(url);
         }
+        else {
+            infoBox.innerHTML = contentCache[url];
+        } 
     }
 
     window.scrollTo(0, 150);
@@ -134,7 +135,6 @@ function loadVideosScript(){
                 }else{
                     filhos.forEach(comp => comp.classList.add('dimmed')); // Esmaecer todos os botões
                     this.classList.remove('dimmed'); // Remover esmaecimento do botão clicado
-
                     reloadVideos();
                 }
             });
@@ -166,7 +166,7 @@ function loadContent(url) {
             contentCache[url] = data;
             // Update the info box with the loaded content
             document.getElementById('info').innerHTML = data;
-            if(url == '../enem/estudecgnt'){
+            if(url='../enem/estudecgnt'){
                 loadVideosScript();
             }
         })
