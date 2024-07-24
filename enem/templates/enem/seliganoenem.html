@@ -234,8 +234,47 @@ document.addEventListener('DOMContentLoaded', function() {
             margin: 5px;
         }
         .seliga-imagem{
-        width: 250px;
-    }
+            width: 250px;
+        }
+        /* Prazos HTML */
+        .prova-datas-div{
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            margin-top:20px;
+        }
+        .aplicacao-provas{
+            display: flex;
+            flex-direction: column;
+            font-weight: bold;
+            gap: 15px;
+        }
+        .aplicacao-provas img{
+            align-self: center;
+            width: 25px;
+        }
+        .prova-data{
+            display: flex;
+            flex-direction: column;
+            /* border-bottom: ;
+             */
+            border-left: 2px #FF5757 solid;
+            border-bottom:  2px #FF5757 solid;
+            align-items: baseline;
+            margin-top: 8px;
+        }
+        .prova-data div{
+            font-size: 12PX;
+            padding: 8px 8px 0px 8px;
+        }
+        .prova-hora{
+            background-color: rgb(244, 188, 188);
+            text-align:end;
+            border-right: none;
+            border-bottom: 2px #FF5757 solid;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
     }
     @media screen and (min-width:901px){ /*Tela desktop*/
         .card-front, .card-back{
@@ -285,7 +324,41 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         .seliga-imagem{
         width: 400px;
-    }
+        }
+
+        /* Prazos HTML */
+        .prova-datas-div{
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            margin-top:20px;
+        }
+        .prova-data{
+            display: flex;
+            flex-direction: row;
+            border-bottom: 2px #FF5757 solid;
+            align-items: baseline;
+            margin-top: 5px;
+        }
+        .prova-data div{
+            font-size: 15px;
+            padding: 8px 8px 0px 8px;
+        }
+        .prova-hora{
+            text-align:end;
+            border-right: 2px #FF5757 solid;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        .aplicacao-provas{
+            display: flex;
+            flex-direction: row;
+            font-weight: bold;
+            gap: 15px;
+        }
+        .aplicacao-provas img{
+            width: 25px;
+        }
     }
 </style>
 
