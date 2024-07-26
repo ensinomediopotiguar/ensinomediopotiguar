@@ -20,3 +20,6 @@ def estudecgnt(request):
 
 def detalhesseliga(request):
     return render(request, 'enem/detalhesseliga.html')
+
+def prova(request):
+    return render(request, 'enem/prova.html')

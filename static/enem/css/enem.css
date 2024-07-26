@@ -122,7 +122,7 @@
 }
 
 .card4 .card-back {
-    background-color: #f15a22;
+    background-color: #ff6a20;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -139,6 +139,23 @@
 }
 
 .card5 .card-back {
+    background-color: #f15a22;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    transform: rotateY(180deg);
+}
+
+.card6 .card-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card6 .card-back {
     background-color: #f15a22;
     background-size: cover;
     background-position: center;
