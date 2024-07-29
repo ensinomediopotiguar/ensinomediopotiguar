@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', function() {
             flex-direction: row;
         }
         .card-front, .card-back{
-            width: 20vw;
+            width: 19vw;
             height: 12vh;
         }
         .card-inner{
@@ -202,15 +202,19 @@ document.addEventListener('DOMContentLoaded', function() {
             height: 12vh;
         }
         .card{
-            width: 20vw;
+            width: 19vw;
             height: 12vh;
         }
         .cards-container{
+            display: flex;
+            flex-direction: column;
             position: sticky;
+            overflow-x: hidden;
             top: 25vh;
+            height: 75vh;
         }
         .cards-div{
-            width: 20vw;
+            width: 23vw;
         }
         .cards-top, .cards-bottom{
             display: flex;
