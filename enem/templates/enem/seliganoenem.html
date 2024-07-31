@@ -181,6 +181,21 @@ function loadContent(url) {
         });
 }
 
+function handleClickArea(navTabColor, navAulasColor, fontColor ){
+    const navAreas = document.querySelectorAll('.nav-link-componentes');
+    const navTabs = document.querySelectorAll('.nav-tabs');
+    // navAreas.forEach(nav =>{
+    //     nav.style.backgroundColor = navComponents;
+    // });
+    navTabs[0].style.backgroundColor = navTabColor;
+    navAreas.forEach(areas =>{
+        console.log(areas.style);
+        areas.style.backgroundColor = navAulasColor;
+        areas.style.color = fontColor;
+    });
+    
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     loadContent('../enem/detalhesseliga')});
 </script>

@@ -49,6 +49,7 @@
 
   .nav-tabs {
     background-color: #00BF63;
+    /* background-color: #c1c45b; */
     border-radius: 10px;
     justify-content: space-between;
   }    
@@ -121,10 +122,10 @@
     <!-- Navegação Horizontal -->
     <nav aria-label="Conteúdos do Enem">
       <div class="nav nav-tabs" id="nav-tab" role="tablist">
-        <button class="nav-link-aulas active " id="nav-linguagens-tab" data-bs-toggle="collapse" data-bs-target="#collapseLinguagens" aria-expanded="false" aria-controls="collapseLinguagens" aria-label="Linguagens e Redação">Linguagens e Redação</button>
-        <button class="nav-link-aulas dimmed" id="nav-matematica-tab" data-bs-toggle="collapse" data-bs-target="#collapseMatematica" aria-expanded="false" aria-controls="collapseMatematica" aria-label="Matemática">Matemática</button>
-        <button class="nav-link-aulas dimmed" id="nav-humanas-tab" data-bs-toggle="collapse" data-bs-target="#collapseHumanas" aria-expanded="false" aria-controls="collapseHumanas" aria-label="Ciências Humanas">Ciências Humanas</button>
-        <button class="nav-link-aulas dimmed" id="nav-natureza-tab" data-bs-toggle="collapse" data-bs-target="#collapseNatureza" aria-expanded="false" aria-controls="collapseNatureza" aria-label="Ciências da Natureza">Ciências da Natureza</button>
+        <button class="nav-link-aulas active " id="nav-linguagens-tab" data-bs-toggle="collapse" data-bs-target="#collapseLinguagens" aria-expanded="false" aria-controls="collapseLinguagens" aria-label="Linguagens e Redação" onclick="handleClickArea('#00BF63','#7fdfb1','#004c27')" >Linguagens e Redação</button>
+        <button class="nav-link-aulas dimmed" id="nav-matematica-tab" data-bs-toggle="collapse" data-bs-target="#collapseMatematica" aria-expanded="false" aria-controls="collapseMatematica" aria-label="Matemática" onclick="handleClickArea('#ff6a20','#e3936c','#571e02')">Matemática</button>
+        <button class="nav-link-aulas dimmed" id="nav-humanas-tab" data-bs-toggle="collapse" data-bs-target="#collapseHumanas" aria-expanded="false" aria-controls="collapseHumanas" aria-label="Ciências Humanas" onclick="handleClickArea('#0c92df','#0CC0DF','#023857')">Ciências Humanas</button>
+        <button class="nav-link-aulas dimmed" id="nav-natureza-tab" data-bs-toggle="collapse" data-bs-target="#collapseNatureza" aria-expanded="false" aria-controls="collapseNatureza" aria-label="Ciências da Natureza" onclick="handleClickArea('#FF5757', '#f68888', '#4d0101')">Ciências da Natureza</button>
       </div>
     </nav>
 
